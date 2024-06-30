@@ -44,10 +44,12 @@ export default function Example() {
     <header className="sticky top-0 z-50 bg-gray-100 shadow shadow-smokewhite-200">
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
+       
           <a href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Friends of Karanda</span>
             {/* <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="" /> */}
-            <span style={{fontSize: "2.5rem"}} className='text-gray-700 text-xl text-bold'>FOKMH</span>
+            {/* <span style={{fontSize: "2.5rem"}} className='leading-6 text-gray-900 text-xl text-bold'>FOKMH</span> */}
+            <a style={{fontSize: "2.5rem"}} href="/" className="text-xl font-semibold leading-6 text-gray-900">FOKMH</a>
           </a>
         </div>
         <div className="flex lg:hidden">
@@ -114,10 +116,10 @@ export default function Example() {
           </Popover>
 
 
-          <a href="#" className="text-xl font-semibold leading-6 text-gray-900">
+          <a href="/causes" className="text-xl font-semibold leading-6 text-gray-900">
             Causes
           </a>
-          <a href="#" className="text-xl font-semibold leading-6 text-gray-900">
+          <a href="/contact" className="text-xl font-semibold leading-6 text-gray-900">
             Contact Us
           </a>
           

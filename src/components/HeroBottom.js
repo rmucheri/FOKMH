@@ -46,6 +46,7 @@ function HeroBottom() {
             />
           </div>
         </div>
+        
       </div>
     </div>
   );
