@@ -23,10 +23,10 @@ import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/
 
 const products = [
   { name: 'About Us', description: 'Get a better understanding of your traffic', href: 'about', icon: ChartPieIcon },
-  { name: 'Mission & Vision', description: 'Speak directly to your customers', href: 'mission-vision', icon: CursorArrowRaysIcon },
-  { name: 'Our Team', description: 'Your customers’ data will be safe and secure', href: 'team', icon: FingerPrintIcon },
-  { name: 'Core Values', description: 'Connect with third-party tools', href: 'values', icon: SquaresPlusIcon },
-  { name: 'Impact & Success Stories', description: 'Build strategic funnels that will convert', href: 'Impact-success-stories', icon: ArrowPathIcon },
+  { name: 'Mission & Vision', description: 'Speak directly to your customers', href: '#mission-vision', icon: CursorArrowRaysIcon },
+  { name: 'Our Team', description: 'Your customers’ data will be safe and secure', href: '#team', icon: FingerPrintIcon },
+  { name: 'Core Values', description: 'Connect with third-party tools', href: '#values', icon: SquaresPlusIcon },
+  { name: 'Gallery', description: 'Build strategic funnels that will convert', href: '#gallery', icon: ArrowPathIcon },
 ]
 const callsToAction = [
   { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
