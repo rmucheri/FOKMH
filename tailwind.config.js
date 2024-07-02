@@ -8,7 +8,13 @@ module.exports = withMT({
     path.join(__dirname, "node_modules", "@material-tailwind/react", "theme/components/**/*.{js,ts,jsx,tsx}"),
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'hospital': "url('/src/assets/images/hospital.jpg')",
+        'operation': "url('/src/assets/images/operation.jpg')",
+        'xrays': "url('/src/assets/images/xrays.jpg')"
+      },
+    },
   },
   plugins: [],
 });

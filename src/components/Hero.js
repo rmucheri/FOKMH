@@ -1,9 +1,23 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
+import { charthos, checkup, docspatient, hosfrtdesk, hospital, karadoc, operation, xrays } from '../assets';
+
+const backgroundImage = [operation, hospital, xrays, charthos, checkup, docspatient, hosfrtdesk, karadoc];
+
+const getRandomImage = () => {
+  const randomIndex = Math.floor(Math.random() * backgroundImage.length);
+  return backgroundImage[randomIndex];
+};
 
 function Hero() {
+  const [bgImage, setBgImage] = useState(getRandomImage());
+
+  useEffect(() => {
+    setBgImage(getRandomImage());
+  }, []);
+
   return (
     <div>
-      <section className="bg-center bg-cover bg-no-repeat bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/conference.jpg')] bg-gray-700 bg-blend-multiply">
+      <section  style={{ backgroundImage: `url(${bgImage})` }} className="bg-center bg-cover bg-no-repeat bg-gray-700 bg-blend-multiply">
   <div className="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
     <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">
       Friends of Karanda Mission Hospital

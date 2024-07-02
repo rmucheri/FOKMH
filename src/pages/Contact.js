@@ -154,12 +154,12 @@ Send Message
 </span>
 </button>
             </div>
-            <a
+            {/* <a
               href="https://veilmail.io/e/FkKh7o"
               className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
             >
               Or click here to reveal our protected email address
-            </a>
+            </a> */}
           </div>
         </div>
       </div>
