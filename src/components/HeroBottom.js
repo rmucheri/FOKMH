@@ -3,9 +3,10 @@ import { doctorl, doctorp, nursel, nursep } from '../assets';
 
 function HeroBottom() {
   return (
-    <div className="w-full bg-white dark:bg-gray-800">
-      <div className="flex flex-col lg:flex-row lg:items-center">
-        <div className="w-full lg:w-1/2 py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+    <div class="w-full px-40">
+    <div className=" w-full bg-white dark:bg-gray-800">
+      <div className="flex flex-col lg:flex-row lg:items-center ">
+        <div className="sm:w-full lg:w-1/2 py-12 px-4 sm:px-4 lg:py-16 lg:px-8">
           <h2 className="text-3xl font-extrabold text-black dark:text-white sm:text-4xl">
             <span className="block">Mother hearth host your travel</span>
           </h2>
@@ -26,17 +27,18 @@ function HeroBottom() {
         <div className="w-full flex items-center gap-8 p-8 lg:p-24">
         <div className='lg:w-1/2 '>
         <img
-            style={{width: "90%"}}
+            style={{width: "100%"}}
             src={nursep}
-            className="w-full  rounded-lg"
+            className="w-  rounded-lg"
             alt="Nurse"
           />
         </div>
         
           <div className="flex flex-col gap-12 w-full lg:w-1/2">
             <img
+             
               src={nursel}
-              className="w-full h-1/2 rounded-lg"
+              className="w-full sm:w-full rounded-lg"
               alt="Nurse"
             />
             <img
@@ -48,6 +50,7 @@ function HeroBottom() {
         </div>
         
       </div>
+    </div>
     </div>
   );
 }

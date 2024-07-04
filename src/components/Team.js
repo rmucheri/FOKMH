@@ -1,7 +1,5 @@
 import React, { useState } from 'react'
 
-
-
 function Team() {
 
   const AccordionItem = ({ header, text }) => {
@@ -57,9 +55,9 @@ function Team() {
   };
 
   return (
+    // <div id="team" className="bg-white py-24 sm:py-32">
     <div id="team" className="bg-white py-24 sm:py-32">
-    <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
-      <div className="max-w-2xl">
+       <div className=" container  px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-32">
         <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
           Meet our leadership
         </h2>
@@ -68,93 +66,200 @@ function Team() {
           elementum enim vitae ullamcorper suspendisse.
         </p>
       </div>
+    <div className="container mx-auto justify-evenly">
+     
       <ul
         role="list"
-        className="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2"
+        className="grid gap-x-2 gap-y-20 sm:grid-cols-1 lg:grid-cols-3 sm:gap-y-16 xl:col-span-2 "
       >
         <li>
-          <div className="flex items-center gap-x-6">
-            <img
-              className="h-16 w-16 rounded-full"
-              src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-              alt=""
-            />
-            <div>
-              <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">
-                Leslie Alexander
-              </h3>
-              <p className="text-sm font-semibold leading-6 text-indigo-600">
-                Co-Founder / CEO
-              </p>
-            </div>
-          </div>
+        <div className="flex flex-col items-center gap-y-4">
+  <img
+    className="h-40 w-40 rounded-full mx-auto"
+    src="https://media.licdn.com/dms/image/D5603AQHSvrsbRqQFtA/profile-displayphoto-shrink_200_200/0/1707094646587?e=1725494400&v=beta&t=cbHD_Rmcdksq4lw3571KZZZ5behFE3j3PQ0s5DwuBMI"
+    alt="Mwandibhuya Mutepfa"
+  />
+  <div className="text-center justify-center">
+    <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">
+      Mwandibhuya Mutepfa
+    </h3>
+    <p className="text-sm font-semibold leading-6 text-indigo-600">
+      Co-Founder / CEO
+    </p>
+  </div>
+</div>
+
         </li>
         <li>
-          <div className="flex items-center gap-x-6">
-            <img
-              className="h-16 w-16 rounded-full"
-              src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-              alt=""
-            />
-            <div>
-              <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">
-                Leslie Alexander
-              </h3>
-              <p className="text-sm font-semibold leading-6 text-indigo-600">
-                Co-Founder / CEO
-              </p>
-            </div>
-          </div>
+          <div className="flex flex-col items-center gap-y-4">
+  <img
+    className="h-40 w-40 rounded-full"
+              src="https://media.licdn.com/dms/image/D5603AQF0Rb3P-DBkMA/profile-displayphoto-shrink_200_200/0/1719100241898?e=1725494400&v=beta&t=2yJ2cFTln_Tgdc0gI0JyJqvVVcDMsxoA1I_0sMxRGEE"
+    alt="Rufaro Mucheri"
+  />
+  <div className="text-center">
+    <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">
+    Rufaro Mucheri
+    </h3>
+    <p className="text-sm font-semibold leading-6 text-indigo-600">
+      Co-Founder / CTO
+    </p>
+  </div>
+</div>
+
         </li>
         <li>
-          <div className="flex items-center gap-x-6">
-            <img
-              className="h-16 w-16 rounded-full"
-              src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-              alt=""
-            />
-            <div>
-              <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">
-                Leslie Alexander
-              </h3>
-              <p className="text-sm font-semibold leading-6 text-indigo-600">
-                Co-Founder / CEO
-              </p>
-            </div>
-          </div>
+        <div className="flex flex-col items-center gap-y-4">
+  <img
+    className="h-40 w-40 rounded-full"
+              src="https://alumni.med.ubc.ca/files/2018/02/IMG_4984-225x300.jpg"
+    alt="Rufaro Mucheri"
+  />
+  <div className="text-center">
+    <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">
+    James Watt
+    </h3>
+    <p className="text-sm font-semibold leading-6 text-indigo-600">
+    Co-Founder / Medical Doctor
+    </p>
+  </div>
+</div>
         </li>
         {/* More people... */}
       </ul>
-      <div className="-mx-4 flex flex-wrap">
-          <div className="w-full px-4 lg:w-1/2">
-            <AccordionItem
-              header="How long we deliver your first blog post?"
-              text="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
-            />
-            <AccordionItem
-              header="How long we deliver your first blog post?"
-              text="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
-            />
-            <AccordionItem
-              header="How long we deliver your first blog post?"
-              text="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
-            />
-          </div>
-          <div className="w-full px-4 lg:w-1/2">
-            <AccordionItem
-              header="How long we deliver your first blog post?"
-              text="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
-            />
-            <AccordionItem
-              header="How long we deliver your first blog post?"
-              text="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
-            />
-            <AccordionItem
-              header="How long we deliver your first blog post?"
-              text="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
-            />
-          </div>
-        </div>
+      </div>
+      <div className='sm:px-8 md:px-4 lg:px-8 xl:px-8'> 
+      <h2 className="py-16 text-3xl text-center font-extrabold text-gray-900">Board Members</h2>
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+  <div className="w-full sm:px-4">
+    <AccordionItem
+      header="Paul Pogba"
+      text="Dynamos Dembare Midfielder"
+    />
+  </div>
+  <div className="w-full sm:px-4">
+    <AccordionItem
+      header="Paul Pogba"
+      text="Dynamos Dembare Midfielder"  />
+  </div>
+  <div className="w-full px-4">
+    <AccordionItem
+     header="Paul Pogba"
+     text="Dynamos Dembare Midfielder"  />
+  </div>
+  <div className="w-full px-4">
+    <AccordionItem
+  header="Paul Pogba"
+  text="Dynamos Dembare Midfielder" />
+  </div>
+  <div className="w-full px-4">
+    <AccordionItem
+      header="Paul Pogba"
+      text="Dynamos Dembare Midfielder"  />
+  </div>
+  <div className="w-full px-4">
+    <AccordionItem
+     header="Paul Pogba"
+     text="Dynamos Dembare Midfielder"  />
+  </div>
+  <div className="w-full px-4">
+    <AccordionItem
+  header="Paul Pogba"
+  text="Dynamos Dembare Midfielder" />
+  </div>
+  <div className="w-full px-4">
+    <AccordionItem
+      header="Paul Pogba"
+      text="Dynamos Dembare Midfielder"  />
+  </div>
+  <div className="w-full px-4">
+    <AccordionItem
+header="Paul Pogba"
+text="Dynamos Dembare Midfielder" />
+  </div>
+  <div className="w-full sm:px-4">
+    <AccordionItem
+      header="Paul Pogbas"
+      text="Dynamos Dembare Midfielder"
+    />
+  </div>
+  <div className="w-full px-4 ">
+    <AccordionItem
+      header="Paul Pogba"
+      text="Dynamos Dembare Midfielder"  />
+  </div>
+  <div className="w-full px-4 ">
+    <AccordionItem
+     header="Paul Pogba"
+     text="Dynamos Dembare Midfielder"  />
+  </div>
+  <div className="w-full px-4 ">
+    <AccordionItem
+  header="Paul Pogba"
+  text="Dynamos Dembare Midfielder" />
+  </div>
+  <div className="w-full px-4 ">
+    <AccordionItem
+      header="Paul Pogba"
+      text="Dynamos Dembare Midfielder"  />
+  </div>
+  <div className="w-full px-4 ">
+    <AccordionItem
+header="Paul Pogba"
+text="Dynamos Dembare Midfielder" />
+  </div>
+  <div className="w-full px-4">
+    <AccordionItem
+      header="Paul Pogba"
+      text="Dynamos Dembare Midfielder"
+    />
+  </div>
+  <div className="w-full px-4 ">
+    <AccordionItem
+      header="Paul Pogba"
+      text="Dynamos Dembare Midfielder"  />
+  </div>
+  <div className="w-full px-4 ">
+    <AccordionItem
+     header="Paul Pogba"
+     text="Dynamos Dembare Midfielder"  />
+  </div>
+  <div className="w-full px-4 ">
+    <AccordionItem
+  header="Paul Pogba"
+  text="Dynamos Dembare Midfielder" />
+  </div>
+  <div className="w-full px-4 ">
+    <AccordionItem
+      header="Paul Pogba"
+      text="Dynamos Dembare Midfielder"  />
+  </div>
+  <div className="w-full px-4 ">
+    <AccordionItem
+      header="Paul Pogba"
+      text="Dynamos Dembare Midfielder"  />
+  </div>
+  <div className="w-full px-4 ">
+    <AccordionItem
+header="Paul Pogba"
+text="Dynamos Dembare Midfielder" />
+  </div>
+  <div className="w-full px-4 ">
+    <AccordionItem
+      header="Paul Pogba"
+      text="Dynamos Dembare Midfielder"  />
+  </div>
+  <div className="w-full px-4 ">
+    <AccordionItem
+      header="Paul Pogba"
+      text="Dynamos Dembare Midfielder"  />
+  </div>
+  <div className="w-full px-4 ">
+    <AccordionItem
+header="Paul Pogba"
+text="Dynamos Dembare Midfielder" />
+  </div>
+</div>
     </div>
   </div>
   

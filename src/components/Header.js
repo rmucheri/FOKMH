@@ -21,16 +21,16 @@ import {
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 
-const products = [
-  { name: 'About Us', description: 'Get a better understanding of your traffic', href: 'about', icon: ChartPieIcon },
-  { name: 'Mission & Vision', description: 'Speak directly to your customers', href: '#mission-vision', icon: CursorArrowRaysIcon },
-  { name: 'Our Team', description: 'Your customers’ data will be safe and secure', href: '#team', icon: FingerPrintIcon },
-  { name: 'Core Values', description: 'Connect with third-party tools', href: '#values', icon: SquaresPlusIcon },
-  { name: 'Gallery', description: 'Build strategic funnels that will convert', href: '#gallery', icon: ArrowPathIcon },
+const aboutList = [
+  { name: 'About Us', description: 'Get to know Friends of Karanda', href: 'about', icon: ChartPieIcon },
+  { name: 'Mission & Vision', description: 'What we aspire to acheive', href: 'https://main.d9oswyj4tbug8.amplifyapp.com/about#mission-vision', icon: CursorArrowRaysIcon },
+  { name: 'Our Team', description: 'Meet our Dedicated leadership team ', href: 'https://main.d9oswyj4tbug8.amplifyapp.com/about#team', icon: FingerPrintIcon },
+  { name: 'Core Values', description: 'What drives us', href: 'https://main.d9oswyj4tbug8.amplifyapp.com/about#values', icon: SquaresPlusIcon },
+  { name: 'Gallery', description: 'Check out our media center', href: 'https://main.d9oswyj4tbug8.amplifyapp.com/about#gallery', icon: ArrowPathIcon },
 ]
 const callsToAction = [
-  { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
-  { name: 'Contact sales', href: '#', icon: PhoneIcon },
+  { name: 'Donate', href: '/donate', icon: PlayCircleIcon },
+  { name: 'Contact Us', href: '/contact', icon: PhoneIcon },
 ]
 
 function classNames(...classes) {
@@ -73,7 +73,7 @@ export default function Example() {
 
           <Popover className="relative">
             <PopoverButton className="flex items-center gap-x-1 text-xl font-semibold leading-6 text-gray-900">
-              About Us
+             About Us
               <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
             </PopoverButton>
 
@@ -82,7 +82,7 @@ export default function Example() {
               className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5 transition data-[closed]:translate-y-1 data-[closed]:opacity-0 data-[enter]:duration-200 data-[leave]:duration-150 data-[enter]:ease-out data-[leave]:ease-in"
             >
               <div className="p-4">
-                {products.map((item) => (
+                {aboutList.map((item) => (
                   <div
                     key={item.name}
                     className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
@@ -125,10 +125,11 @@ export default function Example() {
           
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="/donate" className="text-xl font-semibold leading-6 text-gray-900">
-            Donate Now! <span aria-hidden="true">&rarr;</span>
-          </a>
-        </div>
+  <a href="https://magetsi.co.zw/tickets" className="text-xl font-semibold leading-6 text-gray-900">
+    Donate Now! <span aria-hidden="true">&rarr;</span>
+  </a>
+</div>
+
       </nav>
       <Dialog className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
         <div className="fixed inset-0 z-10" />
@@ -158,14 +159,14 @@ export default function Example() {
                   {({ open }) => (
                     <>
                       <DisclosureButton className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                        Product
+                      FOKMH
                         <ChevronDownIcon
                           className={classNames(open ? 'rotate-180' : '', 'h-5 w-5 flex-none')}
                           aria-hidden="true"
                         />
                       </DisclosureButton>
                       <DisclosurePanel className="mt-2 space-y-2">
-                        {[...products, ...callsToAction].map((item) => (
+                        {[...aboutList, ...callsToAction].map((item) => (
                           <DisclosureButton
                             key={item.name}
                             as="a"
@@ -180,19 +181,19 @@ export default function Example() {
                   )}
                 </Disclosure>
                 <a
-                  href="#"
+                  href="/FAQs"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Features
+                  FAQs
                 </a>
                 <a
-                  href="#"
+                  href="/causes"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Marketplace
+                  Causes
                 </a>
                 <a
-                  href="#"
+                  href="/contact"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Contact Us
@@ -200,10 +201,10 @@ export default function Example() {
               </div>
               <div className="py-6">
                 <a
-                  href="#"
+                  href="https://magetsi.co.zw/tickets"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Log in
+                  Donate Now!
                 </a>
               </div>
             </div>

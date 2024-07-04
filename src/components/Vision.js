@@ -5,10 +5,10 @@ function Vision() {
     <div id="mission-vision" className='mt-10'>
       <section className="bg-gray-100 py-16">
   <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-    <h2 className="text-3xl font-extrabold text-gray-900">Our Vision</h2>
+    <h2 className="text-3xl text-center font-extrabold text-gray-900">Our Vision</h2>
     <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
       <div>
-        <div className="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+      <div className="flex items-center mx-auto justify-center h-16 w-16 rounded-md bg-indigo-500 text-white">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -25,7 +25,7 @@ function Vision() {
           </svg>
         </div>
         <div className="mt-5">
-          <h3 className="text-lg font-medium text-gray-900">Mission</h3>
+          <h3 className="text-lg text-center font-medium text-gray-900">Mission</h3>
           <p className="mt-2 text-base text-gray-500">
             We aim to make the world a better place through innovation and
             collaboration.
@@ -33,7 +33,7 @@ function Vision() {
         </div>
       </div>
       <div>
-        <div className="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+      <div className="flex items-center mx-auto justify-center h-16 w-16 rounded-md bg-indigo-500 text-white">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -50,21 +50,21 @@ function Vision() {
           </svg>
         </div>
         <div className="mt-5">
-          <h3 className="text-lg font-medium text-gray-900">Values</h3>
+          <h3 className="text-lg text-center font-medium text-gray-900">Values</h3>
           <p className="mt-2 text-base text-gray-500">
             We believe in honesty, integrity, and respect for all individuals.
           </p>
         </div>
       </div>
       <div>
-        <div className="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+        <div className="flex items-center mx-auto justify-center h-16 w-16 rounded-md bg-indigo-500 text-white">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             strokeWidth="1.5"
             stroke="currentColor"
-            className="w-6 h-6"
+            className="w-8 h-8"
           >
             <path
               strokeLinecap="round"
@@ -79,7 +79,7 @@ function Vision() {
           </svg>
         </div>
         <div className="mt-5">
-          <h3 className="text-lg font-medium text-gray-900">Vision</h3>
+          <h3 className="text-lg text-center font-medium text-gray-900">Vision</h3>
           <p className="mt-2 text-base text-gray-500">
             We envision a world where technology is used to solve the most
             pressing issues facing humanity and improve people's lives.
