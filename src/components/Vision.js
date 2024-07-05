@@ -26,9 +26,11 @@ function Vision() {
         </div>
         <div className="mt-5">
           <h3 className="text-lg text-center font-medium text-gray-900">Mission</h3>
-          <p className="mt-2 text-base text-gray-500">
-            We aim to make the world a better place through innovation and
-            collaboration.
+          <p className="mt-2 text-base text-gray-500 text-justify">
+          To raise funds and secure resources to support economically disadvantaged cancer patients, 
+          ensuring they have access to affordable and high-quality treatment at Karanda Mission Hospital. 
+          We aim to alleviate the financial burden of cancer care, providing comprehensive support 
+          that encompasses medical, emotional, and logistical assistance to those in need.
           </p>
         </div>
       </div>
@@ -51,8 +53,8 @@ function Vision() {
         </div>
         <div className="mt-5">
           <h3 className="text-lg text-center font-medium text-gray-900">Values</h3>
-          <p className="mt-2 text-base text-gray-500">
-            We believe in honesty, integrity, and respect for all individuals.
+          <p className="mt-2 text-base text-gray-500 text-justify">
+          We are committed to compassion, integrity, and excellence, ensuring accessible and empathetic cancer care for all. Our dedication to community, innovation, and sustainability enhances our impact, while respect and empowerment guide our interactions. Above all, we foster hope, providing emotional and psychological support to inspire recovery and positive outcomes.
           </p>
         </div>
       </div>
@@ -80,9 +82,8 @@ function Vision() {
         </div>
         <div className="mt-5">
           <h3 className="text-lg text-center font-medium text-gray-900">Vision</h3>
-          <p className="mt-2 text-base text-gray-500">
-            We envision a world where technology is used to solve the most
-            pressing issues facing humanity and improve people's lives.
+          <p className="mt-2 text-base text-gray-500 text-justify">
+          To ensure every economically disadvantaged cancer patient receives the necessary support and access to affordable, quality treatment at Karanda Mission Hospital, fostering hope and health in our community. We envision a future where no one is denied life-saving cancer care due to financial constraints, and where Karanda Mission Hospital serves as a beacon of hope, healing, and excellence in cancer treatment.
           </p>
         </div>
       </div>

@@ -9,6 +9,7 @@ function Home() {
     <div>
      <Hero />
      <Features />
+    
      < HeroBottom />
      <Partner />
     </div>

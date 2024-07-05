@@ -101,7 +101,7 @@ body{
     width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
+    grid-gap: 15px;
 }
 .contentLeft .row .imgWrapper{
     width: 100%;
@@ -109,7 +109,7 @@ body{
     overflow: hidden;
     border-radius: 10px;
     cursor: pointer;
-    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 6px 15px 5px rgba(201, 95, 8, 0.15);
 }
 .contentLeft .row .imgWrapper img{
     width: 100%;
