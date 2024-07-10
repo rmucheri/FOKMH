@@ -18,6 +18,11 @@ import hosfrtdesk from './images/hosfrtdesk.jpg'
 import karadoc from './images/karadoc.jpg'
 import aiel from './images/Logo.png'
 import aws from './images/aws.png'
+import logo1 from './images/logo1.jpeg'
+import logo2 from './images/logo2.jpeg'
+import logo3 from './images/logo3.jpeg'
+import logothree from './images/logo3.png'
+
 
 export {
 
@@ -39,5 +44,9 @@ export {
     charthos,
     checkup,
     hosfrtdesk,
-    karadoc
+    karadoc,
+    logo1,
+    logo2,
+    logo3,
+    logothree
 }

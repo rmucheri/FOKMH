@@ -20,6 +20,7 @@ import {
   XMarkIcon,
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
+import { logo1, logo2, logo3, logothree } from '../assets'
 
 // const aboutList = [
 //   { name: 'About Us', description: 'Get to know Friends of Karanda', href: 'about', icon: ChartPieIcon },
@@ -54,11 +55,11 @@ export default function Example() {
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
        
-          <a href="/" className="-m-1.5 p-1.5">
+          <a href="/" className="">
             <span className="sr-only">Friends of Karanda</span>
-            {/* <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="" /> */}
+            <img className="h-20 z-99 w-auto" src={logothree} alt="" />
             {/* <span style={{fontSize: "2.5rem"}} className='leading-6 text-gray-900 text-xl text-bold'>FOKMH</span> */}
-            <a style={{fontSize: "2.5rem"}} href="/" className="text-xl font-semibold leading-6 text-gray-900">FOKMH</a>
+            {/* <a style={{fontSize: "2.5rem"}} href="/" className="text-xl font-semibold leading-6 text-gray-900">FOKMH</a> */}
           </a>
         </div>
         <div className="flex lg:hidden">

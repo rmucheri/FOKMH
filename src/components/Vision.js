@@ -26,7 +26,7 @@ function Vision() {
         </div>
         <div className="mt-5">
           <h3 className="text-lg text-center font-medium text-gray-900">Mission</h3>
-          <p className="mt-2 text-base text-gray-500 text-justify">
+          <p className="mt-2 text-base text-gray-500 text-justify mr-4">
           To raise funds and secure resources to support economically disadvantaged cancer patients, 
           ensuring they have access to affordable and high-quality treatment at Karanda Mission Hospital. 
           We aim to alleviate the financial burden of cancer care, providing comprehensive support 
@@ -52,8 +52,8 @@ function Vision() {
           </svg>
         </div>
         <div className="mt-5">
-          <h3 className="text-lg text-center font-medium text-gray-900">Values</h3>
-          <p className="mt-2 text-base text-gray-500 text-justify">
+          <h3 className="text-lg text-center font-medium text-gray-900 ">Values</h3>
+          <p className="mt-2 text-base text-gray-500 text-justify mr-4">
           We are committed to compassion, integrity, and excellence, ensuring accessible and empathetic cancer care for all. Our dedication to community, innovation, and sustainability enhances our impact, while respect and empowerment guide our interactions. Above all, we foster hope, providing emotional and psychological support to inspire recovery and positive outcomes.
           </p>
         </div>
