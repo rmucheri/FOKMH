@@ -13,22 +13,22 @@ function HeroBottom() {
     <div className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
 
     <h2 className="text-3xl font-extrabold text-black dark:text-white sm:text-4xl">
-             <span className="block px-2 text-gray-600">Meet Our Heroes Behind the Scenes
+             <span className="block px-2 text-gray-600">Meet Our Heroes Behind the Scenes<br/><br/>
 
  </span>
            </h2>
 
      
-                <p className="">
+                <p className="text-justify">
            At Karanda Mission Hospital, our dedicated team of doctors, 
           nurses, and hospital staff work tirelessly to provide exceptional 
            care to our cancer patients. Their unwavering commitment and            
-           compassion are the driving forces behind our mission to deliver t
-           op-notch medical services. <br/>
+           compassion are the driving forces behind our mission to deliver top-notch medical services. <br/><br/>
+           Dr. Paul Thistle, originally from Canada, has dedicated over two decades to serving the people of Zimbabwe. As Medical Director, his expertise and passion for patient care have transformed countless lives. His commitment to improving healthcare access in rural areas has earned him widespread respect and admiration. Under his leadership, he has implemented innovative treatments and care protocols, significantly improving patient outcomes.
+
            </p>
 
       <p>
-      Dr. Paul Thistle, originally from Canada, has dedicated over two decades to serving the people of Zimbabwe. As Medical Director, his expertise and passion for patient care have transformed countless lives. His commitment to improving healthcare access in rural areas has earned him widespread respect and admiration. Under his leadership, the oncology department has implemented innovative treatments and care protocols, significantly improving patient outcomes.
       </p>
     </div>
     <div className="grid grid-cols-2 gap-4 mt-8">
