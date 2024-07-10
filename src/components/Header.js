@@ -51,15 +51,15 @@ export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 z-50 bg-gray-100 shadow shadow-smokewhite-200">
-      <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+    <header className="sticky top-0 z-50 bg-gray-100 shadow-[#ffd832] shadow-sm">
+      <nav className="mx-auto flex max-w-7xl items-center justify-between lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
        
           <a href="/" className="">
             <span className="sr-only">Friends of Karanda</span>
-            <img className="h-20 z-99 w-auto" src={logothree} alt="" />
-            {/* <span style={{fontSize: "2.5rem"}} className='leading-6 text-gray-900 text-xl text-bold'>FOKMH</span> */}
-            {/* <a style={{fontSize: "2.5rem"}} href="/" className="text-xl font-semibold leading-6 text-gray-900">FOKMH</a> */}
+            <img className="h-16 z-99 w-auto" src={logothree} alt="" />
+            {/* <span style={{fontSize: "2.5rem"}} text-[#ffd832] className='leading-6 text-gray-900 text-xl text-bold'>FOKMH</span> */}
+            <a style={{fontSize: "1.2rem"}} href="/" className="text-[#3ea498] text-xl font-semibold leading-6 text-gray-900 text-right">FOKMH</a>
           </a>
         </div>
         <div className="flex lg:hidden">
