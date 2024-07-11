@@ -1,5 +1,5 @@
 import React from 'react'
-import { logo1, logo2, logo3, logothree } from '../assets'
+import { logo1, logo2, logo3, logothree, tranlogo2 } from '../assets'
 
 const currentYear = new Date().getFullYear();
 
@@ -21,7 +21,7 @@ function Footer() {
        
        <a href="/" className="">
          <span className="sr-only">Friends of Karanda</span>
-         <img className="h-24 z-99 w-auto animate-bounce" src={logothree} alt="" />
+         <img className="h-24 z-99 w-auto animate-bounce" src={tranlogo2} alt="" />
          {/* <span style={{fontSize: "2.5rem"}} text-[#ffd832] className='leading-6 text-gray-900 text-xl text-bold'>FOKMH</span> */}
          <a style={{fontSize: "1.8rem"}} href="/" className="text-[#3ea498] text-xl font-semibold leading-6">FOKMH</a>
        </a>
