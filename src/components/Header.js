@@ -20,7 +20,7 @@ import {
   XMarkIcon,
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
-import { logo1, logo2, logo3, logothree } from '../assets'
+import { logo1, logo2, logo3, logothree, tranlogo2 } from '../assets'
 
 // const aboutList = [
 //   { name: 'About Us', description: 'Get to know Friends of Karanda', href: 'about', icon: ChartPieIcon },
@@ -53,11 +53,11 @@ export default function Example() {
   return (
     <header className="sticky top-0 z-50 bg-gray-100 shadow-[#ffd832] shadow-sm">
       <nav className="mx-auto flex max-w-7xl items-center justify-between lg:px-8" aria-label="Global">
-        <div className="flex lg:flex-1">
+        <div className="flex lg:flex-1 hover:scale-105 ">
        
           <a href="/" className="">
             <span className="sr-only">Friends of Karanda</span>
-            <img className="h-16 z-99 w-auto" src={logothree} alt="" />
+            <img className="h-16 z-99 w-auto" src={tranlogo2} alt="" />
             {/* <span style={{fontSize: "2.5rem"}} text-[#ffd832] className='leading-6 text-gray-900 text-xl text-bold'>FOKMH</span> */}
             <a style={{fontSize: "1.2rem"}} href="/" className="text-[#3ea498] text-xl font-semibold leading-6">FOKMH</a>
           </a>
@@ -77,12 +77,12 @@ export default function Example() {
 
             {/* Here */}
 
-          <a href="/" className="text-xl font-semibold leading-6 text-gray-900">
+          <a href="/" className="text-xl font-semibold leading-6 text-gray-900 hover:scale-125 ">
             Home
           </a>
 
           <Popover className="relative">
-            <PopoverButton className="flex items-center gap-x-1 text-xl font-semibold leading-6 text-gray-900">
+            <PopoverButton className="flex items-center gap-x-1 text-xl font-semibold leading-6 text-gray-900 hover:scale-125 ">
              About Us
               <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
             </PopoverButton>
@@ -126,15 +126,15 @@ export default function Example() {
           </Popover>
 
 
-          <a href="/causes" className="text-xl font-semibold leading-6 text-gray-900">
+          <a href="/causes" className="text-xl font-semibold leading-6 text-gray-900 hover:scale-125 ">
             Causes
           </a>
-          <a href="/contact" className="text-xl font-semibold leading-6 text-gray-900">
+          <a href="/contact" className="text-xl font-semibold leading-6 text-gray-900 hover:scale-125 ">
             Contact Us
           </a>
           
         </PopoverGroup>
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+        <div className="hidden lg:flex lg:flex-1 lg:justify-end hover:scale-110 ">
   <a href="https://magetsi.co.zw/tickets" className="text-xl font-semibold leading-6 text-gray-900">
     Donate Now! <span aria-hidden="true">&rarr;</span>
   </a>

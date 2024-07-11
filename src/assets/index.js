@@ -22,6 +22,9 @@ import logo1 from './images/logo1.jpeg'
 import logo2 from './images/logo2.jpeg'
 import logo3 from './images/logo3.jpeg'
 import logothree from './images/logo3.png'
+import tranlogo2 from './images/tranlogo2.png'
+import tranlogo1 from './images/tranlogo1.png'
+
 
 
 export {
@@ -48,5 +51,7 @@ export {
     logo1,
     logo2,
     logo3,
-    logothree
+    logothree,
+    tranlogo2,
+    tranlogo1
 }

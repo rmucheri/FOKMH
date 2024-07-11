@@ -102,7 +102,7 @@ function Team() {
     Rufaro Mucheri
     </h3>
     <p className="text-sm font-semibold leading-6 text-indigo-600">
-      Co-Founder / CTO
+    Co-Founder / CTO
     </p>
   </div>
 </div>
@@ -133,8 +133,8 @@ function Team() {
       <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
   <div className="w-full sm:px-4">
     <AccordionItem
-      header="Paul Pogba"
-      text="Dynamos Dembare Midfielder"
+      header="Thomas Gondo"
+      text="Thomas Gondo is a Licensed Land Surveyor in Ontario Canada and the President of Lejan Land Surveying Inc, a Licensed Practice also in the province of Ontario. He has consistently been involded in efforts to fundraise for Karanda Hospital."
     />
   </div>
   <div className="w-full sm:px-4">

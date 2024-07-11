@@ -1,20 +1,31 @@
 import React from 'react'
+import { logo1, logo2, logo3, logothree } from '../assets'
 
 const currentYear = new Date().getFullYear();
 
 function Footer() {
   return (
-    <div className='bg-[#0B123F]'>
+    // <div className='bg-[#3ea498]'>
+      <div className='bg-[#0B123F]'>
     <footer class="text-gray-600 body-font">
 <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
-  <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left md:mt-0 mt-10">
+  {/* <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left md:mt-0 mt-10">
   <a href="/" className="-m-1.5 p-1.5">
           
-            {/* <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="" /> */}
+            <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="" />
             <span style={{fontSize: "2.5rem"}} className='text-white text-xl text-bold'>FOKMH</span>
           </a>
     
-  </div>
+  </div> */}
+   <div className="flex lg:flex-1">
+       
+       <a href="/" className="">
+         <span className="sr-only">Friends of Karanda</span>
+         <img className="h-24 z-99 w-auto animate-bounce" src={logothree} alt="" />
+         {/* <span style={{fontSize: "2.5rem"}} text-[#ffd832] className='leading-6 text-gray-900 text-xl text-bold'>FOKMH</span> */}
+         <a style={{fontSize: "1.8rem"}} href="/" className="text-[#3ea498] text-xl font-semibold leading-6">FOKMH</a>
+       </a>
+     </div>
   <div class="flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left text-center order-first">
     <div class="lg:w-1/4 md:w-1/2 w-full px-4">
   
