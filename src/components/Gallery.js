@@ -4,23 +4,23 @@ export function Gallery() {
   const data = [
     {
       imgelink:
-        "https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+        "https://images.squarespace-cdn.com/content/v1/6509b098e9ec677d0862ff32/f7a56da4-6a92-4106-a690-65104bfd62d3/DSCF7792.jpg",
     },
     {
       imgelink:
-        "https://images.unsplash.com/photo-1432462770865-65b70566d673?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
+        "https://images.squarespace-cdn.com/content/v1/6509b098e9ec677d0862ff32/a701a090-4ecc-4d3d-8795-de33b253959a/DSCF7726.jpg",
     },
     {
       imgelink:
-        "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
+        "https://images.squarespace-cdn.com/content/v1/6509b098e9ec677d0862ff32/40471144-1aa4-4551-856e-2b99078c40ac/Nursing+School+3.jpg",
     },
     {
       imgelink:
-        "https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2762&q=80",
+        "https://images.squarespace-cdn.com/content/v1/6509b098e9ec677d0862ff32/37b1c04f-3cd0-4a50-b609-67e44e9a49d6/DSCF8563.jpg",
     },
     {
       imgelink:
-        "https://images.unsplash.com/photo-1682407186023-12c70a4a35e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80",
+        "https://images.squarespace-cdn.com/content/v1/6509b098e9ec677d0862ff32/5b8787f2-2c4d-4d24-bba0-903551ca1f75/DSCF8584.jpg",
     },
   ];
 
@@ -31,7 +31,7 @@ export function Gallery() {
       <div className="w-full max-w-5xl p-4">
         <div className="grid gap-4">
           <div>
-            <h1>Gallery</h1>
+          <h3 className="text-5xl text-bold text-center text-[#3ea498] mb-4">Gallery</h3>
             <img
               className="h-auto w-full max-w-full rounded-lg object-cover object-center md:h-[480px]"
               src={active}

@@ -60,7 +60,7 @@ function Vision() {
         </div>
       </div>
       <div>
-        <div className="flex items-center mx-auto justify-center h-16 w-16 rounded-md bg-indigo-500 text-white">
+        <div style={{backgroundColor: "#3ea498"}} className="flex items-center mx-auto justify-center h-16 w-16 rounded-md bg-indigo-500 text-white">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"

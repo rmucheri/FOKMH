@@ -79,11 +79,11 @@ function Footer() {
 </div>
 <div class="bg-gray-100">
   <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-    <p class="text-gray-500 text-sm text-center sm:text-left"> © Copyright {currentYear} Rufaro Mucheri (<a href='https://magetsi.co.zw/'>magetsi.co.zw</a>)
+    <p class="text-[#3ea498] text-md text-center sm:text-left"> © Copyright {currentYear} Rufaro Mucheri (<a href='https://magetsi.co.zw/'>magetsi.co.zw</a>)
       <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank"></a>
     </p>
     <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
-    <p className="text-xs">Powered by <a href='magetsi.co.zw'>Magetsi </a> </p>
+    <p className="text-xs text-[#3ea498]">Powered by <a href='magetsi.co.zw'>Magetsi </a> </p>
       {/* <a class="text-gray-500">
         <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
           <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
