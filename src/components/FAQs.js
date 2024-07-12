@@ -59,13 +59,13 @@ const FAQs = () => {
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4">
             <div className="mx-auto mb-[60px] max-w-[520px] text-center lg:mb-20">
-              <span className="mb-2 block text-lg font-semibold text-primary">
+              <span className="mb-2 block text-lg font-semibold text-primary text-[#3ea498]">
                 FAQ
               </span>
-              <h2 className="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-[40px]/[48px]">
+              <h2 className="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-[40px]/[48px] text-[#3ea498]">
                 Any Questions? Look Here
               </h2>
-              <p className="text-base text-body-color dark:text-dark-6">
+              <p className="text-base text-body-color dark:text-dark-6 text-gray-600">
                 There are many variations of passages of Lorem Ipsum available
                 but the majority have suffered alteration in some form.
               </p>
@@ -74,7 +74,7 @@ const FAQs = () => {
         </div>
 
         <div className="-mx-4 flex flex-wrap">
-          <div className="w-full px-4 lg:w-1/2">
+          <div className="w-full px-4 lg:w-1/2 text-gray-600">
             <AccordionItem
               header="How long we deliver your first blog post?"
               text="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
@@ -88,7 +88,7 @@ const FAQs = () => {
               text="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
             />
           </div>
-          <div className="w-full px-4 lg:w-1/2">
+          <div className="w-full px-4 lg:w-1/2 text-gray-600">
             <AccordionItem
               header="How long we deliver your first blog post?"
               text="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."

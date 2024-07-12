@@ -58,7 +58,7 @@ function Team() {
     // <div id="team" className="bg-white py-24 sm:py-32">
     <div id="team" className="bg-white py-24 sm:py-32">
        <div className=" container  px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-32">
-        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+        <h2 className="text-3xl font-bold tracking-tight text-[#3ea498] sm:text-4xl">
           Meet our leadership
         </h2>
         <p className="mt-6 text-lg leading-8 text-gray-600 text-left">
@@ -80,10 +80,10 @@ function Team() {
     alt="Mwandibhuya Mutepfa"
   />
   <div className="text-center justify-center">
-    <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">
+    <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-700">
       Mwandibhuya Mutepfa
     </h3>
-    <p className="text-sm font-semibold leading-6 text-indigo-600">
+    <p className="text-sm font-semibold leading-6 text-[#3ea498]">
       Co-Founder / CEO
     </p>
   </div>
@@ -98,10 +98,10 @@ function Team() {
     alt="Rufaro Mucheri"
   />
   <div className="text-center">
-    <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">
+    <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-700">
     Rufaro Mucheri
     </h3>
-    <p className="text-sm font-semibold leading-6 text-indigo-600">
+    <p className="text-sm font-semibold leading-6  text-[#3ea498]">
     Co-Founder / CTO
     </p>
   </div>
@@ -116,10 +116,10 @@ function Team() {
     alt="Rufaro Mucheri"
   />
   <div className="text-center">
-    <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">
+    <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-700">
     James Watt
     </h3>
-    <p className="text-sm font-semibold leading-6 text-indigo-600">
+    <p className="text-sm font-semibold leading-6 text-[#3ea498]">
     Co-Founder / Medical Doctor
     </p>
   </div>
@@ -129,7 +129,7 @@ function Team() {
       </ul>
       </div>
       <div className='sm:px-8 md:px-4 lg:px-8 xl:px-8'> 
-      <h2 className="py-16 text-3xl text-center font-extrabold text-gray-900">Board Members</h2>
+      <h2 className="py-16 text-3xl text-center font-extrabold text-[#3ea498]">Board Members</h2>
       <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
   <div className="w-full sm:px-4">
     <AccordionItem

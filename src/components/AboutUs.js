@@ -32,11 +32,11 @@ function AboutUs() {
       </div>
     </div>
     <div className="contentRight">
-      <div className="content rounded-lg shadow p-8">
+      <div className="content rounded-lg shadow p-8 ">
         <h4>Welcome To</h4>
-        <h2>Friends of Karanda Mission Hospital </h2>
-        <h3>Our Story</h3>
-        <p className='text-justify no-scrollbar overflow-auto h-96'>
+        <h2 style={{color: "#3ea498"}}>Friends of Karanda Mission Hospital </h2>
+        <h3 style={{fontSize:"1.5rem"}}>Our Story</h3>
+        <p className='text-justify no-scrollbar overflow-auto h-96 '>
         Friends of Karanda Mission Hospital (FOKMH) was born out of the personal experiences of individuals diagnosed with cancer, faced with enormous medical bills and procedures often beyond their financial reach. For many, especially the breadwinners of their families, the burden of these costs is overwhelming. Families often go to great lengths, sacrificing their resources to cover these expenses. Tragically, when the battle against cancer is lost, families are left not only with the irreplaceable loss of a loved one but also with drained financial resources. <br/><br/>
 
         For economically disadvantaged and underprivileged patients, the situation is even more dire. Many struggle to access any form of treatment and, heartbreakingly, some pass away without ever receiving formal medical care.
@@ -45,7 +45,7 @@ We make a heartfelt appeal to people worldwide, to support our cause under the t
 Together, we can provide hope, health, and a fighting chance to those who need it most. Join us in this vital mission to transform lives and create a brighter, healthier future for all.
 
         </p>
-        <a href="#">Donate Now!</a>
+        <a className='hover:scale-110' href="https://magetsi.co.zw/tickets">Donate Now!</a>
       </div>
     </div>
   </div>

@@ -13,7 +13,7 @@ function HeroBottom() {
     <div className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
 
     <h2 className="text-3xl font-extrabold text-black dark:text-white sm:text-4xl">
-             <span className="block px-2 text-gray-600">Meet Our Heroes Behind the Scenes<br/><br/>
+             <span className="block px-2 text-[#3ea498]">Meet Our Heroes Behind the Scenes<br/><br/>
 
  </span>
            </h2>

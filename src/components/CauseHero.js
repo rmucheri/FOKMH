@@ -52,8 +52,8 @@ function CauseHero() {
                     <div className="w-20 h-20 m-1 p-1 rounded-full inline-flex items-center justify-center bg-white border border-gray-100 text-gray-400">
                      <img src={cause.icon} />
                     </div>
-                    <div className="flex flex-col items-center text-center justify-center">
-                      <h2 className="font-medium title-font mt-4 text-gray-900 text-lg">
+                    <div className="flex flex-col items-center text-center justify-center ">
+                      <h2 className="font-medium title-font mt-4 text-[#3ea498] text-lg">
                         {cause.title}
                       </h2>
                       <div className="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4" />

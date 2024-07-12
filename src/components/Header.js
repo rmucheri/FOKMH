@@ -77,12 +77,12 @@ export default function Example() {
 
             {/* Here */}
 
-          <a href="/" className="text-xl font-semibold leading-6 text-gray-900 hover:scale-125 ">
+          <a href="/" className="text-xl text-[#3ea498] font-semibold leading-6  hover:scale-125 ">
             Home
           </a>
 
           <Popover className="relative">
-            <PopoverButton className="flex items-center gap-x-1 text-xl font-semibold leading-6 text-gray-900 hover:scale-125 ">
+            <PopoverButton className="flex items-center gap-x-1 text-xl font-semibold leading-6 text-[#3ea498] hover:scale-125 ">
              About Us
               <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
             </PopoverButton>
@@ -126,16 +126,16 @@ export default function Example() {
           </Popover>
 
 
-          <a href="/causes" className="text-xl font-semibold leading-6 text-gray-900 hover:scale-125 ">
+          <a href="/causes" className="text-xl font-semibold leading-6 text-[#3ea498] hover:scale-125 ">
             Causes
           </a>
-          <a href="/contact" className="text-xl font-semibold leading-6 text-gray-900 hover:scale-125 ">
+          <a href="/contact" className="text-xl font-semibold leading-6 text-[#3ea498] hover:scale-125 ">
             Contact Us
           </a>
           
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end hover:scale-110 ">
-  <a href="https://magetsi.co.zw/tickets" className="text-xl font-semibold leading-6 text-gray-900">
+  <a href="https://magetsi.co.zw/tickets" className="text-xl font-semibold leading-6 text-orange-800">
     Donate Now! <span aria-hidden="true">&rarr;</span>
   </a>
 </div>
