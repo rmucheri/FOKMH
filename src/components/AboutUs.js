@@ -2,7 +2,7 @@ import React from 'react'
 
 function AboutUs() {
   return (
-    <div className="container  px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-32">
+    <div className="  px-4 mx-auto max-w-screen-xl text-center py-8 lg:py-16">
     <div className="contentLeft ">
       <div className="row">
         <div className="imgWrapper ">
@@ -32,11 +32,11 @@ function AboutUs() {
       </div>
     </div>
     <div className="contentRight">
-      <div className="content rounded-lg shadow p-8 ">
-        <h4>Welcome To</h4>
-        <h2 style={{color: "#3ea498"}}>Friends of Karanda Mission Hospital </h2>
-        <h3 style={{fontSize:"1.5rem"}}>Our Story</h3>
-        <p className='text-justify no-scrollbar overflow-auto h-96 '>
+      <div className="content rounded-lg shadow p-4 ">
+        <h4 style={{fontSize:"2rem"}}>Welcome To</h4>
+        <h2 style={{color: "#3ea498", fontSize:"1.5rem"}}>Friends of Karanda Mission Hospital </h2>
+        <h3 style={{fontSize:"1.5rem", color: "#3ea498"}}>Our Story</h3>
+        <p className='text-justify text-3xl no-scrollbar overflow-auto h-96 '>
         Friends of Karanda Mission Hospital (FOKMH) was born out of the personal experiences of individuals diagnosed with cancer, faced with enormous medical bills and procedures often beyond their financial reach. For many, especially the breadwinners of their families, the burden of these costs is overwhelming. Families often go to great lengths, sacrificing their resources to cover these expenses. Tragically, when the battle against cancer is lost, families are left not only with the irreplaceable loss of a loved one but also with drained financial resources. <br/><br/>
 
         For economically disadvantaged and underprivileged patients, the situation is even more dire. Many struggle to access any form of treatment and, heartbreakingly, some pass away without ever receiving formal medical care.

@@ -4,6 +4,7 @@ import Team from '../components/Team'
 import FAQs from '../components/FAQs'
 import Vision from '../components/Vision'
 import { Gallery } from '../components/Gallery'
+import Board from '../components/Board'
 
 
 function About() {
@@ -11,6 +12,7 @@ function About() {
     <div className=''>
       <AboutUs />
       <Team />
+      {/* <Board /> */}
       <Vision />
       <Gallery />
       <FAQs />

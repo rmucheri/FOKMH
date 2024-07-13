@@ -36,7 +36,7 @@ function CauseHero() {
   return (
     <div>
       <section className="text-gray-600 body-font">
-        <div className="px-5 py-24 mx-auto flex flex-col">
+        <div className="px-5 py-4 mt-10 mx-auto flex flex-col">
           <div className="lg:w-4/6 mx-auto">
             {causes.map((cause, index) => (
               <div className='mb-20' key={index}>
@@ -63,7 +63,7 @@ function CauseHero() {
                     </div>
                   </div>
                   <div className="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
-                    <p className="leading-relaxed text-lg mb-4">
+                    <p className="leading-relaxed text-lg mb-4 text-justify">
                       {cause.content}
                     </p>
                     <a className="text-indigo-500 inline-flex items-center">

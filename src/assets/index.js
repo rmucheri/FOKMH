@@ -24,6 +24,10 @@ import logo3 from './images/logo3.jpeg'
 import logothree from './images/logo3.png'
 import tranlogo2 from './images/tranlogo2.png'
 import tranlogo1 from './images/tranlogo1.png'
+import mortgagePic from './images/mortgagePic.png'
+import mortgagePic2 from './images/mortgagePic2.png'
+import finreport from './images/finreport.jpg'
+import laptopaccount from './images/laptopaccount.jpg'
 
 
 
@@ -53,5 +57,9 @@ export {
     logo3,
     logothree,
     tranlogo2,
-    tranlogo1
+    tranlogo1,
+    mortgagePic,
+    mortgagePic2,
+    finreport,
+    laptopaccount
 }
