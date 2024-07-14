@@ -5,7 +5,7 @@ import { aiel, aws, calculators, mamoyo, magetsi, solvaxion, wildrose } from '..
 
 function Partner() {
   return (
-    <div className='bodyP my-20'>
+    <div className='bodyP mb-0 bg-gray-200'>
       <div class="inline-flex w-full flex-nowrap overflow-hidden bg-white [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
   <ul class="brands-wrapper">
     <li>

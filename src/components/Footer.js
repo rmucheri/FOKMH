@@ -31,19 +31,19 @@ function Footer() {
   
       <nav class="list-none mb-10">
         <li>
-          <a class="text-white hover:text-orange-700">Home</a>
+          <a href='/' class="text-white hover:text-orange-700">Home</a>
         </li>
         <li>
-          <a class="text-white hover:text-orange-700">About</a>
+          <a href='/about' class="text-white hover:text-orange-700">About</a>
         </li>
         <li>
-          <a class="text-white hover:text-orange-700">Causes</a>
+          <a href='/causes' class="text-white hover:text-orange-700">Causes</a>
         </li>
         <li>
-          <a class="text-white hover:text-orange-700">Contact</a>
+          <a href='/contact' class="text-white hover:text-orange-700">Contact</a>
         </li>
         <li>
-          <a class="text-white hover:text-orange-700">FAQs</a>
+          <a href='/about#faq' class="text-white hover:text-orange-700">FAQs</a>
         </li>
       </nav>
     </div>
@@ -58,16 +58,16 @@ function Footer() {
           <a class="text-white hover:text-orange-700">PARTNERS</a>
         </li>
         <li>
-          <a class="text-white hover:text-orange-700">Magetsi</a>
+          <a  href='https://magetsi.co.zw/' target='_blank' class="text-white hover:text-orange-700">Magetsi</a>
         </li>
         <li>
-          <a class="text-white hover:text-orange-700">Solvaxion</a>
+          <a  href='https://www.solvaxion.com/' target='_blank' class="text-white hover:text-orange-700">Solvaxion</a>
         </li>
         <li>
-          <a class="text-white hover:text-orange-700">Wildrose</a>
+          <a href='https://www.wildroseplacement.com/' target='_blank' class="text-white hover:text-orange-700">Wildrose</a>
         </li>
         <li>
-          <a class="text-white hover:text-orange-700">AWS</a>
+          <a href='https://aws.amazon.com/' target='_blank' class="text-white hover:text-orange-700">AWS</a>
         </li>
       </nav>
     </div>

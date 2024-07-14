@@ -3,7 +3,7 @@ import React from 'react'
 function AboutUs() {
   return (
     <div className="  px-4 mx-auto max-w-screen-xl text-center py-8 lg:py-16">
-    <div className="contentLeft ">
+    <div className="contentLeft">
       <div className="row">
         <div className="imgWrapper ">
           <img

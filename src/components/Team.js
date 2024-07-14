@@ -8,7 +8,7 @@ function Team() {
 
   return (
     // <div id="team" className="bg-white py-24 sm:py-32">
-    <div id="team" className="bg-white py-24 sm:py-32">
+    <div id="team" className="bg-gray-200 py-24 sm:py-32">
        <div className=" container  px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-32">
         <h2 className="text-3xl font-bold tracking-tight text-[#3ea498] sm:text-4xl">
           Meet our leadership
