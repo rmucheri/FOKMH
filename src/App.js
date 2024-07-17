@@ -9,6 +9,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Causes from './pages/Causes';
 import Board from './components/Board';
+import CEO from './pages/CEO';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/contact" element={<Contact/>} />
         <Route path="/causes" element={<Causes/>} />
         <Route path="/board" element={<Board/>} />
+        <Route path="/ceo" element={<CEO/>} />
         
 
         </Routes>

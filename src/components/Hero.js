@@ -27,7 +27,7 @@ function Hero() {
     </p>
     <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
       <a
-        href="#"
+        href="https://magetsi.co.zw/tickets"
         className="inline-flex justify-center gap-4 items-center py-4 px-8 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900 hover:scale-110"
       >
        Donate Now
@@ -48,7 +48,7 @@ function Hero() {
         </svg>
       </a>
       <a
-        href="#"
+        href="/about"
         className="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400 hover:scale-110"
       >
         More Information 

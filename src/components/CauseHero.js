@@ -66,7 +66,7 @@ function CauseHero() {
                     <p className="leading-relaxed text-lg mb-4 text-justify">
                       {cause.content}
                     </p>
-                    <a className="text-indigo-500 inline-flex items-center">
+                    <a href='https://magetsi.co.zw/tickets' className="text-indigo-500 inline-flex items-center">
                       Donate
                       <svg
                         fill="none"
