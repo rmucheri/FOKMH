@@ -30,7 +30,6 @@ import finreport from './images/finreport.jpg'
 import laptopaccount from './images/laptopaccount.jpg'
 
 
-
 export {
 
     magetsi,
@@ -61,5 +60,7 @@ export {
     mortgagePic,
     mortgagePic2,
     finreport,
-    laptopaccount
+    laptopaccount,
+
+    
 }

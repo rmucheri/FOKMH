@@ -1,6 +1,9 @@
 import React from 'react'
 import { aiel, aws, calculators, mamoyo, magetsi, solvaxion, wildrose } from '../assets'
 
+const teamlogo = 'https://images.squarespace-cdn.com/content/v1/6509b098e9ec677d0862ff32/1a71a740-072f-42ff-9509-596f1b44d79f/team_logo.png'
+const Karandalogo = 'https://images.squarespace-cdn.com/content/v1/6509b098e9ec677d0862ff32/f10381d2-45d5-4db0-a1cc-85664ada753a/logowhite.png?format=1500w'
+
 
 
 function Partner() {
@@ -17,8 +20,8 @@ function Partner() {
     <li><img src={wildrose} width="250" height="100" /></li>
     <li><img src={mamoyo} width="250" height="100" /></li>
     <li><img src={calculators} width="250" height="100" /></li>
-    <li><img src={aiel} width="250" height="100" /></li>
-    <li><img src={aws} width="250" height="100" /></li>
+    <li><img src={teamlogo} width="250" height="100" /></li>
+    <li><img className='bg-gray-600 p-4 rounded-lg' src={Karandalogo} width="250" height="100" /></li>
   </ul>
   <ul class="brands-wrapper" aria-hidden="true">
     <li>
@@ -30,8 +33,8 @@ function Partner() {
     <li><img src={wildrose} width="250" height="100" /></li>
     <li><img src={mamoyo} width="250" height="100" /></li>
     <li><img src={calculators} width="250" height="100" /></li>
-    <li><img src={aiel} width="250" height="100" /></li>
-    <li><img src={aws} width="250" height="100" /></li>
+    <li><img src={teamlogo} width="250" height="100" /></li>
+    <li><img className='bg-gray-900' src={Karandalogo} width="250" height="100" /></li>
   </ul>
 </div>
     </div>

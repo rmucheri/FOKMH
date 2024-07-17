@@ -27,7 +27,7 @@ export function Gallery() {
   const [active, setActive] = React.useState(data[0].imgelink);
 
   return (
-    <div id="gallery" className="flex justify-center items-center min-h-screen bg-gray-200">
+    <div id="gallery" className="flex justify-center items-center min-h-screen bg-white">
       <div className="w-full max-w-5xl p-4">
         <div className="grid gap-4">
           <div>

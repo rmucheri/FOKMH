@@ -4,15 +4,17 @@ import Team from '../components/Team'
 import FAQs from '../components/FAQs'
 import Vision from '../components/Vision'
 import { Gallery } from '../components/Gallery'
-import Board from '../components/Board'
+import Teamleadership from '../components/Teamleadership'
+
+
 
 
 function About() {
   return (
     <div className=''>
       <AboutUs />
-      <Team />
-      {/* <Board /> */}
+      <Teamleadership />
+      < Team />
       <Vision />
       <Gallery />
       <FAQs />

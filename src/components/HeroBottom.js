@@ -8,7 +8,7 @@ function HeroBottom() {
 
     <div>
 
-<section className="bg-gray-200 dark:bg-gray-900 py-20">
+<section className="bg-gray-50 dark:bg-gray-900 py-20">
   <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-4 lg:px-6">
     <div className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
 
@@ -24,7 +24,8 @@ function HeroBottom() {
           nurses, and hospital staff work tirelessly to provide exceptional 
            care to our cancer patients. Their unwavering commitment and            
            compassion are the driving forces behind our mission to deliver top-notch medical services. <br/><br/>
-           Dr. Paul Thistle, originally from Canada, has dedicated over two decades to serving the people of Zimbabwe. As Medical Director, his expertise and passion for patient care have transformed countless lives. His commitment to improving healthcare access in rural areas has earned him widespread respect and admiration. Under his leadership, he has implemented innovative treatments and care protocols, significantly improving patient outcomes.
+           Paul Thistle has 29 years of full time medical missionary service in Zimbabwe, His commitment to improving healthcare access in rural areas has earned him widespread respect and admiration. Under his leadership, he has implemented innovative treatments and care protocols, significantly improving patient outcomes.
+
 
            </p>
 

@@ -69,7 +69,7 @@ function Features() {
           
         </dl>
       </div>
-      <hr/>
+      <hr className='bg-gray-100 shadow-[#ffd832] shadow-lg'></hr>
     </div>
     
   </div>

@@ -5,10 +5,10 @@ function Vision() {
     <div id="mission-vision" className='mt-10'>
       <section className="bg-gray-50 py-2">
   <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-    <h2 className="text-3xl text-center font-extrabold text-[#3ea498]">Our Vision</h2>
-    <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+    <h2 className="text-3xl text-center font-extrabold text-[#3ea498] mt-20">Our Vision</h2>
+    <div className="mt-12 mb-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
       <div>
-      <div className="flex items-center mx-auto justify-center h-16 w-16 rounded-md bg-indigo-500 text-white">
+      <div style={{backgroundColor: "#3ea498"}} className="flex items-center mx-auto justify-center h-16 w-16 rounded-md bg-indigo-500 text-white">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -35,7 +35,7 @@ function Vision() {
         </div>
       </div>
       <div>
-      <div className="flex items-center mx-auto justify-center h-16 w-16 rounded-md bg-indigo-500 text-white">
+      <div style={{backgroundColor: "#3ea498"}} className="flex items-center mx-auto justify-center h-16 w-16 rounded-md bg-indigo-500 text-white">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"

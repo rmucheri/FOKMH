@@ -66,35 +66,34 @@ const FAQs = () => {
                 Any Questions? Look Here
               </h2>
               <p className="text-base text-body-color dark:text-dark-6 text-gray-600">
-                There are many variations of passages of Lorem Ipsum available
-                but the majority have suffered alteration in some form.
+              Seeking clarity? Our FAQ section provides straightforward answers to ensure you’re always in the know.
               </p>
             </div>
           </div>
         </div>
 
         <div className="-mx-4 flex flex-wrap">
-          <div className="w-full px-4 lg:w-1/2 text-gray-600">
+          <div className="w-full px-4 lg:full text-gray-600">
             <AccordionItem
-              header="How long we deliver your first blog post?"
-              text="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+              header="What is Friends of Karanda Mission Hospital?"
+              text="Friends of Karanda Mission Hospital is a charitable organization dedicated to raising funds and mobilizing resources to support cancer treatment for poor and less privileged individuals at Karanda Mission Hospital."
             />
             <AccordionItem
-              header="How long we deliver your first blog post?"
-              text="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+              header="What is the primary objective of FOKMH?"
+              text="Our primary objective is to ensure that underprivileged individuals have access to necessary cancer treatment by fundraising and providing essential resources to Karanda Mission Hospital."
             />
             <AccordionItem
-              header="How long we deliver your first blog post?"
-              text="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+              header="How can I donate to Friends of Karanda Mission Hospital?"
+              text="You can donate through our website; Detailed donation instructions can be found on our 'Donate' page."
             />
           </div>
-          <div className="w-full px-4 lg:w-1/2 text-gray-600">
+          <div className="w-full px-4 lg:full text-gray-600">
             <AccordionItem
-              header="How long we deliver your first blog post?"
-              text="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+              header="How are the funds used?"
+              text="The funds raised are used to cover the costs of cancer treatment, including medical procedures, medications, and supportive care for patients who cannot afford these services."
             />
             <AccordionItem
-              header="How long we deliver your first blog post?"
+              header="Does Friends of Karanda Mission Hospital only support cancer treatment?"
               text="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
             />
             <AccordionItem
