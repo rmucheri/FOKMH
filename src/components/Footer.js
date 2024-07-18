@@ -56,7 +56,7 @@ function Footer() {
       
       <nav class="list-none mb-10">
         <li>
-          <a class="text-white hover:text-orange-700">PARTNERS</a>
+          <p class="text-white hover:text-orange-700">PARTNERS</p>
         </li>
         <li>
           <a  href='https://magetsi.co.zw/' target='_blank' class="text-white hover:text-orange-700">Magetsi</a>

@@ -38,7 +38,7 @@ function Features() {
     <div className="mx-auto max-w-7xl px-6 lg:px-8">
       <div className="mx-auto max-w-2xl lg:text-center ">
         <h3 className="text-2xl font-semibold leading-7 text-[#3ea498]">Overview of our Campaign</h3>
-        <p className="mt-2  font-bold tracking-tight text-gray-700 sm:text-2xl">
+        <p className="mt-2 text-left  font-bold tracking-tight text-gray-700 sm:text-2xl">
         Let's Fight Against Cancer at Karanda Mission Hospital
         </p>
         <p className="mt-6 text-lg leading-8 text-gray-600 text-justify mb-6">

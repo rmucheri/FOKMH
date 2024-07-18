@@ -12,11 +12,16 @@ import {
 } from '@headlessui/react'
 import {
   ArrowPathIcon,
+  ArrowRightIcon,
   Bars3Icon,
   ChartPieIcon,
   CursorArrowRaysIcon,
+  CursorArrowRippleIcon,
+  FilmIcon,
   FingerPrintIcon,
+  LightBulbIcon,
   SquaresPlusIcon,
+  UsersIcon,
   XMarkIcon,
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
@@ -31,15 +36,15 @@ import { logo1, logo2, logo3, logothree, tranlogo2 } from '../assets'
 // ]
 
 const aboutList = [
-  { name: 'About Us', description: 'Get to know Friends of Karanda', href: 'about', icon: ChartPieIcon },
-  { name: 'Mission & Vision', description: 'What we aspire to acheive', href: 'https://main.d9oswyj4tbug8.amplifyapp.com/about#mission-vision', icon: CursorArrowRaysIcon },
-  { name: 'Our Team', description: 'Meet our Dedicated leadership team ', href: 'https://main.d9oswyj4tbug8.amplifyapp.com/about#team', icon: FingerPrintIcon },
+  { name: 'About Us', description: 'Get to know Friends of Karanda', href: 'about', icon: CursorArrowRippleIcon },
+  { name: 'Mission & Vision', description: 'What we aspire to acheive', href: 'https://main.d9oswyj4tbug8.amplifyapp.com/about#mission-vision', icon: LightBulbIcon },
+  { name: 'Our Team', description: 'Meet our Dedicated leadership team ', href: 'https://main.d9oswyj4tbug8.amplifyapp.com/about#team', icon: UsersIcon },
   { name: 'Core Values', description: 'What drives us', href: 'https://main.d9oswyj4tbug8.amplifyapp.com/about#values', icon: SquaresPlusIcon },
-  { name: 'Gallery', description: 'Check out our media center', href: 'https://main.d9oswyj4tbug8.amplifyapp.com/about#gallery', icon: ArrowPathIcon },
+  { name: 'Gallery', description: 'Check out our media center', href: 'https://main.d9oswyj4tbug8.amplifyapp.com/about#gallery', icon: FilmIcon },
 ]
 
 const callsToAction = [
-  { name: 'Donate', href: '/donate', icon: PlayCircleIcon },
+  { name: 'Donate', href: 'https://magetsi.co.zw/tickets', icon: ArrowRightIcon },
   { name: 'Contact Us', href: '/contact', icon: PhoneIcon },
 ]
 
