@@ -15,7 +15,7 @@ function Partner() {
       <img src={solvaxion} width="250" height="100" />
     </li>
     <li>
-      <img src={magetsi} width="250" height="100" />
+    <a href='https://magetsi.co.zw/tickets' ><img src={magetsi} width="250" height="100" /></a> 
     </li>
     <li><img src={wildrose} width="250" height="100" /></li>
     <li><img src={mamoyo} width="250" height="100" /></li>
@@ -28,7 +28,7 @@ function Partner() {
       <img src={solvaxion} width="250" height="100" />
     </li>
     <li>
-      <img src={magetsi} width="250" height="100" />
+     <a><img src={magetsi} width="250" height="100" /></a> 
     </li>
     <li><img src={wildrose} width="250" height="100" /></li>
     <li><img src={mamoyo} width="250" height="100" /></li>

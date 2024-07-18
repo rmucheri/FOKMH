@@ -17,14 +17,15 @@ function Footer() {
           </a>
     
   </div> */}
-   <div className="flex lg:flex-1">
-       
+   <div className="flex justify-center items-center ">
+      
        <a href="/" className="">
          <span className="sr-only">Friends of Karanda</span>
-         <img className="h-24 z-99 w-auto animate-bounce" src={tranlogo2} alt="" />
+         <img className="h-24 z-99 w-auto animate-bounce " src={tranlogo2} alt="" />
          {/* <span style={{fontSize: "2.5rem"}} text-[#ffd832] className='leading-6 text-gray-900 text-xl text-bold'>FOKMH</span> */}
          <a style={{fontSize: "1.8rem"}} href="/" className="text-[#3ea498] text-xl font-semibold leading-6">FOKMH</a>
        </a>
+ 
      </div>
   <div class="flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left text-center order-first">
     <div class="lg:w-1/4 md:w-1/2 w-full px-4">
