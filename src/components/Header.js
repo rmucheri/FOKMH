@@ -22,21 +22,21 @@ import {
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 import { logo1, logo2, logo3, logothree, tranlogo2 } from '../assets'
 
-// const aboutList = [
-//   { name: 'About Us', description: 'Get to know Friends of Karanda', href: 'about', icon: ChartPieIcon },
-//   { name: 'Mission & Vision', description: 'What we aspire to acheive', href: 'http://localhost:3000/about#mission-vision', icon: CursorArrowRaysIcon },
-//   { name: 'Our Team', description: 'Meet our Dedicated leadership team ', href: 'http://localhost:3000/about#team', icon: FingerPrintIcon },
-//   { name: 'Core Values', description: 'What drives us', href: 'http://localhost:3000/about#values', icon: SquaresPlusIcon },
-//   { name: 'Gallery', description: 'Check out our media center', href: 'http://localhost:3000/about#gallery', icon: ArrowPathIcon },
-// ]
-
 const aboutList = [
   { name: 'About Us', description: 'Get to know Friends of Karanda', href: 'about', icon: ChartPieIcon },
-  { name: 'Mission & Vision', description: 'What we aspire to acheive', href: 'https://main.d9oswyj4tbug8.amplifyapp.com/about#mission-vision', icon: CursorArrowRaysIcon },
-  { name: 'Our Team', description: 'Meet our Dedicated leadership team ', href: 'https://main.d9oswyj4tbug8.amplifyapp.com/about#team', icon: FingerPrintIcon },
-  { name: 'Core Values', description: 'What drives us', href: 'https://main.d9oswyj4tbug8.amplifyapp.com/about#values', icon: SquaresPlusIcon },
-  { name: 'Gallery', description: 'Check out our media center', href: 'https://main.d9oswyj4tbug8.amplifyapp.com/about#gallery', icon: ArrowPathIcon },
+  { name: 'Mission & Vision', description: 'What we aspire to acheive', href: 'http://localhost:3000/about#mission-vision', icon: CursorArrowRaysIcon },
+  { name: 'Our Team', description: 'Meet our Dedicated leadership team ', href: 'http://localhost:3000/about#team', icon: FingerPrintIcon },
+  { name: 'Core Values', description: 'What drives us', href: 'http://localhost:3000/about#values', icon: SquaresPlusIcon },
+  { name: 'Gallery', description: 'Check out our media center', href: 'http://localhost:3000/about#gallery', icon: ArrowPathIcon },
 ]
+
+// const aboutList = [
+//   { name: 'About Us', description: 'Get to know Friends of Karanda', href: 'about', icon: ChartPieIcon },
+//   { name: 'Mission & Vision', description: 'What we aspire to acheive', href: 'https://main.d9oswyj4tbug8.amplifyapp.com/about#mission-vision', icon: CursorArrowRaysIcon },
+//   { name: 'Our Team', description: 'Meet our Dedicated leadership team ', href: 'https://main.d9oswyj4tbug8.amplifyapp.com/about#team', icon: FingerPrintIcon },
+//   { name: 'Core Values', description: 'What drives us', href: 'https://main.d9oswyj4tbug8.amplifyapp.com/about#values', icon: SquaresPlusIcon },
+//   { name: 'Gallery', description: 'Check out our media center', href: 'https://main.d9oswyj4tbug8.amplifyapp.com/about#gallery', icon: ArrowPathIcon },
+// ]
 
 const callsToAction = [
   { name: 'Donate', href: '/donate', icon: PlayCircleIcon },

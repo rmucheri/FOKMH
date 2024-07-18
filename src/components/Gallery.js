@@ -4,7 +4,7 @@ export function Gallery() {
   const data = [
     {
       imgelink:
-        "https://images.squarespace-cdn.com/content/v1/6509b098e9ec677d0862ff32/f7a56da4-6a92-4106-a690-65104bfd62d3/DSCF7792.jpg",
+        "https://images.squarespace-cdn.com/content/v1/6509b098e9ec677d0862ff32/302dbc06-51e9-496e-9845-290226370ad3/DSCF7739.jpg?format=750w",
     },
     {
       imgelink:
@@ -16,11 +16,15 @@ export function Gallery() {
     },
     {
       imgelink:
-        "https://images.squarespace-cdn.com/content/v1/6509b098e9ec677d0862ff32/37b1c04f-3cd0-4a50-b609-67e44e9a49d6/DSCF8563.jpg",
+        "https://images.squarespace-cdn.com/content/v1/6509b098e9ec677d0862ff32/1695396378380-6SV0BLJZZP5B07WGVHS7/61C83E21-1427-4C39-9096-C82AF10A4769.jpg?format=2500w",
     },
     {
       imgelink:
         "https://images.squarespace-cdn.com/content/v1/6509b098e9ec677d0862ff32/5b8787f2-2c4d-4d24-bba0-903551ca1f75/DSCF8584.jpg",
+    },
+    {
+      imgelink:
+        "https://images.squarespace-cdn.com/content/v1/6509b098e9ec677d0862ff32/1c811416-d6c4-4b49-80f5-d340616162a1/IMG_7744.JPEG?format=2500w",
     },
   ];
 
@@ -38,7 +42,7 @@ export function Gallery() {
               alt="active gallery"
             />
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 lg:cols-6 gap-4">
             {data.map(({ imgelink }, index) => (
               <div key={index}>
                 <img
