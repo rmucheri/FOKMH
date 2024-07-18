@@ -3,7 +3,7 @@ import React from 'react'
 function Vision() {
   return (
     <div id="mission-vision" className='mt-10'>
-      <section className="bg-gray-50 py-2">
+      <section className="bg-[#fffffd] shadow py-2">
   <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
     <h2 className="text-3xl text-center font-extrabold text-[#3ea498] mt-20">Our Vision</h2>
     <div className="mt-12 mb-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">

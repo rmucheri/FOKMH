@@ -4,7 +4,7 @@ import { finreport, karadoc, laptopaccount, mortgagePic, mortgagePic2 } from '..
 function CauseHeroBottom() {
   return (
     <div>
-      <section className="text-gray-600 body-font">
+      <section className="text-gray-600 body-font bg-[#fffffd] shadow">
   <div className="container px-2 py-12 mx-auto flex flex-wrap">
     <div className="lg:w-full w-full mb-10 lg:mb-0 shadow-gray-500 shadow-lg rounded-md overflow-hidden">
       <img

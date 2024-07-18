@@ -3,7 +3,7 @@ import React from 'react'
 function Testimonials() {
   return (
     <div>
-     <section className="px-8 py-10 lg:py-28">
+     <section className="px-8 py-10 lg:py-28 bg-[#fffffd] shadow">
   <div className="container mx-auto">
     <h2 className="block antialiased tracking-normal font-sans font-semibold leading-[1.3] text-blue-gray-900 mb-4 !text-2xl lg:!text-4xl">
       The heartfelt testimonials of our community

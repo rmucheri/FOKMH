@@ -8,7 +8,7 @@ function HeroBottom() {
 
     <div>
 
-<section className="bg-gray-50 dark:bg-gray-900 py-20">
+<section className="bg-[#fffffd] shadow dark:bg-gray-900 py-20">
   <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-4 lg:px-6">
     <div className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
 

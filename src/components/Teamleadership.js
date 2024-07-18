@@ -5,7 +5,7 @@ function Teamleadership() {
 
   return (
     // <div id="team" className="bg-white py-24 sm:py-32">
-    <div id="team" className="bg-gray-50 py-4 sm:py-32">
+    <div id="team" className="bg-[#fffffd] shadow py-4 sm:py-32">
        <div className=" container  px-4 mx-auto max-w-screen-xl text-center py-4 lg:py-12">
         <h2 className="text-3xl font-bold tracking-tight text-[#3ea498] sm:text-4xl">
           Meet our leadership
