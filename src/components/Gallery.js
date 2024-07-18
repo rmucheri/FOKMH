@@ -37,18 +37,18 @@ export function Gallery() {
           <div>
           <h3 className="text-5xl text-bold text-center text-[#3ea498] mb-4">Gallery</h3>
             <img
-              className="h-auto w-full max-w-full rounded-lg object-cover object-center md:h-[480px]"
+              className="h-auto w-full max-w-full rounded-lg object-cover object-center shadow-gray-600 shadow-lg md:h-[480px]"
               src={active}
               alt="active gallery"
             />
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 lg:cols-6 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 lg:cols-6 gap-4 ">
             {data.map(({ imgelink }, index) => (
               <div key={index}>
                 <img
                   onClick={() => setActive(imgelink)}
                   src={imgelink}
-                  className={`h-40 w-full cursor-pointer rounded-lg object-cover object-center ${
+                  className={`h-40 w-full cursor-pointer rounded-lg object-cover hover:scale-105 shadow-gray-400 shadow-lg object-center ${
                     active === imgelink ? 'border-2 border-blue-500' : ''
                   }`}
                   alt={`gallery thumbnail ${index + 1}`}
