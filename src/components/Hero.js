@@ -16,7 +16,7 @@ function Hero() {
   }, []);
 
   return (
-    <div className=''>
+    <div className='animate-slide-and-fade-in'>
       <section  style={{ backgroundImage: `url(${bgImage})` }} className="bg-center bg-cover bg-no-repeat bg-gray-700 bg-blend-multiply">
   <div className="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
     <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-300 md:text-5xl lg:text-6xl">

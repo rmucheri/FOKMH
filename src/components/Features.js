@@ -34,7 +34,7 @@ const features = [
 function Features() {
    
   return (
-    <div className="bg-white py-12 sm:py-20">
+    <div className="bg-white py-12 sm:py-20 animate-slide-and-fade-in">
     <div className="mx-auto max-w-7xl px-6 lg:px-8">
       <div className="mx-auto max-w-2xl lg:text-center ">
         <h3 className="text-base font-semibold leading-7 text-[#3ea498]">Overview of our Campaign</h3>

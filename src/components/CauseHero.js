@@ -35,7 +35,7 @@ const causes = [
 function CauseHero() {
   return (
     <div>
-      <section className="text-gray-600 body-font">
+      <section className="animate-slide-and-fade-in text-gray-600 body-font">
         <div className="px-5 py-4 mt-10 mx-auto flex flex-col">
           <div className="lg:w-4/6 mx-auto">
             {causes.map((cause, index) => (

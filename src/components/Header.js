@@ -59,7 +59,7 @@ export default function Example() {
             <span className="sr-only">Friends of Karanda</span>
             <img className="h-16 z-99 w-auto" src={tranlogo2} alt="" />
             {/* <span style={{fontSize: "2.5rem"}} text-[#ffd832] className='leading-6 text-gray-900 text-xl text-bold'>FOKMH</span> */}
-            <a style={{fontSize: "1.2rem"}} href="/" className="text-[#3ea498] text-xl font-semibold leading-6">FOKMH</a>
+            <a style={{fontSize: "1.1rem"}} href="/" className="text-[#3ea498] text-xl font-semibold leading-6">FOKMH</a>
           </a>
         </div>
         <div className="flex lg:hidden">

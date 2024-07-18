@@ -2,7 +2,7 @@ import React from 'react'
 
 function Contact() {
   return (
-    <div className='mt-10 mb-10'>
+    <div className='animate-slide-and-fade-in mt-10 mb-10'>
        <form action="https://fabform.io/f/{form-id}" method="post">
       <div
         id="contact-us"
@@ -76,7 +76,7 @@ function Contact() {
             />
           </svg>
           <div className="text-center">
-            <h2 className=" font-extrabold tracking-tight text-gray-900 dark:text-slate-200 sm:text-4xl">
+            <h2 className=" font-extrabold tracking-tight text-[#3ea498] dark:text-slate-200 sm:text-4xl">
               Contact Us
             </h2>
             <p className="mt-4 text-xl leading-6 text-gray-500 dark:text-slate-400">
