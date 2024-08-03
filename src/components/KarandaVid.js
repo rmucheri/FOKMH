@@ -2,7 +2,7 @@ import React from 'react'
 
 function KarandaVid() {
   return (
-    <div className='flex justify-center items-center min-h-screen'>
+    <div className='flex justify-center items-center md:mt-6 lg:mt-10'>
       
         <div className='shadow-gray-700 shadow-lg w-full max-w-full md:max-w-3xl lg:max-w-4xl xl:max-w-5xl'>
       
