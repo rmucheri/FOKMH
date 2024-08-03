@@ -1,6 +1,6 @@
 import React from 'react'
 
-function AccordionItemCard({ header, text, active, handleToggle }) {
+function AccordionItemCard({ header, text, img, active, handleToggle }) {
   return (
     <div className="mb-8 w-full rounded-lg bg-white p-4 shadow-[0px_20px_95px_0px_rgba(201,203,204,0.30)] dark:bg-dark-2 dark:shadow-[0px_20px_95px_0px_rgba(0,0,0,0.30)] sm:p-8 lg:px-6 xl:px-8">
     <button
@@ -25,7 +25,8 @@ function AccordionItemCard({ header, text, active, handleToggle }) {
         </svg>
       </div>
 
-      <div className="w-full">
+      <div className="w-full flex justify-even">
+        <img className=' h-20 w-20 rounded-full lg:mr-7 mr-12' src={img} alt='' />
         <h4 className="mt-1 text-lg font-semibold text-dark dark:text-white">
           {header}
         </h4>
