@@ -97,8 +97,8 @@ const FAQs = () => {
               text="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
             />
             <AccordionItem
-              header="How long we deliver your first blog post?"
-              text="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+              header="Does FOKMH only support cancer treatment?"
+              text="While the initiative of FOKMH is to support cancer patience, Karanda Mission Hospital supports and treat all patients."
             />
           </div>
         </div>

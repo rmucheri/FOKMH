@@ -1,7 +1,16 @@
 import React, { useEffect, useState } from 'react';
-import { charthos, checkup, docspatient, hosfrtdesk, hospital, karadoc, operation, xrays } from '../assets';
+// import { charthos, checkup, docspatient, hosfrtdesk, hospital, karadoc, operation, xrays } from '../assets';
 
-const backgroundImage = [operation, hospital, xrays, charthos, checkup, docspatient, hosfrtdesk, karadoc];
+
+const karanda1 = "https://images.squarespace-cdn.com/content/v1/6509b098e9ec677d0862ff32/302dbc06-51e9-496e-9845-290226370ad3/DSCF7739.jpg?format=750w"
+const karanda2 = "https://images.squarespace-cdn.com/content/v1/6509b098e9ec677d0862ff32/a701a090-4ecc-4d3d-8795-de33b253959a/DSCF7726.jpg"
+const karanda3 = "https://images.squarespace-cdn.com/content/v1/6509b098e9ec677d0862ff32/40471144-1aa4-4551-856e-2b99078c40ac/Nursing+School+3.jpg"
+const karanda4 = "https://images.squarespace-cdn.com/content/v1/6509b098e9ec677d0862ff32/1695396378380-6SV0BLJZZP5B07WGVHS7/61C83E21-1427-4C39-9096-C82AF10A4769.jpg?format=2500w"
+const karanda5 = "https://images.squarespace-cdn.com/content/v1/6509b098e9ec677d0862ff32/5b8787f2-2c4d-4d24-bba0-903551ca1f75/DSCF8584.jpg"
+const karanda6 = "https://images.squarespace-cdn.com/content/v1/6509b098e9ec677d0862ff32/1c811416-d6c4-4b49-80f5-d340616162a1/IMG_7744.JPEG?format=2500w"
+
+
+const backgroundImage = [karanda1 , karanda2 , karanda3 , karanda4 , karanda5, karanda6 ];
 
 const getRandomImage = () => {
   const randomIndex = Math.floor(Math.random() * backgroundImage.length);
@@ -23,7 +32,7 @@ function Hero() {
       Friends of Karanda Mission Hospital
     </h1>
     <p className="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">
-    "Support Life, Inspire Hope: Join Us in the Fight Against Cancer at Karanda Mission Hospital"
+    "Support Life, Inspire Hope: Join Us in the Fight Against Cancer at Karanda Mission Hospital in our Patient Sponsorship Program,<br/> <a href='https://magetsi.co.zw/tickets'><span className='text-4xl font-extrabold text-orange-900 animate-pulse'>"Adopt a Patient”</span> </a>
     </p>
     <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
       <a
