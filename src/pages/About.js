@@ -5,6 +5,7 @@ import FAQs from '../components/FAQs'
 import Vision from '../components/Vision'
 import { Gallery } from '../components/Gallery'
 import Teamleadership from '../components/Teamleadership'
+import Values from '../components/Values'
 
 
 
@@ -16,6 +17,7 @@ function About() {
       <Teamleadership />
       < Team />
       <Vision />
+      <Values />
       <Gallery />
       <FAQs />
     </div>
