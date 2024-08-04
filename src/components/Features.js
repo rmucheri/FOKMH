@@ -34,7 +34,7 @@ const features = [
 function Features() {
    
   return (
-    <div className="bg-white py-12 sm:py-20 animate-slide-and-fade-in">
+    <div className="bg-white py-4 md:py-20 animate-slide-and-fade-in">
     <div className="mx-auto max-w-7xl px-6 lg:px-8">
       {/* <div className="mx-auto max-w-2xl lg:text-center w-2/3">
       <h3 className="text-2xl font-semibold leading-7 text-[#3ea498]">Adopt a Patient</h3>
@@ -53,8 +53,8 @@ function Features() {
         </p>
         <hr/>
       </div> */}
-      <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl mb-8">
-      <h3 className="text-2xl font-semibold leading-7 text-[#3ea498] lg:text-center  mb-8">Highlights of your Contributions</h3>
+      <div className="mx-auto mt-10 max-w-2xl sm:mt-20 lg:mt-4 lg:max-w-4xl mb-8">
+      <h3 className="text-2xl font-semibold leading-7 text-[#3ea498] lg:text-center  mb-12">Highlights of your Contributions</h3>
         <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
           {features.map((feature) => (
             <div key={feature.name} className="relative pl-20">
