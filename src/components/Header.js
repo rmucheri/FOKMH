@@ -12,25 +12,40 @@ import {
 } from '@headlessui/react'
 import {
   ArrowPathIcon,
+  ArrowRightIcon,
   Bars3Icon,
   ChartPieIcon,
   CursorArrowRaysIcon,
+  CursorArrowRippleIcon,
+  FilmIcon,
   FingerPrintIcon,
+  LightBulbIcon,
   SquaresPlusIcon,
+  UsersIcon,
   XMarkIcon,
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
+import { logo1, logo2, logo3, logothree, tranlogo2 } from '../assets'
 
-const products = [
-  { name: 'About Us', description: 'Get a better understanding of your traffic', href: 'about', icon: ChartPieIcon },
-  { name: 'Mission & Vision', description: 'Speak directly to your customers', href: 'mission-vision', icon: CursorArrowRaysIcon },
-  { name: 'Our Team', description: 'Your customers’ data will be safe and secure', href: 'team', icon: FingerPrintIcon },
-  { name: 'Core Values', description: 'Connect with third-party tools', href: 'values', icon: SquaresPlusIcon },
-  { name: 'Impact & Success Stories', description: 'Build strategic funnels that will convert', href: 'Impact-success-stories', icon: ArrowPathIcon },
+// const aboutList = [
+//   { name: 'About Us', description: 'Get to know Friends of Karanda', href: 'about', icon: ChartPieIcon },
+//   { name: 'Mission & Vision', description: 'What we aspire to acheive', href: 'http://localhost:3000/about#mission-vision', icon: CursorArrowRaysIcon },
+//   { name: 'Our Team', description: 'Meet our Dedicated leadership team ', href: 'http://localhost:3000/about#team', icon: FingerPrintIcon },
+//   { name: 'Core Values', description: 'What drives us', href: 'http://localhost:3000/about#values', icon: SquaresPlusIcon },
+//   { name: 'Gallery', description: 'Check out our media center', href: 'http://localhost:3000/about#gallery', icon: ArrowPathIcon },
+// ]
+
+const aboutList = [
+  { name: 'About Us', description: 'Get to know Friends of Karanda', href: 'about', icon: CursorArrowRippleIcon },
+  { name: 'Mission & Vision', description: 'What we aspire to acheive', href: 'https://main.d9oswyj4tbug8.amplifyapp.com/about#mission-vision', icon: LightBulbIcon },
+  { name: 'Our Team', description: 'Meet our Dedicated leadership team ', href: 'https://main.d9oswyj4tbug8.amplifyapp.com/about#team', icon: UsersIcon },
+  { name: 'Core Values', description: 'What drives us', href: 'https://main.d9oswyj4tbug8.amplifyapp.com/about#values', icon: SquaresPlusIcon },
+  { name: 'Gallery', description: 'Check out our media center', href: 'https://main.d9oswyj4tbug8.amplifyapp.com/about#gallery', icon: FilmIcon },
 ]
+
 const callsToAction = [
-  { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
-  { name: 'Contact sales', href: '#', icon: PhoneIcon },
+  { name: 'Donate', href: 'https://magetsi.co.zw/tickets', icon: ArrowRightIcon },
+  { name: 'Contact Us', href: '/contact', icon: PhoneIcon },
 ]
 
 function classNames(...classes) {
@@ -41,13 +56,15 @@ export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 z-50 bg-gray-100 shadow shadow-smokewhite-200">
-      <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
-        <div className="flex lg:flex-1">
-          <a href="/" className="-m-1.5 p-1.5">
+    <header className="sticky top-0 z-50 bg-gray-100 shadow-[#ffd832] shadow-sm">
+      <nav className="mx-auto flex max-w-7xl items-center justify-between lg:px-8" aria-label="Global">
+        <div className="flex lg:flex-1 hover:scale-105 ">
+       
+          <a href="/" className="">
             <span className="sr-only">Friends of Karanda</span>
-            {/* <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="" /> */}
-            <span style={{fontSize: "2.5rem"}} className='text-gray-700 text-xl text-bold'>FOKMH</span>
+            <img className="h-16 z-99 w-auto" src={tranlogo2} alt="" />
+            {/* <span style={{fontSize: "2.5rem"}} text-[#ffd832] className='leading-6 text-gray-900 text-xl text-bold'>FOKMH</span> */}
+            <a style={{fontSize: "1.1rem"}} href="/" className="text-[#3ea498] text-xl font-semibold leading-6">FOKMH</a>
           </a>
         </div>
         <div className="flex lg:hidden">
@@ -65,13 +82,13 @@ export default function Example() {
 
             {/* Here */}
 
-          <a href="/" className="text-xl font-semibold leading-6 text-gray-900">
+          <a href="/" className="text-xl text-[#3ea498] font-semibold leading-6  hover:scale-125 ">
             Home
           </a>
 
           <Popover className="relative">
-            <PopoverButton className="flex items-center gap-x-1 text-xl font-semibold leading-6 text-gray-900">
-              About Us
+            <PopoverButton className="flex items-center gap-x-1 text-xl font-semibold leading-6 text-[#3ea498] hover:scale-125 ">
+             About Us
               <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
             </PopoverButton>
 
@@ -80,7 +97,7 @@ export default function Example() {
               className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5 transition data-[closed]:translate-y-1 data-[closed]:opacity-0 data-[enter]:duration-200 data-[leave]:duration-150 data-[enter]:ease-out data-[leave]:ease-in"
             >
               <div className="p-4">
-                {products.map((item) => (
+                {aboutList.map((item) => (
                   <div
                     key={item.name}
                     className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
@@ -114,19 +131,20 @@ export default function Example() {
           </Popover>
 
 
-          <a href="#" className="text-xl font-semibold leading-6 text-gray-900">
+          <a href="/causes" className="text-xl font-semibold leading-6 text-[#3ea498] hover:scale-125 ">
             Causes
           </a>
-          <a href="#" className="text-xl font-semibold leading-6 text-gray-900">
+          <a href="/contact" className="text-xl font-semibold leading-6 text-[#3ea498] hover:scale-125 ">
             Contact Us
           </a>
           
         </PopoverGroup>
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="/donate" className="text-xl font-semibold leading-6 text-gray-900">
-            Donate Now! <span aria-hidden="true">&rarr;</span>
-          </a>
-        </div>
+        <div className="hidden lg:flex lg:flex-1 lg:justify-end hover:scale-110 ">
+  <a href="https://magetsi.co.zw/tickets" className="text-xl font-semibold leading-6 text-orange-800">
+    Donate Now! <span aria-hidden="true">&rarr;</span>
+  </a>
+</div>
+
       </nav>
       <Dialog className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
         <div className="fixed inset-0 z-10" />
@@ -156,14 +174,14 @@ export default function Example() {
                   {({ open }) => (
                     <>
                       <DisclosureButton className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                        Product
+                      About Us
                         <ChevronDownIcon
                           className={classNames(open ? 'rotate-180' : '', 'h-5 w-5 flex-none')}
                           aria-hidden="true"
                         />
                       </DisclosureButton>
                       <DisclosurePanel className="mt-2 space-y-2">
-                        {[...products, ...callsToAction].map((item) => (
+                        {[...aboutList, ...callsToAction].map((item) => (
                           <DisclosureButton
                             key={item.name}
                             as="a"
@@ -178,19 +196,19 @@ export default function Example() {
                   )}
                 </Disclosure>
                 <a
-                  href="#"
+                  href="/FAQs"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Features
+                  FAQs
                 </a>
                 <a
-                  href="#"
+                  href="/causes"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Marketplace
+                  Causes
                 </a>
                 <a
-                  href="#"
+                  href="/contact"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Contact Us
@@ -198,10 +216,10 @@ export default function Example() {
               </div>
               <div className="py-6">
                 <a
-                  href="#"
+                  href="https://magetsi.co.zw/tickets"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Log in
+                  Donate Now!
                 </a>
               </div>
             </div>
