@@ -3,8 +3,8 @@ import values from '../Content/valuecardcontent'
 
 function ValueCard(props) {
   return (
-    <div class="mx-auto relative flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-60">
-  <div class="p-6">
+    <div class="mx-auto relative flex flex-col mt-6 text-gray-700 bg-white shadow-lg bg-clip-border rounded-md w-64">
+  <div class="p-2">
     <h5 class="block mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-[#3ea498]">
       {props.header}
     </h5>

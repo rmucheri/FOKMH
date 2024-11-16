@@ -6,6 +6,7 @@ import Partner from '../components/Partner'
 import Carousel from '../components/Carousel'
 import KarandaVid from '../components/KarandaVid'
 import Feature from '../components/Feature'
+import Payment from '../components/Payment'
 
 function Home() {
   return (
@@ -13,7 +14,8 @@ function Home() {
      <Hero />
      <Feature />
      <Features />
-     {/* <Carousel /> */}
+     <Payment />
+     
      < HeroBottom />
      <KarandaVid />
      <Partner />
