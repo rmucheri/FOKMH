@@ -31,7 +31,8 @@ function AboutUs() {
           </div>
         </div>
       </div>
-      <div className="contentRight">
+
+      {/* <div className="contentRight">
         <div className="content rounded-lg shadow p-4 ">
           <h4 style={{ fontSize: "2rem" }}>Welcome To</h4>
           <h2 style={{ color: "#3ea498", fontSize: "1.5rem" }}>
@@ -74,7 +75,7 @@ function AboutUs() {
             Donate Now!
           </a>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
