@@ -60,7 +60,7 @@ function AboutStory() {
             <div className="col-span-12 md:col-span-5 md:col-start-7 order-2">
               <div className="flex flex-col justify-center lg:pl-14">
                 <h4 className="text-2xl text-[#3ea498] font-bold mb-4">
-                  Cancer
+                  Our story cont.
                 </h4>
                 <p className="text-base leading-relaxed text-justify opacity-70 mb-0">
                   Friends of Karanda Mission Hospital is a volunteer-driven
