@@ -49,25 +49,25 @@ const aboutList = [
   {
     name: "Mission & Vision",
     description: "What we aspire to acheive",
-    href: "https://main.d9oswyj4tbug8.amplifyapp.com/about#mission-vision",
+    href: "https://www.friendsofkaranda.com/about#mission-vision",
     icon: LightBulbIcon,
   },
   {
     name: "Our Team",
     description: "Meet our Dedicated leadership team ",
-    href: "https://main.d9oswyj4tbug8.amplifyapp.com/about#team",
+    href: "https://www.friendsofkaranda.com/about#team",
     icon: UsersIcon,
   },
   {
     name: "Core Values",
     description: "What drives us",
-    href: "https://main.d9oswyj4tbug8.amplifyapp.com/about#values",
+    href: "https://www.friendsofkaranda.com/about#values",
     icon: SquaresPlusIcon,
   },
   {
     name: "Gallery",
     description: "Check out our media center",
-    href: "https://main.d9oswyj4tbug8.amplifyapp.com/about#gallery",
+    href: "https://www.friendsofkaranda.com/about#gallery",
     icon: FilmIcon,
   },
 ];
