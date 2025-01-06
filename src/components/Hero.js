@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-// import { charthos, checkup, docspatient, hosfrtdesk, hospital, karadoc, operation, xrays } from '../assets';
+import { kmhgate } from "../assets";
 
 const karanda1 =
   "https://images.squarespace-cdn.com/content/v1/6509b098e9ec677d0862ff32/302dbc06-51e9-496e-9845-290226370ad3/DSCF7739.jpg?format=750w";
@@ -14,6 +14,8 @@ const karanda5 =
 const karanda6 =
   "https://images.squarespace-cdn.com/content/v1/6509b098e9ec677d0862ff32/1c811416-d6c4-4b49-80f5-d340616162a1/IMG_7744.JPEG?format=2500w";
 
+const karanda7 = { kmhgate };
+
 const backgroundImage = [
   karanda1,
   karanda2,
@@ -21,6 +23,7 @@ const backgroundImage = [
   karanda4,
   karanda5,
   karanda6,
+  karanda7,
 ];
 
 const getRandomImage = () => {

@@ -12,9 +12,7 @@ function About() {
   return (
     <div className="">
       <AboutStory />
-
       <Teamleadership />
-
       <Team />
       <AboutUs />
       <Vision />

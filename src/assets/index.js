@@ -29,8 +29,30 @@ import finreport from "./images/finreport.jpg";
 import mutepfa from "./images/mufepfa.jpg";
 import rufus from "./images/rufus.jpg";
 import laptopaccount from "./images/laptopaccount.jpg";
+import docNurse from "./images/docnurse.jpeg";
+import docPaul from "./images/docPaul.jpeg";
+import docTakTalk from "./images/doctacktalk.jpeg";
+import docTak from "./images/docTak.jpeg";
+import docTakFull from "./images/docTakFull.jpeg";
+import docTakHalf from "./images/docTakHalf.jpeg";
+import docTakPodium from "./images/doctakPodium.jpeg";
+import docTakSpeach from "./images/docTakspeach.jpeg";
+import doctakwhite from "./images/doctakwhite.jpeg";
+import kmhgate from "./images/kmhgate.jpeg";
+import nurseCharge from "./images/nurseCharge.jpeg";
 
 export {
+  kmhgate,
+  nurseCharge,
+  doctakwhite,
+  docTakSpeach,
+  docTakPodium,
+  docTakHalf,
+  docTakFull,
+  docTak,
+  docTakTalk,
+  docPaul,
+  docNurse,
   magetsi,
   calculators,
   mamoyo,
@@ -61,5 +83,5 @@ export {
   finreport,
   mutepfa,
   laptopaccount,
-  rufus
+  rufus,
 };
