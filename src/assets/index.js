@@ -30,7 +30,7 @@ import mutepfa from "./images/mufepfa.jpg";
 import rufus from "./images/rufus.jpg";
 import laptopaccount from "./images/laptopaccount.jpg";
 import docNurse from "./images/docnurse.jpg";
-import docPaul from "./images/docPaul.jpeg";
+import docPaul from "./images/docPaul.jpg";
 import docTakTalk from "./images/doctacktalk.jpg";
 import docTak from "./images/docTak.jpg";
 import docTakFull from "./images/docTakFull.jpg";
