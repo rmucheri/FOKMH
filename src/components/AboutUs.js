@@ -1,4 +1,5 @@
 import React from "react";
+import { docPaul } from "../assets";
 
 function AboutUs() {
   return (
@@ -6,10 +7,7 @@ function AboutUs() {
       <div className="contentLeft">
         <div className="row">
           <div className="imgWrapper ">
-            <img
-              src="https://images.squarespace-cdn.com/content/v1/62de875d83675b0dd4255d6b/cd7761b9-7c54-4bf1-b085-67c625a5fa53/25903809243_2733e9f415_o.jpg"
-              alt=""
-            />
+            <img src={docPaul} alt="" />
           </div>
           <div className="imgWrapper shadow-orange-700 rounded-lg shadow-lg">
             <img

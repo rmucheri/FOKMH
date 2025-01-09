@@ -1,4 +1,5 @@
 import React from "react";
+import { docPaulNurses, doctakwhite } from "../assets";
 
 function AboutStory() {
   return (
@@ -40,7 +41,7 @@ function AboutStory() {
             <div className="col-span-12 md:col-span-5 md:col-start-7 order-1 md:order-2 mb-6 md:mb-0 mt-6 md:mt-0">
               <div>
                 <img
-                  src="https://images.squarespace-cdn.com/content/v1/62de875d83675b0dd4255d6b/cd7761b9-7c54-4bf1-b085-67c625a5fa53/25903809243_2733e9f415_o.jpg"
+                  src={docPaulNurses}
                   alt=""
                   className="max-w-full h-auto rounded-2xl"
                 />
@@ -84,7 +85,7 @@ function AboutStory() {
             <div className="col-span-12 md:col-span-5 md:col-start-2 order-1 mb-6 md:mb-0 mt-6 md:mt-0">
               <div>
                 <img
-                  src="https://images.squarespace-cdn.com/content/v1/6509b098e9ec677d0862ff32/c8b16879-82fd-4197-bd36-6ae20b19422e/DSCF8600.jpg"
+                  src={doctakwhite}
                   alt=""
                   className="max-w-full h-auto rounded-2xl"
                 />

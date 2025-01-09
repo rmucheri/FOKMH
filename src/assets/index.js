@@ -40,8 +40,10 @@ import docTakSpeach from "./images/docTakspeach.jpg";
 import doctakwhite from "./images/doctakwhite.jpg";
 import kmhgate from "./images/kmhgate.jpg";
 import nurseCharge from "./images/nurseCharge.jpg";
+import docPaulNurses from "./images/docPaulNurses.jpg";
 
 export {
+  docPaulNurses,
   kmhgate,
   nurseCharge,
   doctakwhite,
