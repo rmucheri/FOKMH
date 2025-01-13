@@ -52,7 +52,7 @@ function Hero() {
             "Support Life, Inspire Hope: Join Us in the Fight Against Cancer at
             Karanda Mission Hospital in our Patient Sponsorship Program,
             <br />{" "}
-            <a href="https://magetsi.co.zw/billers/pay/TVRnPQ/friends-of-karanda-mission-hospital">
+            <a href="/causes">
               <span className="text-4xl font-extrabold text-orange-900 animate-pulse">
                 "Adopt a Patient”
               </span>{" "}
