@@ -87,7 +87,7 @@ dedication, bringing a wealth of experience and passion to her ministerial and c
     text: "FRIENDS OF KARANDA BOARD MEMBER",
   },
   {
-    img: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+    img: NyarotaTazvionepi,
     header: "Merrit Munzwembiri",
     text: "FRIENDS OF KARANDA BOARD MEMBER",
   },
