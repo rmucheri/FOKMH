@@ -43,7 +43,7 @@ import nurseCharge from "./images/nurseCharge.jpg";
 import docPaulNurses from "./images/docPaulNurses.jpg";
 import victoria from "./images/victoria.jpg";
 import merrit from "./images/merrit.jpg";
-import NyarotaTazvionepi from "./images/NyarotaTazvionepi.webp";
+import NyarotaTazvionepi from "./images/NyarotaTazvionepi.jpg";
 
 export {
   merrit,
