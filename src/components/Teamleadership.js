@@ -1,5 +1,26 @@
 import React, { useState } from "react";
 import { mutepfa, rufus } from "../assets";
+import AccordionItemCard from "./Cards/AccordionItemCard";
+import members from "./Content/memberscontent";
+
+const AccordionItems = ({ header, text, img }) => {
+  const [active, setActive] = useState(false);
+
+  const handleToggle = (event) => {
+    event.preventDefault();
+    setActive(!active);
+  };
+
+  return (
+    <AccordionItemCard
+      header={header}
+      text={text}
+      img={img}
+      active={active}
+      handleToggle={handleToggle}
+    />
+  );
+};
 
 function Teamleadership() {
   return (
@@ -83,13 +104,21 @@ function Teamleadership() {
           {/* More people... */}
         </ul>
       </div>
-      <h2 className="py-16 text-3xl text-center font-extrabold text-[#3ea498]">
+      <h2 className="py-16 text-3xl uppercase text-center font-extrabold text-[#3ea498]">
         Board Members
       </h2>
-
-      <p className="text-2xl text-center font-extrabold text-gray-600 animate-bounce">
-        <a className="hover:scale-125" href="/board">
-          Click to view our Board Members
+      <div className="mx-4 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 text-justify">
+        {members.slice(0, 3).map((member) => (
+          <AccordionItems
+            header={member.header}
+            text={member.text}
+            img={member.img}
+          />
+        ))}
+      </div>
+      <p className="text-4xl mt-10 hover:scale-125 text-center font-extrabold text-[#3ea498] animate-bounce">
+        <a className="" href="/board">
+          Click to view all Board Members
         </a>
       </p>
 

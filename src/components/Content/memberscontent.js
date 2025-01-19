@@ -1,10 +1,31 @@
-import { mutepfa, NyarotaTazvionepi, victoria } from "../../assets";
+import { merrit, mutepfa, NyarotaTazvionepi, victoria } from "../../assets";
 
 const members = [
   {
-    img: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
-    header: "Thomas Gondo ",
-    text: "Thomas Gondo is a Licensed Land Surveyor in Ontario Canada and the President of Lejan Land Surveying Inc, a Licensed Practice also in the province of Ontario. He has consistently been involded in efforts to fundraise for Karanda Hospital.",
+    img: mutepfa,
+    header: "Mr. Mwandibhuya K Mutepfa",
+    text: "Mr. Mwandibhuya Kennedy Mutepfa is the Founder and CEO of several private enterprises in Calgary, Canada. Prior to his entrepreneurial ventures, he held significant positions in the industrial sector, serving as a Senior Buyer at Lancashire Steel and later as Retail Manager and General Manager at Ziscosteel Distribution Center in Kwekwe. His leadership extended to the realm of sports, where he held multiple national soccer leadership roles, demonstrating his passion for the sport and administrative acumen. He also currently serve as a board member with the Calgary United Soccer Association (CUSA) Mr. Mutepfa is a proponent of good corporate governance, strategic planning, and effective policy formulation and implementation. He has earned several certifications in stores and purchasing management, soccer administration, entrepreneurship and a Diploma in business and digital marketing management, He also holds an Executive Master of Business Administration (EMBA) with a focus on professional selling and leadership from the university of Fredericton, New Brunswick, Canada. As one of the co-founders of Friends of Karanda Mission Hospital (FOKMH), Mr. Mutepfa believes in the importance of giving back to the community. He advocates for sharing resources with those in need, emphasizing the positive impact such contributions can have on the less privileged.",
+  },
+
+  {
+    img: NyarotaTazvionepi,
+    header: "Tazvionepi Musanhi Nyarota",
+    text: `Tazvionepi Nyarota is an accomplished religious leader with over 25 years of ministry
+experience. She has served in various leadership roles, including District Superintendent of the
+Mutare District in Zimbabwe, where she successfully established six new circuits and three local
+churches. As the first woman to chair the Board on Ordained Ministry in her conference, she
+championed education and training for clergy, significantly increasing the number of trained
+pastors and advancing opportunities for women in ministry.
+Her ecumenical contributions include serving on international committees such as the World
+Methodist Council and participating in global conferences addressing social and theological
+issues. Tazvionepi is deeply committed to pastoral care, counseling, and justice, and values
+learning and collaboration in her ministry. Based in Leduc, Alberta, she continues to lead with
+dedication, bringing a wealth of experience and passion to her ministerial and charity work.`,
+  },
+  {
+    img: merrit,
+    header: "Merrit Munzwembiri",
+    text: "FRIENDS OF KARANDA BOARD MEMBER",
   },
   {
     img: victoria,
@@ -51,26 +72,13 @@ Her vast experience, coupled with her commitment to strategic development and ca
     header: "Dr Causemore Zengeni",
     text: "Dr. C. Zengeni graduated from the University of Zimbabwe Medical School in 2005. After completing an 18-month tenure at Harare Hospital, he moved to the United Kingdom, where he undertook training in Family Medicine. He is currently a partner at Ash Tree House Surgery in Kirkham. Dr. Zengeni holds the Membership of the Royal Colleges of Physicians (MRCP UK), a specialty certificate in Diabetes and Endocrinology, and a Diploma in the Management of Diabetes in Primary Care. He is a member of the Royal College of Physicians of Edinburgh and the Society for Endocrinology.",
   },
+
   {
-    img: mutepfa,
-    header: "Mr. Mwandibhuya K Mutepfa",
-    text: "Mr. Mwandibhuya Kennedy Mutepfa is the Founder and CEO of several private enterprises in Calgary, Canada. Prior to his entrepreneurial ventures, he held significant positions in the industrial sector, serving as a Senior Buyer at Lancashire Steel and later as Retail Manager and General Manager at Ziscosteel Distribution Center in Kwekwe. His leadership extended to the realm of sports, where he held multiple national soccer leadership roles, demonstrating his passion for the sport and administrative acumen. He also currently serve as a board member with the Calgary United Soccer Association (CUSA) Mr. Mutepfa is a proponent of good corporate governance, strategic planning, and effective policy formulation and implementation. He has earned several certifications in stores and purchasing management, soccer administration, entrepreneurship and a Diploma in business and digital marketing management, He also holds an Executive Master of Business Administration (EMBA) with a focus on professional selling and leadership from the university of Fredericton, New Brunswick, Canada. As one of the co-founders of Friends of Karanda Mission Hospital (FOKMH), Mr. Mutepfa believes in the importance of giving back to the community. He advocates for sharing resources with those in need, emphasizing the positive impact such contributions can have on the less privileged.",
+    img: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+    header: "Thomas Gondo ",
+    text: "Thomas Gondo is a Licensed Land Surveyor in Ontario Canada and the President of Lejan Land Surveying Inc, a Licensed Practice also in the province of Ontario. He has consistently been involded in efforts to fundraise for Karanda Hospital.",
   },
-  {
-    img: NyarotaTazvionepi,
-    header: "Tazvionepi Musanhi Nyarota",
-    text: `Tazvionepi Nyarota is an accomplished religious leader with over 25 years of ministry
-experience. She has served in various leadership roles, including District Superintendent of the
-Mutare District in Zimbabwe, where she successfully established six new circuits and three local
-churches. As the first woman to chair the Board on Ordained Ministry in her conference, she
-championed education and training for clergy, significantly increasing the number of trained
-pastors and advancing opportunities for women in ministry.
-Her ecumenical contributions include serving on international committees such as the World
-Methodist Council and participating in global conferences addressing social and theological
-issues. Tazvionepi is deeply committed to pastoral care, counseling, and justice, and values
-learning and collaboration in her ministry. Based in Leduc, Alberta, she continues to lead with
-dedication, bringing a wealth of experience and passion to her ministerial and charity work.`,
-  },
+
   {
     img: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
     header: "Eugine Matikiti",
@@ -86,11 +94,7 @@ dedication, bringing a wealth of experience and passion to her ministerial and c
     header: "Judith Mutamba",
     text: "FRIENDS OF KARANDA BOARD MEMBER",
   },
-  {
-    img: NyarotaTazvionepi,
-    header: "Merrit Munzwembiri",
-    text: "FRIENDS OF KARANDA BOARD MEMBER",
-  },
+
   //   {
   //     img: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
   //     header: "",

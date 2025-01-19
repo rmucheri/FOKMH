@@ -91,7 +91,7 @@ export default function Example() {
   return (
     <header className="sticky top-0 z-50 bg-gray-100 shadow-[#ffd832] shadow-sm">
       <nav
-        className="mx-auto flex max-w-7xl items-center justify-between lg:px-8"
+        className="w-full max-w-7xl mx-auto flex items-center justify-between lg:px-8"
         aria-label="Global"
       >
         <div className="flex lg:flex-1 hover:scale-105 ">
