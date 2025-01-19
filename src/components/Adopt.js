@@ -14,12 +14,15 @@ function Adopt() {
             </div>
             <div className="md:col-span-2">
               <p className="text-2xl leading-9 text-justify p-4 md:p-12 text-gray-600">
-                At Karanda Mission Hospital, every donation brings hope to those
-                in desperate need of care. Your generosity helps us provide
-                life-saving treatments for patients battling cancer and other
-                critical illnesses. With your support, we can ensure every
-                patient receives the care they deserve. Join us in making a
-                difference—adopt a patient today and change a life forever.
+                At Karanda Mission Hospital, every contribution, no matter the
+                size, brings hope and healing to those in urgent need of medical
+                care. Through our "Adopt a Patient" appeal, your donation helps
+                support patients facing life-threatening illnesses like cancer.
+                While we’re not asking you to shoulder the full cost of
+                treatment, your generosity will go a long way in covering vital
+                aspects of care, ensuring that no patient is left behind.
+                Together, we can make a meaningful impact—adopt a patient today
+                and be the reason someone gets a second chance at life.
               </p>
             </div>
           </div>

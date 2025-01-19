@@ -1,4 +1,4 @@
-import { mutepfa } from "../../assets";
+import { mutepfa, NyarotaTazvionepi, victoria } from "../../assets";
 
 const members = [
   {
@@ -7,10 +7,19 @@ const members = [
     text: "Thomas Gondo is a Licensed Land Surveyor in Ontario Canada and the President of Lejan Land Surveying Inc, a Licensed Practice also in the province of Ontario. He has consistently been involded in efforts to fundraise for Karanda Hospital.",
   },
   {
-    img: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+    img: victoria,
     header: "Victoria S Mamvura",
-    text: `"Victoria Siphiwe Mamvura holds a Masters, Post Graduate Diploma in HIV and AIDS, and Health Communication: Research, Monitoring & Evaluation of HIV & AIDS Projects, Developing Workplace Wellness Programs and Strategic Management in the field of HIV
-& AIDS. She has worked in different portfolios in Zimbabwe and Namibia working with organizations like University of Namibia, Bank Windhoek Namibia, Broadcasting Authority of Zimbabwe, Namibia Student Financial Assistance Fund amongst other organizations."`,
+    text: `"Victoria Siphiwe Mamvura is an accomplished professional with a diverse academic and professional background spanning health communication, human resources, and management. She holds a Master’s Degree and a Postgraduate Diploma in HIV and AIDS, with a focus on Health Communication, Research, Monitoring & Evaluation of HIV and AIDS Projects, Developing Workplace Wellness Programs, and Strategic Management in the field of HIV and AIDS. Additionally, she possesses a Master’s Diploma in Human Resources Management, a BTech in Hospitality Management, and certificates in HIV and AIDS Counseling, General Counseling, Community Counseling, Supply Chain Management, and Alternative Dispute Resolution (ADR) from the University of Namibia.
+
+With extensive experience in Zimbabwe, Namibia, and South Africa, Victoria has held various key roles with reputable organizations:
+
+Board Member, Broadcasting Authority of Zimbabwe (BAZ): Chair of the HR Committee and member of the Finance & Risk Management Committees.
+HR Committee Member, Namibia Student Financial Assistance Fund (NSFAF). 
+Assessor & Moderator for multiple South African Sector Education and Training Authorities (SETAs), including Services SETA, HWSETA, ETDPSETA, and CATHSSETA.
+Consultant, University of Namibia, Continuous Professional Development (CPD) Unit.
+Consultant, Bank Windhoek Namibia for the Women at Work (W@W) Project setup.
+Victoria is also a member of the Institute of Directors South Africa (IoDSA) and has contributed her expertise to numerous other organizations.
+Her vast experience, coupled with her commitment to strategic development and capacity building, makes her a valuable member of the Friends of Karanda Mission Hospital board."`,
   },
   {
     img: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
@@ -48,7 +57,7 @@ const members = [
     text: "Mr. Mwandibhuya Kennedy Mutepfa is the Founder and CEO of several private enterprises in Calgary, Canada. Prior to his entrepreneurial ventures, he held significant positions in the industrial sector, serving as a Senior Buyer at Lancashire Steel and later as Retail Manager and General Manager at Ziscosteel Distribution Center in Kwekwe. His leadership extended to the realm of sports, where he held multiple national soccer leadership roles, demonstrating his passion for the sport and administrative acumen. He also currently serve as a board member with the Calgary United Soccer Association (CUSA) Mr. Mutepfa is a proponent of good corporate governance, strategic planning, and effective policy formulation and implementation. He has earned several certifications in stores and purchasing management, soccer administration, entrepreneurship and a Diploma in business and digital marketing management, He also holds an Executive Master of Business Administration (EMBA) with a focus on professional selling and leadership from the university of Fredericton, New Brunswick, Canada. As one of the co-founders of Friends of Karanda Mission Hospital (FOKMH), Mr. Mutepfa believes in the importance of giving back to the community. He advocates for sharing resources with those in need, emphasizing the positive impact such contributions can have on the less privileged.",
   },
   {
-    img: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+    img: NyarotaTazvionepi,
     header: "Tazvionepi Musanhi Nyarota",
     text: `Tazvionepi Nyarota is an accomplished religious leader with over 25 years of ministry
 experience. She has served in various leadership roles, including District Superintendent of the
