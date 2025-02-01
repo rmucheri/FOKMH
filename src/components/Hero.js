@@ -39,7 +39,7 @@ function Hero() {
   }, []);
 
   return (
-    <div className="animate-slide-and-fade-in">
+    <div className="animate-slide-and-fade-in z-0">
       <section
         style={{ backgroundImage: `url(${bgImage})` }}
         className="bg-center bg-cover bg-no-repeat bg-gray-700 bg-blend-multiply"

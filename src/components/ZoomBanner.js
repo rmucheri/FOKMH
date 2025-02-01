@@ -2,7 +2,7 @@ import React from "react";
 
 const ZoomBanner = () => {
   return (
-    <div className="w-full  bg-gradient-to-r from-[#3ea498] via-[#0be699] to-[#11eed4]  text-white py-1 text-center">
+    <div className="sticky top-20 z-50 w-full  bg-gradient-to-r from-[#3ea498] via-[#0be699] to-[#11eed4]  text-white py-1 text-center">
       <div className="container mx-auto">
         <p className="text-lg md:text-2xl font-semibold">
           Join our meeting on Zoom! Click to register and attend.
