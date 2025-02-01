@@ -44,8 +44,10 @@ import docPaulNurses from "./images/docPaulNurses.jpg";
 import victoria from "./images/victoria.jpg";
 import merrit from "./images/merrit.jpg";
 import NyarotaTazvionepi from "./images/NyarotaTazvionepi.jpg";
+import StevenGondo from "./images/stevenGondo.jpg";
 
 export {
+  StevenGondo,
   merrit,
   NyarotaTazvionepi,
   victoria,

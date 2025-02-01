@@ -1,4 +1,10 @@
-import { merrit, mutepfa, NyarotaTazvionepi, victoria } from "../../assets";
+import {
+  merrit,
+  mutepfa,
+  NyarotaTazvionepi,
+  StevenGondo,
+  victoria,
+} from "../../assets";
 
 const members = [
   {
@@ -41,6 +47,11 @@ Consultant, University of Namibia, Continuous Professional Development (CPD) Uni
 Consultant, Bank Windhoek Namibia for the Women at Work (W@W) Project setup.
 Victoria is also a member of the Institute of Directors South Africa (IoDSA) and has contributed her expertise to numerous other organizations.
 Her vast experience, coupled with her commitment to strategic development and capacity building, makes her a valuable member of the Friends of Karanda Mission Hospital board."`,
+  },
+  {
+    img: StevenGondo,
+    header: "Stephen Gondo",
+    text: "Stephen Gondo is very passionate about fundraising for charity and has been involved in fundraising for Karanda Mission Hospital for the past 6-7 years. He works for the Federal Government of Canada (15 years to date)as a Specialist Inspector in the Food Processing Field. He graduated and did his post graduate studies at the University of Zimbabwe before joining the Agricultural Development Authority (ADA) and Pioneer Seeds(Zim).",
   },
   {
     img: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
@@ -105,11 +116,7 @@ Her vast experience, coupled with her commitment to strategic development and ca
     header: "Rutendo Maereka",
     text: "FRIENDS OF KARANDA BOARD MEMBER",
   },
-  {
-    img: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
-    header: "Stephen Gondo",
-    text: "FRIENDS OF KARANDA BOARD MEMBER",
-  },
+
   {
     img: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
     header: "Stephen Ndiyamba",
