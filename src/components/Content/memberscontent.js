@@ -132,6 +132,36 @@ Her vast experience, coupled with her commitment to strategic development and ca
     header: "Taremeredzwa Mutepfa",
     text: "FRIENDS OF KARANDA BOARD MEMBER",
   },
+  {
+    img: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+    header: "Aurthur Choga",
+    text: "FRIENDS OF KARANDA BOARD MEMBER",
+  },
+  {
+    img: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+    header: "Farai Gonyora",
+    text: "FRIENDS OF KARANDA BOARD MEMBER",
+  },
+  {
+    img: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+    header: "Oliver Gono",
+    text: "FRIENDS OF KARANDA BOARD MEMBER",
+  },
+  {
+    img: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+    header: "Arthur Choga",
+    text: "FRIENDS OF KARANDA BOARD MEMBER",
+  },
+  {
+    img: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+    header: "Efficiency Dangaiso",
+    text: "FRIENDS OF KARANDA BOARD MEMBER",
+  },
+  {
+    img: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+    header: "Paul Tinashe Dangaiso",
+    text: "FRIENDS OF KARANDA BOARD MEMBER",
+  },
 ];
 
 export default members;
