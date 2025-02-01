@@ -11,7 +11,7 @@ const ZoomBanner = () => {
           href="https://us06web.zoom.us/meeting/register/I7SXAXvhQmqyKfyXLHCTRQ"
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-1 inline-block animate-bounce bg-orange-700 text-white px-6 py-4 rounded-md font-semibold hover:bg-green-700 transition-colors"
+          className="mt-1 inline-block animate-bounce bg-orange-700 text-white px-6 py-4 rounded-md font-semibold hover:bg-orange-600 transition-colors"
         >
           Join Zoom Meeting
         </a>
