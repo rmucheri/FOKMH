@@ -11,7 +11,7 @@ import ZoomBanner from "../components/ZoomBanner";
 function Home() {
   return (
     <div>
-      <ZoomBanner />
+      {/* <ZoomBanner /> */}
       <Hero />
       <Feature />
       <Features />
