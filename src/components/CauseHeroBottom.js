@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  finreport,
-  karadoc,
-  laptopaccount,
-  mortgagePic,
-  mortgagePic2,
-} from "../assets";
+import { finreport, laptopaccount } from "../assets";
 
 function CauseHeroBottom() {
   return (
@@ -38,14 +32,18 @@ function CauseHeroBottom() {
                 <h2 className="text-[#3ea498] text-lg title-font font-medium mb-4">
                   Managing Your Funds with Trust and Transparency
                 </h2>
-                <p className="text-lg leading-relaxed text-base text-justify">
+                <p className="text-lg p-4 leading-relaxed text-base text-justify">
                   At Friends of Karanda Mission Hospital (FOKMH), we prioritize
                   the responsible management and safeguarding of every
                   contribution entrusted to us. Whether from individual donors,
                   corporations, or other organizations, we ensure that every
                   donation is directed with utmost care and accountability.
                 </p>
-                <a className="mt-3 text-indigo-500 inline-flex items-center">
+                <a
+                  href="https://www.magetsi.co.zw/billers/pay/TVRnPQ/friends-of-karanda-mission-hospital"
+                  target="_blank"
+                  className="mt-3 text-indigo-500 inline-flex items-center"
+                >
                   Learn More
                   <svg
                     fill="none"
@@ -81,7 +79,7 @@ function CauseHeroBottom() {
                 <h2 className="text-[#3ea498] text-lg title-font font-medium mb-4">
                   Secure Channels and Partnerships
                 </h2>
-                <p className="text-lg leading-relaxed text-base text-justify">
+                <p className="text-lg p-4 leading-relaxed text-base text-justify">
                   FOKMH channels all contributions directly to the Karanda
                   Mission Hospital account through trusted partnerships with
                   Magetsi or The Evangelical Alliance Mission (TEAM). These
@@ -89,7 +87,11 @@ function CauseHeroBottom() {
                   transfer of funds, maintaining a clear audit trail for
                   transparency and accountability.
                 </p>
-                <a className="mt-3 text-indigo-500 inline-flex items-center">
+                <a
+                  href="https://www.magetsi.co.zw/billers/pay/TVRnPQ/friends-of-karanda-mission-hospital"
+                  target="_blank"
+                  className="mt-3 text-indigo-500 inline-flex items-center"
+                >
                   Learn More
                   <svg
                     fill="none"
@@ -124,7 +126,7 @@ function CauseHeroBottom() {
                 <h2 className="text-[#3ea498] text-lg title-font font-medium mb-4">
                   Transparency through Reporting
                 </h2>
-                <p className="text-lg leading-relaxed text-base text-justify">
+                <p className="text-lg p-4 leading-relaxed text-base text-justify">
                   We are committed to transparency. Through our official
                   website, FOKMH provides comprehensive and accessible reports
                   detailing how donor funds are utilized. These reports offer
@@ -132,7 +134,11 @@ function CauseHeroBottom() {
                   the tangible difference made in supporting healthcare
                   initiatives at Karanda Mission Hospital.
                 </p>
-                <a className="mt-3 text-indigo-500 inline-flex items-center">
+                <a
+                  href="https://www.magetsi.co.zw/billers/pay/TVRnPQ/friends-of-karanda-mission-hospital"
+                  target="_blank"
+                  className="mt-3 text-indigo-500 inline-flex items-center"
+                >
                   Learn More
                   <svg
                     fill="none"
@@ -173,7 +179,7 @@ function CauseHeroBottom() {
                 <h2 className="text-[#3ea498] text-lg title-font font-medium mb-4">
                   Stewardship and Accountability
                 </h2>
-                <p className="text-lg leading-relaxed text-base text-justify">
+                <p className="text-lg p-4 leading-relaxed text-base text-justify">
                   Every dollar donated to FOKMH is treated with the highest
                   standards of stewardship and accountability. Our financial
                   practices are guided by rigorous internal controls and
@@ -181,7 +187,11 @@ function CauseHeroBottom() {
                   advancing healthcare services and improving the lives of those
                   in need.
                 </p>
-                <a className="mt-3 text-indigo-500 inline-flex items-center">
+                <a
+                  href="https://www.magetsi.co.zw/billers/pay/TVRnPQ/friends-of-karanda-mission-hospital"
+                  target="_blank"
+                  className="mt-3 text-indigo-500 inline-flex items-center"
+                >
                   Learn More
                   <svg
                     fill="none"
@@ -217,13 +227,17 @@ function CauseHeroBottom() {
                 <h2 className="text-[#3ea498] text-lg title-font font-medium mb-4">
                   Commitment to Integrity
                 </h2>
-                <p className="text-lg leading-relaxed text-base text-justify">
+                <p className="text-lg p-4 leading-relaxed text-base text-justify">
                   Integrity forms the cornerstone of our operations. We adhere
                   strictly to ethical guidelines and best practices in
                   fundraising and financial management, striving to earn and
                   maintain the trust of our donors and partners.
                 </p>
-                <a className="mt-3 text-indigo-500 inline-flex items-center">
+                <a
+                  href="https://www.magetsi.co.zw/billers/pay/TVRnPQ/friends-of-karanda-mission-hospital"
+                  target="_blank"
+                  className="mt-3 text-indigo-500 inline-flex items-center"
+                >
                   Learn More
                   <svg
                     fill="none"
@@ -258,14 +272,18 @@ function CauseHeroBottom() {
                 <h2 className="text-[#3ea498] text-lg title-font font-medium mb-4">
                   Your Partner in Making a Difference
                 </h2>
-                <p className="text-lg leading-relaxed text-base text-justify">
+                <p className="text-lg p-4 leading-relaxed text-base text-justify">
                   When you choose to support FOKMH, you are choosing a partner
                   dedicated to making a meaningful impact through transparent
                   stewardship of funds. Together, we can continue to empower
                   Karanda Mission Hospital in delivering vital healthcare
                   services to communities in Zimbabwe and beyond.
                 </p>
-                <a className="mt-3 text-indigo-500 inline-flex items-center">
+                <a
+                  href="https://www.magetsi.co.zw/billers/pay/TVRnPQ/friends-of-karanda-mission-hospital"
+                  target="_blank"
+                  className="mt-3 text-indigo-500 inline-flex items-center"
+                >
                   Learn More
                   <svg
                     fill="none"

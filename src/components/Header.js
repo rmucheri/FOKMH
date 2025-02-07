@@ -11,33 +11,17 @@ import {
   PopoverPanel,
 } from "@headlessui/react";
 import {
-  ArrowPathIcon,
   ArrowRightIcon,
   Bars3Icon,
-  ChartPieIcon,
-  CursorArrowRaysIcon,
   CursorArrowRippleIcon,
   FilmIcon,
-  FingerPrintIcon,
   LightBulbIcon,
   SquaresPlusIcon,
   UsersIcon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
-import {
-  ChevronDownIcon,
-  PhoneIcon,
-  PlayCircleIcon,
-} from "@heroicons/react/20/solid";
-import { logo1, logo2, logo3, logothree, tranlogo2 } from "../assets";
-
-// const aboutList = [
-//   { name: 'About Us', description: 'Get to know Friends of Karanda', href: 'about', icon: ChartPieIcon },
-//   { name: 'Mission & Vision', description: 'What we aspire to acheive', href: 'http://localhost:3000/about#mission-vision', icon: CursorArrowRaysIcon },
-//   { name: 'Our Team', description: 'Meet our Dedicated leadership team ', href: 'http://localhost:3000/about#team', icon: FingerPrintIcon },
-//   { name: 'Core Values', description: 'What drives us', href: 'http://localhost:3000/about#values', icon: SquaresPlusIcon },
-//   { name: 'Gallery', description: 'Check out our media center', href: 'http://localhost:3000/about#gallery', icon: ArrowPathIcon },
-// ]
+import { ChevronDownIcon, PhoneIcon } from "@heroicons/react/20/solid";
+import { tranlogo2 } from "../assets";
 
 const aboutList = [
   {
@@ -98,7 +82,6 @@ export default function Example() {
           <a href="/" className="">
             <span className="sr-only">Friends of Karanda</span>
             <img className="h-16 z-99 w-auto" src={tranlogo2} alt="" />
-            {/* <span style={{fontSize: "2.5rem"}} text-[#ffd832] className='leading-6 text-gray-900 text-xl text-bold'>FOKMH</span> */}
             <a
               style={{ fontSize: "1.1rem" }}
               href="/"
@@ -201,6 +184,7 @@ export default function Example() {
           <a
             href="https://magetsi.co.zw/billers/pay/TVRnPQ/friends-of-karanda-mission-hospital"
             target="_blank"
+            rel="noreferrer"
             className="text-xl font-semibold leading-6 text-orange-800"
           >
             Donate Now! <span aria-hidden="true">&rarr;</span>
@@ -215,8 +199,8 @@ export default function Example() {
         <div className="fixed inset-0 z-10" />
         <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
+            <a href="/" className="-m-1.5 p-1.5">
+              <span className="sr-only">FOKMH</span>
               <img
                 className="h-8 w-auto"
                 src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"

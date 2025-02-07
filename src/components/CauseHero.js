@@ -2,11 +2,7 @@ import React from "react";
 import xrays from "../assets/images/xrays.jpg";
 import charthos from "../assets/images/charthos.jpg";
 import docspatient from "../assets/images/docspatient.jpg";
-import logothree from "../assets/images/logo3.png";
 import tranlogo2 from "../assets/images/tranlogo2.png";
-import tranlogo1 from "../assets/images/tranlogo1.png";
-
-// import { charthos } from '../assets';
 
 const causes = [
   {
@@ -53,7 +49,7 @@ function CauseHero() {
                 <div className="flex flex-col sm:flex-row mt-10">
                   <div className="sm:w-1/3 text-center sm:pr-8 sm:py-8">
                     <div className="w-20 h-20 m-1 p-1 rounded-full inline-flex items-center justify-center bg-white border border-gray-100 text-gray-400">
-                      <img src={cause.icon} />
+                      <img src={cause.icon} alt={cause.title} />
                     </div>
                     <div className="flex flex-col items-center text-center justify-center ">
                       <h2 className="font-medium title-font mt-4 text-[#3ea498] text-lg">
@@ -70,6 +66,7 @@ function CauseHero() {
                     <a
                       href="https://magetsi.co.zw/billers/pay/TVRnPQ/friends-of-karanda-mission-hospital"
                       target="_blank"
+                      rel="noreferrer"
                       className="text-indigo-500 inline-flex items-center hover:scale-150"
                     >
                       Donate

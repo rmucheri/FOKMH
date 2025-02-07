@@ -1,6 +1,5 @@
 import React from "react";
 import {
-  ArrowPathIcon,
   BuildingOffice2Icon,
   CheckBadgeIcon,
   MagnifyingGlassIcon,
@@ -40,23 +39,6 @@ function Features() {
   return (
     <div className="bg-white py-4 md:py-20 animate-slide-and-fade-in">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        {/* <div className="mx-auto max-w-2xl lg:text-center w-2/3">
-      <h3 className="text-2xl font-semibold leading-7 text-[#3ea498]">Adopt a Patient</h3>
-      <p className='mt-6 text-lg leading-8 text-gray-600 text-justify pb-4' >This initiative invites donors to contribute funds that directly support the medical care and treatment of individual patients who are in need. It emphasizes the personalized impact of the donation, connecting donors to specific patients and their healthcare journeys.</p>
-        <h3 className="text-2xl font-semibold leading-7 text-[#3ea498]">Overview of our Campaign</h3>
-        <p className="mt-2 text-left  font-bold tracking-tight text-gray-700 sm:text-2xl">
-        Let's Fight Against Cancer at Karanda Mission Hospital
-        </p>
-        <p className="mt-6 text-lg leading-8 text-gray-600 text-justify mb-6">
-        Through the “Adopt a Patient” campaign, at Karanda Mission Hospital, we are dedicated to providing life-saving cancer treatments 
-        to patients in need. Our mission is to ensure that no one faces cancer alone or without 
-        the necessary care. Through the "Friends of Karanda" campaign, we aim to raise funds to 
-        support our cancer program, enabling us to offer advanced treatments, improve patient care, 
-        and provide much-needed resources. Your support can make a significant difference in the lives 
-        of countless individuals battling cancer. Together, we can give hope and inspire healing.
-        </p>
-        <hr/>
-      </div> */}
         <div className="mx-auto mt-10 max-w-2xl sm:mt-20 lg:mt-4 lg:max-w-4xl mb-8">
           <h3 className="text-2xl font-semibold leading-7 text-[#3ea498] lg:text-center  mb-12">
             Highlights of your Contributions

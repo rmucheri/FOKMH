@@ -1,5 +1,5 @@
 import React from "react";
-import { docTakPodium, karadoc, nursel, nursep } from "../assets";
+import { docTakPodium } from "../assets";
 
 function Feature() {
   return (
@@ -8,14 +8,14 @@ function Feature() {
         <div class="w-full items-center mx-auto max-w-screen-lg">
           <div class="group grid w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
             <div>
-              <div class="pr-12">
-                <h3 className="text-2xl font-semibold leading-7 text-[#3ea498]">
+              <div class="p-4 ">
+                <h3 className="text-2xl font-semibold  leading-7 text-[#3ea498]">
                   Overview of our Campaign
                 </h3>
                 <p className="mt-2 text-left  font-bold tracking-tight text-gray-700 sm:text-2xl">
                   Let's Fight Against Cancer at Karanda Mission Hospital
                 </p>
-                <p className="mt-6 text-lg leading-8 text-gray-600 text-justify mb-6">
+                <p className="mt-6 text-lg items-center   leading-8 text-gray-600 text-justify mb-6">
                   Through the “Adopt a Patient” campaign, at Karanda Mission
                   Hospital, we are dedicated to providing life-saving cancer
                   treatments to patients in need. Our mission is to ensure that
@@ -27,12 +27,7 @@ function Feature() {
                   difference in the lives of countless individuals battling
                   cancer. Together, we can give hope and inspire healing.
                 </p>
-                {/* <h3 class="mb-4 font-semibold text-xl text-gray-400">Conditioning installation packages</h3>
-          <ul role="list" class="marker:text-sky-400 list-disc pl-5 space-y-3 text-slate-500">
-            <li>5 cups chopped Porcini mushrooms</li>
-            <li>1/2 cup of olive oil</li>
-            <li>3lb of celery</li>
-          </ul> */}
+             
               </div>
             </div>
             <div class="pl-16 relative flex items-end flex-col before:block before:absolute before:h-1/6 before:w-4 before:bg-blue-500 before:bottom-0 before:left-0 before:rounded-lg  before:transition-all group-hover:before:bg-orange-300 overflow-hidden">

@@ -6,12 +6,12 @@ import Partner from "../components/Partner";
 import KarandaVid from "../components/KarandaVid";
 import Feature from "../components/Feature";
 import Payment from "../components/Payment";
-import ZoomBanner from "../components/ZoomBanner";
+
 
 function Home() {
   return (
     <div>
-      {/* <ZoomBanner /> */}
+   
       <Hero />
       <Feature />
       <Features />

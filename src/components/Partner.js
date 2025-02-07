@@ -1,7 +1,5 @@
 import React from "react";
 import {
-  aiel,
-  aws,
   calculators,
   mamoyo,
   magetsi,
@@ -21,29 +19,30 @@ function Partner() {
       <div class="inline-flex w-full flex-nowrap overflow-hidden bg-white [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
         <ul class="brands-wrapper">
           <li>
-            <img src={solvaxion} width="250" height="100" />
+            <img src={solvaxion} alt="solavation" width="250" height="100" />
           </li>
           <li>
             <a href="https://magetsi.co.zw/billers/pay/TVRnPQ/friends-of-karanda-mission-hospital">
-              <img src={magetsi} width="250" height="100" />
+              <img src={magetsi} alt="magetsi" width="250" height="100" />
             </a>
           </li>
           <li>
-            <img src={wildrose} width="250" height="100" />
+            <img src={wildrose} alt="wildrose" width="250" height="100" />
           </li>
           <li>
-            <img src={mamoyo} width="250" height="100" />
+            <img src={mamoyo} alt="mamoyo" width="250" height="100" />
           </li>
           <li>
-            <img src={calculators} width="250" height="100" />
+            <img src={calculators} alt="calculators" width="250" height="100" />
           </li>
           <li>
-            <img src={teamlogo} width="250" height="100" />
+            <img src={teamlogo} alt="teamlogo" width="250" height="100" />
           </li>
           <li>
             <img
               className="bg-gray-600 p-4 rounded-lg"
               src={Karandalogo}
+              alt="karanda"
               width="250"
               height="100"
             />
@@ -51,29 +50,30 @@ function Partner() {
         </ul>
         <ul class="brands-wrapper" aria-hidden="true">
           <li>
-            <img src={solvaxion} width="250" height="100" />
+            <img src={solvaxion} alt="solvaxion" width="250" height="100" />
           </li>
           <li>
-            <a>
-              <img src={magetsi} width="250" height="100" />
-            </a>
+       
+              <img src={magetsi} alt="magetsi" width="250" height="100" />
+        
           </li>
           <li>
-            <img src={wildrose} width="250" height="100" />
+            <img src={wildrose} alt="wildrose" width="250" height="100" />
           </li>
           <li>
-            <img src={mamoyo} width="250" height="100" />
+            <img src={mamoyo} alt="mamoyo" width="250" height="100" />
           </li>
           <li>
-            <img src={calculators} width="250" height="100" />
+            <img src={calculators} alt="calculators" width="250" height="100" />
           </li>
           <li>
-            <img src={teamlogo} width="250" height="100" />
+            <img src={teamlogo} alt="teamlogo" width="250" height="100" />
           </li>
           <li>
             <img
               className="bg-gray-900"
               src={Karandalogo}
+              alt="karanda"
               width="250"
               height="100"
             />
