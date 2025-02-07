@@ -27,11 +27,10 @@ function Feature() {
                   difference in the lives of countless individuals battling
                   cancer. Together, we can give hope and inspire healing.
                 </p>
-             
               </div>
             </div>
             <div class="pl-16 relative flex items-end flex-col before:block before:absolute before:h-1/6 before:w-4 before:bg-blue-500 before:bottom-0 before:left-0 before:rounded-lg  before:transition-all group-hover:before:bg-orange-300 overflow-hidden">
-              <div class="absolute top-0 left-0 opacity-85 bg-[#3ea498] mt-20 px-6 py-12 w-5/6 lg:w-4/6 lg:px-10 lg:py-16 flex flex-col justify-center rounded-xl group-hover:bg-sky-600 transition-all ">
+              <div class="absolute top-0 left-0 opacity-95 bg-[#3ea498] mt-20 px-6 py-12 w-5/6 lg:w-4/6 lg:px-10 lg:py-16 flex flex-col justify-center rounded-xl group-hover:bg-sky-600 transition-all ">
                 <h3 className="lg:text-3xl text-2xl font-semibold leading-7  mb-6 text-white">
                   Adopt a Patient
                 </h3>

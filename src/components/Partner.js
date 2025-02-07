@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  calculators,
-  mamoyo,
-  magetsi,
-  solvaxion,
-  wildrose,
-} from "../assets";
+import { calculators, mamoyo, magetsi, solvaxion, wildrose } from "../assets";
 
 const teamlogo =
   "https://images.squarespace-cdn.com/content/v1/6509b098e9ec677d0862ff32/1a71a740-072f-42ff-9509-596f1b44d79f/team_logo.png";
@@ -22,7 +16,7 @@ function Partner() {
             <img src={solvaxion} alt="solavation" width="250" height="100" />
           </li>
           <li>
-            <a href="https://magetsi.co.zw/billers/pay/TVRnPQ/friends-of-karanda-mission-hospital">
+            <a href="https://magetsi.co.zw/">
               <img src={magetsi} alt="magetsi" width="250" height="100" />
             </a>
           </li>
@@ -53,9 +47,9 @@ function Partner() {
             <img src={solvaxion} alt="solvaxion" width="250" height="100" />
           </li>
           <li>
-       
+            <a href="https://magetsi.co.zw/">
               <img src={magetsi} alt="magetsi" width="250" height="100" />
-        
+            </a>
           </li>
           <li>
             <img src={wildrose} alt="wildrose" width="250" height="100" />
