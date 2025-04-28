@@ -52,15 +52,15 @@ function Hero() {
         className="bg-center bg-cover bg-no-repeat bg-gray-700 bg-blend-multiply"
       >
         <div className="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-44              ">
-          <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-300 md:text-5xl lg:text-6xl">
+          <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">
             Friends of Karanda Mission Hospital
           </h1>
-          <p className="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">
+          <p className="mb-8 text-lg font-normal text-gray-100 lg:text-xl sm:px-16 lg:px-48">
             "Support Life, Inspire Hope: Join Us in the Fight Against Cancer at
             Karanda Mission Hospital in our Patient Sponsorship Program,
             <br />{" "}
             <a href="/causes">
-              <span className="text-4xl font-extrabold text-orange-900 animate-pulse">
+              <span className="text-4xl font-extrabold text-orange-700 animate-pulse">
                 "Adopt a Patient”
               </span>{" "}
             </a>
@@ -105,7 +105,9 @@ function Hero() {
          {showModal && (
           <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
             <div className="bg-white p-8 rounded-lg shadow-lg">
-              <h2 className="text-2xl font-bold mb-4 text-gray-800">Choose Donation Region</h2>
+              <h2 className="text-2xl font-bold mb-4 text-gray-800">  <h2 className="text-2xl font-bold mb-4 text-[#3ea498] text-center">
+          Choose Donation Region
+        </h2></h2>
               <div className="flex flex-col space-y-4">
                 <a
                   target="_blank"
@@ -131,7 +133,7 @@ function Hero() {
               </div>
               <button
                 onClick={() => setShowModal(false)}
-                className="mt-4 text-gray-600 hover:text-gray-800"
+                className="mt-4 text-xl text-red-600 hover:text-red-800"
               >
                 Close
               </button>
@@ -139,6 +141,7 @@ function Hero() {
           </div>
         )}
         </div>
+     
       </section>
     </div>
   );

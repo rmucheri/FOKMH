@@ -294,7 +294,9 @@ const handleDonateClick = (e) => {
       {showModal && (
   <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
     <div className="bg-white p-8 rounded-lg shadow-lg">
-      <h2 className="text-2xl font-bold mb-4 text-gray-800">Choose Donation Region</h2>
+      <h2 className="text-2xl font-bold mb-4 text-gray-800">  <h2 className="text-2xl font-bold mb-4 text-[#3ea498] text-center">
+          Choose Donation Region
+        </h2></h2>
       <div className="flex flex-col space-y-4">
         <a
           target="_blank"
@@ -317,13 +319,14 @@ const handleDonateClick = (e) => {
         >
           International Donations
         </a>
-      </div>
-      <button
+        <button
         onClick={() => setShowModal(false)}
-        className="mt-4 text-gray-600 hover:text-gray-800"
+        className="mt-4 text-xl text-red-600 hover:text-red-800"
       >
         Close 
       </button>
+      </div>
+     
     </div>
   </div>
 )}

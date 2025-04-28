@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { finreport, laptopaccount } from "../assets";
+import Button from "./Botton";
 
 function CauseHeroBottom() {
+   const [showModal, setShowModal] = useState(false);
   return (
     <div>
       <section className="text-gray-600 body-font bg-[#fffffd] shadow">
@@ -39,24 +41,7 @@ function CauseHeroBottom() {
                   corporations, or other organizations, we ensure that every
                   donation is directed with utmost care and accountability.
                 </p>
-                <a
-                  href="https://www.magetsi.co.zw/billers/pay/TVRnPQ/friends-of-karanda-mission-hospital"
-                  target="_blank"
-                  className="mt-3 text-indigo-500 inline-flex items-center"
-                >
-                  Learn More
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    className="w-4 h-4 ml-2"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M5 12h14M12 5l7 7-7 7" />
-                  </svg>
-                </a>
+              
               </div>
             </div>
             <div className="flex flex-col mb-10 lg:items-start items-center">
@@ -87,24 +72,7 @@ function CauseHeroBottom() {
                   transfer of funds, maintaining a clear audit trail for
                   transparency and accountability.
                 </p>
-                <a
-                  href="https://www.magetsi.co.zw/billers/pay/TVRnPQ/friends-of-karanda-mission-hospital"
-                  target="_blank"
-                  className="mt-3 text-indigo-500 inline-flex items-center"
-                >
-                  Learn More
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    className="w-4 h-4 ml-2"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M5 12h14M12 5l7 7-7 7" />
-                  </svg>
-                </a>
+            
               </div>
             </div>
             <div className="flex flex-col mb-10 lg:items-start items-center">
@@ -134,29 +102,51 @@ function CauseHeroBottom() {
                   the tangible difference made in supporting healthcare
                   initiatives at Karanda Mission Hospital.
                 </p>
-                <a
-                  href="https://www.magetsi.co.zw/billers/pay/TVRnPQ/friends-of-karanda-mission-hospital"
-                  target="_blank"
-                  className="mt-3 text-indigo-500 inline-flex items-center"
-                >
-                  Learn More
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    className="w-4 h-4 ml-2"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M5 12h14M12 5l7 7-7 7" />
-                  </svg>
-                </a>
+               <Button setShowModal={setShowModal}/>
               </div>
             </div>
           </div>
         </div>
       </section>
+       {/* Modal - Moved outside the section */}
+       {showModal && (
+        <div className="fixed inset-0 flex items-center justify-center z-50" style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>
+          <div className="bg-white p-8 rounded-lg shadow-lg max-w-md w-full mx-4">
+            <h2 className="text-2xl font-bold mb-4 text-gray-800">  <h2 className="text-2xl font-bold mb-4 text-[#3ea498] text-center">
+          Choose Donation Region
+        </h2></h2>
+            <div className="flex flex-col space-y-4">
+              <a
+                target="_blank"
+                href="https://give.team.org/give/672997/#!/donation/checkout"
+                className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-white rounded-lg bg-[#3ea498] hover:bg-orange-800"
+              >
+                USA Donations
+              </a>
+              <a
+                target="_blank"
+                href="https://give.ca.team.org/give/673060/#!/donation/checkout"
+                className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-white rounded-lg bg-[#3ea498] hover:bg-orange-800"
+              >
+                Canada Donations
+              </a>
+              <a
+                target="_blank"
+                href="https://magetsi.co.zw/billers/pay/TVRnPQ/friends-of-karanda-mission-hospital"
+                className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-white rounded-lg bg-[#3ea498] hover:bg-orange-800"
+              >
+                International Donations
+              </a>
+              <button
+                onClick={() => setShowModal(false)}
+                className="mt-4 text-xl items-center justify-center text-red-600 hover:text-red-800"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
 
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto flex flex-wrap">
@@ -187,24 +177,7 @@ function CauseHeroBottom() {
                   advancing healthcare services and improving the lives of those
                   in need.
                 </p>
-                <a
-                  href="https://www.magetsi.co.zw/billers/pay/TVRnPQ/friends-of-karanda-mission-hospital"
-                  target="_blank"
-                  className="mt-3 text-indigo-500 inline-flex items-center"
-                >
-                  Learn More
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    className="w-4 h-4 ml-2"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M5 12h14M12 5l7 7-7 7" />
-                  </svg>
-                </a>
+              
               </div>
             </div>
             <div className="flex flex-col mb-10 lg:items-start items-center">
@@ -233,24 +206,7 @@ function CauseHeroBottom() {
                   fundraising and financial management, striving to earn and
                   maintain the trust of our donors and partners.
                 </p>
-                <a
-                  href="https://www.magetsi.co.zw/billers/pay/TVRnPQ/friends-of-karanda-mission-hospital"
-                  target="_blank"
-                  className="mt-3 text-indigo-500 inline-flex items-center"
-                >
-                  Learn More
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    className="w-4 h-4 ml-2"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M5 12h14M12 5l7 7-7 7" />
-                  </svg>
-                </a>
+              
               </div>
             </div>
             <div className="flex flex-col mb-10 lg:items-start items-center">
@@ -279,24 +235,7 @@ function CauseHeroBottom() {
                   Karanda Mission Hospital in delivering vital healthcare
                   services to communities in Zimbabwe and beyond.
                 </p>
-                <a
-                  href="https://www.magetsi.co.zw/billers/pay/TVRnPQ/friends-of-karanda-mission-hospital"
-                  target="_blank"
-                  className="mt-3 text-indigo-500 inline-flex items-center"
-                >
-                  Learn More
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    className="w-4 h-4 ml-2"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M5 12h14M12 5l7 7-7 7" />
-                  </svg>
-                </a>
+                <Button setShowModal={setShowModal} />
               </div>
             </div>
           </div>

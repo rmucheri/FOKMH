@@ -6,7 +6,7 @@ import Adopt from "../components/Adopt";
 
 function Causes() {
   return (
-    <div>
+    <div className="">
       <Adopt />
       <CauseHero />
       <CauseHeroBottom />

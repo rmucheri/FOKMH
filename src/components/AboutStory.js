@@ -133,7 +133,7 @@ function AboutStory() {
   <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-[1000]">
     <div className="bg-white p-8 rounded-lg shadow-lg max-w-md w-full mx-4 relative">
       <div className="flex flex-col">
-        <h2 className="text-2xl font-bold mb-4 text-gray-800 text-center">
+                 <h2 className="text-2xl font-bold mb-4 text-[#3ea498] text-center">
           Choose Donation Region
         </h2>
         <div className="flex flex-col space-y-4">

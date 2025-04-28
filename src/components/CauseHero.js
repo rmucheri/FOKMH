@@ -3,6 +3,7 @@ import xrays from "../assets/images/xrays.jpg";
 import charthos from "../assets/images/charthos.jpg";
 import docspatient from "../assets/images/docspatient.jpg";
 import tranlogo2 from "../assets/images/tranlogo2.png";
+import Button from "./Botton"; // Ensure this is the correct path to your Button component
 
 const causes = [
   {
@@ -32,16 +33,10 @@ const causes = [
 ];
 
 function CauseHero() {
-
   const [showModal, setShowModal] = useState(false);
 
-  const handleDonateClick = (e) => {
-    e.preventDefault();
-    setShowModal(true);
-  };
-
   return (
-    <div>
+    <>
       <section className="animate-slide-and-fade-in text-gray-600 body-font">
         <div className="px-5 py-4 mt-10 mx-auto flex flex-col">
           <div className="lg:w-4/6 mx-auto">
@@ -59,7 +54,7 @@ function CauseHero() {
                     <div className="w-20 h-20 m-1 p-1 rounded-full inline-flex items-center justify-center bg-white border border-gray-100 text-gray-400">
                       <img src={cause.icon} alt={cause.title} />
                     </div>
-                    <div className="flex flex-col items-center text-center justify-center ">
+                    <div className="flex flex-col items-center text-center justify-center">
                       <h2 className="font-medium title-font mt-4 text-[#3ea498] text-lg">
                         {cause.title}
                       </h2>
@@ -71,71 +66,7 @@ function CauseHero() {
                     <p className="leading-relaxed text-lg mb-4 text-justify">
                       {cause.content}
                     </p>
-                    <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
-          <button
-            href="#"
-            onClick={handleDonateClick}
-            className="inline-flex justify-center gap-4 items-center py-4 px-8 text-base font-medium text-center text-white rounded-lg bg-[#3ea498] hover:bg-orange-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900 hover:scale-110"
-          >
-            Donate Now
-            <svg
-              className="w-3.5 h-3.5 ms-2 rtl:rotate-180"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 14 10"
-            >
-              <path
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M1 5h12m0 0L9 1m4 4L9 9"
-              />
-            </svg>
-          </button>
-       
-        </div>
-
-
-
-         {/* Modal */}
-         {showModal && (
-          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-            <div className="bg-white p-8 rounded-lg shadow-lg">
-              <h2 className="text-2xl font-bold mb-4 text-gray-800">Choose Donation Region</h2>
-              <div className="flex flex-col space-y-4">
-                <a
-                  target="_blank"
-                  href="https://give.team.org/give/672997/#!/donation/checkout"
-                  className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-white rounded-lg bg-[#3ea498] hover:bg-orange-800"
-                >
-                USA Donations
-                </a>
-                <a
-                  target="_blank"
-                  href="https://give.ca.team.org/give/673060/#!/donation/checkout"
-                  className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-white rounded-lg bg-[#3ea498] hover:bg-orange-800"
-                >
-                Canada Donations
-                </a>
-                <a
-                  target="_blank"
-                  href="https://magetsi.co.zw/billers/pay/TVRnPQ/friends-of-karanda-mission-hospital"
-                  className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-white rounded-lg bg-[#3ea498] hover:bg-orange-800"
-                >
-                  International Donations
-                </a>
-              </div>
-              <button
-                onClick={() => setShowModal(false)}
-                className="mt-4 text-gray-600 hover:text-gray-800"
-              >
-                Close
-              </button>
-            </div>
-          </div>
-        )}
+                    <Button setShowModal={setShowModal} />
                   </div>
                 </div>
               </div>
@@ -143,7 +74,47 @@ function CauseHero() {
           </div>
         </div>
       </section>
-    </div>
+
+      {/* Modal - Moved outside the section */}
+      {showModal && (
+        <div className="fixed inset-0 flex items-center justify-center z-50" style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>
+          <div className="bg-white p-8 rounded-lg shadow-lg max-w-md w-full mx-4">
+            <h2 className="text-2xl font-bold mb-4 text-gray-800">  <h2 className="text-2xl font-bold mb-4 text-[#3ea498] text-center">
+          Choose Donation Region
+        </h2></h2>
+            <div className="flex flex-col space-y-4">
+              <a
+                target="_blank"
+                href="https://give.team.org/give/672997/#!/donation/checkout"
+                className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-white rounded-lg bg-[#3ea498] hover:bg-orange-800"
+              >
+                USA Donations
+              </a>
+              <a
+                target="_blank"
+                href="https://give.ca.team.org/give/673060/#!/donation/checkout"
+                className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-white rounded-lg bg-[#3ea498] hover:bg-orange-800"
+              >
+                Canada Donations
+              </a>
+              <a
+                target="_blank"
+                href="https://magetsi.co.zw/billers/pay/TVRnPQ/friends-of-karanda-mission-hospital"
+                className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-white rounded-lg bg-[#3ea498] hover:bg-orange-800"
+              >
+                International Donations
+              </a>
+              <button
+                onClick={() => setShowModal(false)}
+                className="mt-4 text-xl items-center justify-center text-red-600 hover:text-red-800"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+    </>
   );
 }
 

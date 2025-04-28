@@ -2,18 +2,18 @@ import React from "react";
 
 function Adopt() {
   return (
-    <div className="w-full">
-      <section className=" ezy__featured11 light py-8 md:py-8 bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white w-full">
+    <div className="lg:mx-56">
+      <section className=" mx-auto ezy__featured11 light py-8 md:py-8 bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white w-full">
         <div className=" px-4 md:px-8 lg:px-28">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 justify-center items-center w-full">
             <div className="md:col-span-1 text-center md:text-left">
-              <h2 className="text-[25px] md:text-[35px] lg:text-[45px] text-[#3ea498] leading-none font-bold mb-6">
+              <h2 className="text-[25px] md:text-[35px] lg:text-[45px] text-[#3ea498] leading-none font-semibold mb-6">
                 Adopt a Patient: <br />
                 <br /> Transform a Life Today
               </h2>
             </div>
             <div className="md:col-span-2">
-              <p className="text-2xl leading-9 text-justify p-4 md:p-12 text-gray-800">
+              <p className="text-md leading-9 text-justify p-4 md:p-12 text-gray-800">
                 At Karanda Mission Hospital, every contribution, no matter the
                 size, brings hope and healing to those in urgent need of medical
                 care. Through our "Adopt a Patient" appeal, your donation helps
@@ -27,7 +27,7 @@ function Adopt() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {[
               {
                 icon: "fas fa-cannabis",
@@ -69,16 +69,16 @@ function Adopt() {
             ].map((item, index) => (
               <div
                 key={index}
-                className="rounded-xl bg-white dark:bg-[#1E2735] shadow-md dark:shadow-none flex flex-col p-6 h-full"
+                className="rounded-md bg-white dark:bg-[#1E2735] shadow-md dark:shadow-none flex flex-col p-4 h-full"
               >
                 <div className="w-12 min-w-[50px] h-12 min-h-[50px] bg-[#3ea498] shadow-gray-600 text-white rounded-full text-xl inline-flex items-center justify-center shadow-md dark:shadow-none mb-4">
                   <i className={item.icon} />
                 </div>
                 <div className="flex-grow">
-                  <h4 className="text-2xl font-bold mb-4 text-[#3ea498]">
+                  <h4 className="text-xl font-bold mb-4 text-[#3ea498]">
                     {item.title}
                   </h4>
-                  <p className="text-gray-600">{item.description}</p>
+                  <p className="text-gray-600 text-sm">{item.description}</p>
                 </div>
               </div>
             ))}
