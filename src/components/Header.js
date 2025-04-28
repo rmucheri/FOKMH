@@ -69,8 +69,17 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
+
+
 export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+
+  // Add a handler function
+const handleDonateClick = (e) => {
+  e.preventDefault();
+  setShowModal(true);
+};
 
   return (
     <header className="sticky top-0 z-50 bg-gray-100 shadow-[#ffd832] shadow-sm">
@@ -181,15 +190,14 @@ export default function Example() {
           </a>
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end hover:scale-110 ">
-          <a
-            href="https://magetsi.co.zw/billers/pay/TVRnPQ/friends-of-karanda-mission-hospital"
-            target="_blank"
-            rel="noreferrer"
-            className="text-xl font-semibold leading-6 text-orange-800"
-          >
-            Donate Now! <span aria-hidden="true">&rarr;</span>
-          </a>
-        </div>
+  <a
+    href="#"
+    onClick={handleDonateClick}
+    className="text-xl font-semibold leading-6 text-orange-800"
+  >
+    Donate Now! <span aria-hidden="true">&rarr;</span>
+  </a>
+</div>
       </nav>
       <Dialog
         className="lg:hidden"
@@ -267,18 +275,58 @@ export default function Example() {
                 </a>
               </div>
               <div className="py-6">
-                <a
-                  href="https://magetsi.co.zw/billers/pay/TVRnPQ/friends-of-karanda-mission-hospital"
-                  target="__blank"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  Donate Now!
-                </a>
-              </div>
+  <a
+    href="#"
+    onClick={(e) => {
+      e.preventDefault();
+      setMobileMenuOpen(false);
+      setShowModal(true);
+    }}
+    className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+  >
+    Donate Now!
+  </a>
+</div>
             </div>
           </div>
         </DialogPanel>
       </Dialog>
+      {showModal && (
+  <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+    <div className="bg-white p-8 rounded-lg shadow-lg">
+      <h2 className="text-2xl font-bold mb-4 text-gray-800">Choose Donation Region</h2>
+      <div className="flex flex-col space-y-4">
+        <a
+          target="_blank"
+          href="https://give.team.org/give/672997/#!/donation/checkout"
+          className="inline-flex justify-center items-center py-3 px-5 text-xl font-medium text-white rounded-lg bg-[#3ea498] hover:bg-orange-800"
+        >
+          USA Donations
+        </a>
+        <a
+          target="_blank"
+          href="https://give.ca.team.org/give/673060/#!/donation/checkout"
+          className="inline-flex justify-center items-center py-3 px-5 text-xl font-medium text-white rounded-lg bg-[#3ea498] hover:bg-orange-800"
+        >
+          Canada Donations
+        </a>
+        <a
+          target="_blank"
+          href="https://magetsi.co.zw/billers/pay/TVRnPQ/friends-of-karanda-mission-hospital"
+          className="inline-flex justify-center items-center py-3 px-5 text-xl font-medium text-white rounded-lg bg-[#3ea498] hover:bg-orange-800"
+        >
+          International Donations
+        </a>
+      </div>
+      <button
+        onClick={() => setShowModal(false)}
+        className="mt-4 text-gray-600 hover:text-gray-800"
+      >
+        Close 
+      </button>
+    </div>
+  </div>
+)}
     </header>
   );
 }

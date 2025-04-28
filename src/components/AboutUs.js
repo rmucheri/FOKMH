@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { docPaul } from "../assets";
 
 function AboutUs() {
+
+
+
+
   return (
     <div className="animate-slide-and-fade-in  px-4 mx-auto max-w-screen-xl text-center py-8 lg:py-16">
       <div className="contentLeft">
