@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { docTakHalf, nurseCharge } from "../assets";
+import { docPaul, docTakHalf, nurseCharge } from "../assets";
 
 const Paul =
   "https://thenewshawks.com/wp-content/uploads/2022/07/Karanda-Hospital-Medical-Director-Dr-Paul-Thistle-scaled.jpg";
@@ -24,7 +24,7 @@ const Team = () => {
           <TeamCard
             name="Paul Thistle"
             profession="Medical Director"
-            imageSrc={Paul}
+            imageSrc={docPaul}
             content=" has 29 years of full time medical missionary service in Zimbabwe, first
                             as a chief medical officer at the Salvation Army Howard Hospital (1995-2012), and
                             most recently as a Medical Director at Karanda Mission Hospital (2012-present).
