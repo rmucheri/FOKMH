@@ -3,10 +3,7 @@ import React, { useState } from "react";
 import { ambulance, bbq, ECGmachine, waterHeater } from "../assets";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 
-// Replace these with your actual image URLs
-const ambulanceImage = "your-ambulance-image-url";
-const ecgImage = "your-ecg-image-url";
-const geyserImage = "your-geyser-image-url";
+
 
 const CampaignPage = () => {
   const [showModal, setShowModal] = useState(false);

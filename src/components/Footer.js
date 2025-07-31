@@ -116,7 +116,7 @@ function Footer() {
             </p>
             <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
               <p className="text-xs text-[#3ea498]">
-                Powered by <a href="magetsi.co.zw">Magetsi </a>{" "}
+                Powered by <a href="https://magetsi.co.zw/">Magetsi </a>{" "}
               </p>
             </span>
           </div>
