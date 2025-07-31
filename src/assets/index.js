@@ -45,8 +45,14 @@ import victoria from "./images/victoria.jpg";
 import merrit from "./images/merrit.jpg";
 import NyarotaTazvionepi from "./images/NyarotaTazvionepi.jpg";
 import StevenGondo from "./images/stevenGondo.jpg";
+import ambulance from "./images/ToyotaLandCruiserAmbulance.jpg";
+import waterHeater from "./images/SolarWaterHeater.jpg";
+import ECGmachine from "./images/ECGmachine.jpg";
 
 export {
+  ECGmachine,
+  waterHeater,
+  ambulance,
   StevenGondo,
   merrit,
   NyarotaTazvionepi,

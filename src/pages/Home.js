@@ -6,12 +6,12 @@ import Partner from "../components/Partner";
 import KarandaVid from "../components/KarandaVid";
 import Feature from "../components/Feature";
 import Payment from "../components/Payment";
-
+import CampaignPopup from "../components/CampaignPopup"; // Add this import
 
 function Home() {
   return (
     <div>
-   
+      <CampaignPopup /> 
       <Hero />
       <Feature />
       <Features />

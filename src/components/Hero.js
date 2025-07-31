@@ -52,6 +52,19 @@ function Hero() {
         className="bg-center bg-cover bg-no-repeat bg-gray-700 bg-blend-multiply"
       >
         <div className="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-44              ">
+  <div className="mb-6 py-2 bg-orange-600 bg-opacity-80 rounded-lg animate-pulse">
+    <p className="text-white text-lg">
+      🏥 Special Campaign: Help us acquire vital medical equipment and transport
+      <a 
+        href="#"
+        onClick={handleDonateClick}
+        className="underline ml-2 font-bold hover:text-[#3ea498]"
+      >
+        Learn More →
+      </a>
+    </p>
+  </div>
+
           <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">
             Friends of Karanda Mission Hospital
           </h1>

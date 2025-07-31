@@ -9,6 +9,7 @@ import Contact from "./pages/Contact";
 import Causes from "./pages/Causes";
 import Board from "./components/Board";
 import CEO from "./pages/CEO";
+import CampaignPage from "./components/CampaignPage";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/causes" element={<Causes />} />
           <Route path="/board" element={<Board />} />
           <Route path="/ceo" element={<CEO />} />
+          <Route path="fundraising" element={<CampaignPage />} />
         </Routes>
       </BrowserRouter>
       <Footer />
