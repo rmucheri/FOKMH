@@ -1,6 +1,6 @@
 import { CheckCircleIcon } from "@heroicons/react/24/outline";
 import React, { useState } from "react";
-import { ambulance, ECGmachine, waterHeater } from "../assets";
+import { ambulance, bbq, ECGmachine, waterHeater } from "../assets";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 
 // Replace these with your actual image URLs
@@ -19,9 +19,12 @@ const CampaignPage = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <div className="bg-[#3ea498] text-white">
+      <div
+        style={{ backgroundImage: `url(${bbq})` }}
+        className="bg-center bg-cover bg-no-repeat bg-gray-700 bg-blend-multiply text-white relative"
+      >
         <div className="max-w-7xl mx-auto py-24 px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
+          <div className="text-center relative z-10">
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
               BBQ fundraising campaign
             </h1>

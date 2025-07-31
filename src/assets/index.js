@@ -48,8 +48,12 @@ import StevenGondo from "./images/stevenGondo.jpg";
 import ambulance from "./images/ToyotaLandCruiserAmbulance.jpg";
 import waterHeater from "./images/SolarWaterHeater.jpg";
 import ECGmachine from "./images/ECGmachine.jpg";
+import bbq from "./images/bbq.jpg";
+import bbq2 from "./images/bbq2.jpg";
 
 export {
+  bbq,
+  bbq2,
   ECGmachine,
   waterHeater,
   ambulance,
