@@ -176,7 +176,7 @@ function Footer() {
                   whileHover={{ x: 5 }}
                 >
                   <span className="text-2xl">📞</span>
-                  <span>+1 (234) 567-890</span>
+                  <span>+1 (587) 500-3490</span>
                 </motion.a>
                 <motion.div
                   className="flex items-center gap-3 text-gray-100 justify-center lg:justify-start"
