@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Parallax } from "react-parallax";
 import { kmhgate } from "../assets";
 
 const karanda1 =
@@ -39,122 +41,194 @@ function Hero() {
     setBgImage(getRandomImage());
   }, []);
 
-  const handleDonateClick = (e) => {
-    e.preventDefault();
-    setShowModal(true);
-  };
-
   return (
-    <div className="animate-slide-and-fade-in z-0">
-      <section
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      className="relative h-[75vh] overflow-hidden"
+    >
+      {/* Background Image with Overlay */}
+      <div
         style={{ backgroundImage: `url(${bgImage})` }}
-        className="bg-center bg-cover bg-no-repeat bg-gray-700 bg-blend-multiply"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
       >
-        <div className="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-44              ">
-          <div className="mb-6 py-2 bg-orange-600 bg-opacity-80 rounded-lg animate-pulse">
-            <p className="text-white text-lg">
-              🏥 Special Campaign: Help us acquire vital medical equipment and
-              transport
-              <a
-                href="/fundraising"
-                // onClick={handleDonateClick}
-                className="underline ml-2 font-bold hover:text-[#3ea498]"
-              >
-                Learn More →
-              </a>
+        <div className="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-[0px]" />
+      </div>
+
+      {/* Content Container */}
+      <div className="relative h-full flex flex-col items-center justify-center px-4 max-w-7xl mx-auto">
+        {/* Campaign Banner */}
+        <motion.div
+          initial={{ y: -50, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.2 }}
+          className="w-full max-w-3xl mb-8"
+        >
+          <div className="bg-orange-600 bg-opacity-90 rounded-lg p-4 shadow-lg transform hover:scale-105 transition-transform duration-300">
+            <p className="text-white text-lg text-center flex items-center justify-center gap-2">
+              <span className="text-2xl">🏥</span>
+              <span>
+                Special Campaign: Help us acquire vital medical equipment and
+                transport
+                <a
+                  href="/fundraising"
+                  className="ml-2 font-bold text-white hover:text-[#3ea498] underline decoration-2 transition-colors duration-300"
+                >
+                  Learn More →
+                </a>
+              </span>
             </p>
           </div>
+        </motion.div>
 
-          <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">
+        {/* Main Content */}
+        <motion.div
+          initial={{ y: 50, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.4 }}
+          className="text-center max-w-4xl"
+        >
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-white mb-6 leading-tight">
             Friends of Karanda Mission Hospital
           </h1>
-          <p className="mb-8 text-lg font-normal text-gray-100 lg:text-xl sm:px-16 lg:px-48">
-            "Support Life, Inspire Hope: Join Us in the Fight Against Cancer at
+
+          <p className="text-xl md:text-2xl text-gray-100 mb-8 leading-relaxed">
+            Support Life, Inspire Hope: Join Us in the Fight Against Cancer at
             Karanda Mission Hospital in our Patient Sponsorship Program,
-            <br />{" "}
-            <a href="/causes">
-              <span className="text-4xl font-extrabold text-orange-700 animate-pulse">
-                "Adopt a Patient”
-              </span>{" "}
+            <a href="/causes" className="block mt-4">
+              <span className="text-4xl font-extrabold text-orange-500 hover:text-orange-400 transition-colors duration-300">
+                "Adopt a Patient"
+              </span>
             </a>
           </p>
 
-          <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
-            <a
-              href="#"
-              onClick={handleDonateClick}
-              className="inline-flex justify-center gap-4 items-center py-4 px-8 text-base font-medium text-center text-white rounded-lg bg-[#3ea498] hover:bg-orange-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900 hover:scale-110"
+          {/* Buttons */}
+          <motion.div
+            initial={{ y: 50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.6 }}
+            className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8"
+          >
+            <button
+              onClick={() => setShowModal(true)}
+              className="px-8 py-4 bg-[#3ea498] text-white text-lg font-semibold rounded-full 
+                       hover:bg-orange-600 transition-all duration-300 transform hover:scale-105
+                       flex items-center gap-2 shadow-lg"
             >
               Donate Now
               <svg
-                className="w-3.5 h-3.5 ms-2 rtl:rotate-180"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
+                className="w-5 h-5"
                 fill="none"
-                viewBox="0 0 14 10"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
               >
                 <path
-                  stroke="currentColor"
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth={2}
-                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
                 />
               </svg>
-            </a>
+            </button>
+
             <a
               href="/about"
-              className="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400 hover:scale-110"
+              className="px-8 py-4 border-2 border-white text-white text-lg font-semibold rounded-full
+                       hover:bg-white hover:text-gray-900 transition-all duration-300 transform hover:scale-105"
             >
               More Information
             </a>
-          </div>
+          </motion.div>
+        </motion.div>
+      </div>
 
-          {/* Modal */}
-          {showModal && (
-            <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-              <div className="bg-white p-8 rounded-lg shadow-lg">
-                <h2 className="text-2xl font-bold mb-4 text-gray-800">
-                  {" "}
-                  <h2 className="text-2xl font-bold mb-4 text-[#3ea498] text-center">
-                    Choose Donation Region
-                  </h2>
-                </h2>
-                <div className="flex flex-col space-y-4">
-                  <a
-                    target="_blank"
-                    href="https://give.team.org/give/672997/#!/donation/checkout"
-                    className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-white rounded-lg bg-[#3ea498] hover:bg-orange-800"
-                  >
-                    USA Donations
-                  </a>
-                  <a
-                    target="_blank"
-                    href="https://give.ca.team.org/give/673060/#!/donation/checkout"
-                    className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-white rounded-lg bg-[#3ea498] hover:bg-orange-800"
-                  >
-                    Canada Donations
-                  </a>
-                  <a
-                    target="_blank"
-                    href="https://magetsi.co.zw/billers/pay/TVRnPQ/friends-of-karanda-mission-hospital"
-                    className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-white rounded-lg bg-[#3ea498] hover:bg-orange-800"
-                  >
-                    International Donations
-                  </a>
-                </div>
-                <button
-                  onClick={() => setShowModal(false)}
-                  className="mt-4 text-xl text-red-600 hover:text-red-800"
-                >
-                  Close
-                </button>
-              </div>
-            </div>
-          )}
+      {/* Scroll Indicator */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1 }}
+        className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+      >
+        <div className="animate-bounce">
+          <svg
+            className="w-6 h-6 text-white"
+            fill="none"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+          </svg>
         </div>
-      </section>
-    </div>
+      </motion.div>
+
+      {/* Modal - Same as before */}
+      {showModal && (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 backdrop-blur-sm"
+        >
+          <motion.div
+            initial={{ scale: 0.9 }}
+            animate={{ scale: 1 }}
+            className="bg-white rounded-2xl p-8 shadow-2xl max-w-md w-full mx-4"
+          >
+            <h2 className="text-3xl font-bold mb-6 text-[#3ea498] text-center">
+              Choose Donation Region
+            </h2>
+            <div className="space-y-4">
+              {[
+                {
+                  text: "USA Donations",
+                  href: "https://give.team.org/give/672997/#!/donation/checkout",
+                },
+                {
+                  text: "Canada Donations",
+                  href: "https://give.ca.team.org/give/673060/#!/donation/checkout",
+                },
+                {
+                  text: "Rest  of the World - Magetsi",
+                  href: "https://magetsi.co.zw/billers/pay/TVRnPQ/friends-of-karanda-mission-hospital",
+                },
+              ].map((button, index) => (
+                <a
+                  key={index}
+                  target="_blank"
+                  href={button.href}
+                  className="block w-full py-3 px-6 text-center text-white bg-[#3ea498] rounded-lg
+                           hover:bg-orange-600 transition-all duration-300 transform hover:scale-105"
+                >
+                  {button.text}
+                </a>
+              ))}
+            </div>
+            <button
+              onClick={() => setShowModal(false)}
+              className="mt-6 text-red-600 hover:text-red-800 transition-colors duration-300
+                       absolute top-4 right-4"
+            >
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </motion.div>
+        </motion.div>
+      )}
+    </motion.div>
   );
 }
 

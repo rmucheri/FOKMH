@@ -23,7 +23,7 @@ const CampaignPage = () => {
         <div className="max-w-7xl mx-auto py-24 px-4 sm:px-6 lg:px-8">
           <div className="text-center relative z-10">
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
-              BBQ fundraising campaign
+              Ongoing fundraising campaign
             </h1>
             <p className="mt-6 max-w-2xl mx-auto text-xl">
               Help us improve healthcare delivery at Karanda Mission Hospital

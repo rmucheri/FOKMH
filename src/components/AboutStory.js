@@ -1,179 +1,363 @@
 import React, { useState } from "react";
-import { docPaulNurses, doctakwhite } from "../assets";
+import { motion, AnimatePresence } from "framer-motion";
+import { docTakFull } from "../assets";
 
-function AboutStory() {
-
+const AboutStory = () => {
   const [showModal, setShowModal] = useState(false);
 
-  const handleBackdropClick = (e) => {
-    if (e.target === e.currentTarget) {
-      setShowModal(false);
-    }
-  };
-
-  const handleDonateClick = (e) => {
-    e.preventDefault();
+  const handleDonateClick = () => {
     setShowModal(true);
   };
+
   return (
-    <section className=" animate-slide-and-fade-in  px-4 mx-auto max-w-screen-2xl text-center py-8 lg:py-8">
-      <div className="">
-        <div className="mx-auto  px-4">
-          <div className="grid grid-cols-12 justify-center text-center mb-12">
-            <div className=" col-span-12 md:col-span-8 md:col-start-3">
-              <h4 className="text-[#d35400] text-4xl">Welcome To</h4>
-              <h2 style={{ color: "#3ea498", fontSize: "1.5rem" }}>
-                Friends of Karanda Mission Hospital{" "}
-              </h2>
-            </div>
-          </div>
-          <div className="grid grid-cols-12 justify-center items-center mt-12">
-            <div className="col-span-12 md:col-span-5 md:col-start-2 order-2 md:order-1">
-              <div className="flex flex-col justify-center lg:pr-14">
-                <h2 className="text-3xl text-[#3ea498] leading-snug md:text-3xl md:leading-snug font-bold mb-6">
-                  Our Story
-                </h2>
-                <p className="text-base leading-relaxed text-justify opacity-70 mb-0 md:pr-6">
-                  Friends of Karanda Mission Hospital (FOKMH) was born out of
-                  the personal experiences of individuals diagnosed with cancer,
-                  faced with enormous medical bills and procedures often beyond
-                  their financial reach. For many, especially the breadwinners
-                  of their families, the burden of these costs is overwhelming.
-                  Families often go to great lengths, sacrificing their
-                  resources to cover these expenses. Tragically, when the battle
-                  against cancer is lost, families are left not only with the
-                  irreplaceable loss of a loved one but also with drained
-                  financial resources. For economically disadvantaged and
-                  underprivileged patients, the situation is even more dire.
-                  Many struggle to access any form of treatment and,
-                  heartbreakingly, some pass away without ever receiving formal
-                  medical care.
-                </p>
-              </div>
-            </div>
-            <div className="col-span-12 md:col-span-5 md:col-start-7 order-1 md:order-2 mb-6 md:mb-0 mt-6 md:mt-0">
-              <div>
-                <img
-                  src={docPaulNurses}
-                  alt=""
-                  className="max-w-full h-auto rounded-2xl"
-                />
-              </div>
-            </div>
-          </div>
-          <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
-          <button
-            href="#"
-            onClick={handleDonateClick}
-            className="inline-flex justify-center gap-4 items-center py-4 px-8 text-base font-medium text-center text-white rounded-lg bg-[#3ea498] hover:bg-orange-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900 hover:scale-110"
+    <>
+      {/* ========== TOP SECTION: HERO + FIGHTING CANCER TOGETHER ========== */}
+      <section className="relative min-h-screen overflow-hidden">
+        {/* Hero Background Image with Overlay */}
+        <div className="absolute inset-0">
+          <div
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style={{
+              backgroundImage: `url('https://jsh.co.za/wp-content/uploads/2023/10/JSH-OCT-LR-33.jpg')`,
+            }}
+          />
+          {/* Gradient Overlay for readability */}
+          <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/70" />
+          {/* Additional colored overlay for warmth */}
+          <div className="absolute inset-0 bg-gradient-to-br from-cyan-900/20 via-transparent to-orange-900/20" />
+        </div>
+
+        {/* Floating Background Elements */}
+        <div className="absolute inset-0 opacity-20">
+          <div className="absolute top-20 left-20 w-96 h-96 bg-gradient-to-r from-cyan-400/30 to-teal-400/30 rounded-full blur-3xl" />
+          <div className="absolute bottom-20 right-20 w-80 h-80 bg-gradient-to-r from-orange-400/30 to-pink-400/30 rounded-full blur-3xl" />
+        </div>
+
+        {/* MAIN CONTAINER */}
+        <div className="relative z-10 container mx-auto px-6 py-20">
+          {/* HERO SECTION */}
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="text-center mb-20"
           >
-            Donate Now
-            <svg
-              className="w-3.5 h-3.5 ms-2 rtl:rotate-180"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 14 10"
+            <motion.h1
+              className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-8 drop-shadow-2xl"
+              animate={{
+                textShadow: [
+                  "0 0 20px rgba(34, 211, 238, 0.5)",
+                  "0 0 40px rgba(34, 211, 238, 0.8)",
+                  "0 0 20px rgba(34, 211, 238, 0.5)",
+                ],
+              }}
+              transition={{
+                duration: 3,
+                repeat: Infinity,
+                ease: "easeInOut",
+              }}
             >
-              <path
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M1 5h12m0 0L9 1m4 4L9 9"
-              />
-            </svg>
-          </button>
-       
-        </div>
+              Our Story of Hope
+            </motion.h1>
 
-
-
-        
-
-          <div className="grid grid-cols-12 justify-center items-center mt-12">
-            <div className="col-span-12 md:col-span-5 md:col-start-7 order-2">
-              <div className="flex flex-col justify-center lg:pl-14">
-                <h4 className="text-2xl text-[#3ea498] font-bold mb-4">
-                  Our story cont.
-                </h4>
-                <p className="text-base leading-relaxed text-justify opacity-70 mb-0">
-                  Friends of Karanda Mission Hospital is a volunteer-driven
-                  charitable organization founded with a singular purpose: to
-                  raise funds and secure resources for Karanda Mission Hospital.
-                  Our mission is to enable the hospital to provide essential
-                  treatment to poor and underprivileged cancer patients. We make
-                  a heartfelt appeal to people worldwide, to support our cause
-                  under the theme “Adopt a Patient.” Your small donation can
-                  make a significant difference, not just for individuals in
-                  Zimbabwe, but for the entire African continent. Karanda
-                  hospital has treated patients from other African countries
-                  like Mozambique, Zambia, Malawi, South Africa, Burundi, and
-                  Rwanda. Together, we can provide hope, health, and a fighting
-                  chance to those who need it most. Join us in this vital
-                  mission to transform lives and create a brighter, healthier
-                  future for all.
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+              className="max-w-4xl mx-auto"
+            >
+              <div className="backdrop-blur-md bg-white/10 rounded-3xl p-6 md:p-8 border border-white/20 shadow-2xl">
+                <p className="text-lg md:text-2xl text-white leading-relaxed font-light">
+                  Every patient has a story. Every story matters. At Karanda
+                  Mission Hospital, we're committed to writing stories of
+                  healing, hope, and transformation.
                 </p>
+
+                {/* Hero Call-to-Action */}
+                <motion.div
+                  className="mt-6 md:mt-8 flex flex-col sm:flex-row gap-3 md:gap-4 justify-center items-center"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: 0.6 }}
+                >
+                  <motion.button
+                    onClick={handleDonateClick}
+                    className="w-full sm:w-auto bg-gradient-to-r from-cyan-500 to-teal-500 text-white font-semibold py-3 md:py-4 px-6 md:px-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 min-h-[48px] touch-manipulation"
+                    whileHover={{ scale: 1.05, y: -2 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    Join Our Mission
+                  </motion.button>
+
+                  <motion.button
+                    className="w-full sm:w-auto backdrop-blur-md bg-white/15 text-white font-semibold py-3 md:py-4 px-6 md:px-8 rounded-xl border border-white/40 hover:bg-white/25 transition-all duration-300 min-h-[48px] touch-manipulation"
+                    whileHover={{ scale: 1.05, y: -2 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    Read More
+                  </motion.button>
+                </motion.div>
+              </div>
+            </motion.div>
+          </motion.div>
+
+          {/* FIGHTING CANCER TOGETHER */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="mb-8 md:mb-12 lg:mb-16"
+          >
+            <div className="max-w-5xl mx-auto">
+              <div className="modern-card p-6 md:p-10 lg:p-12">
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-12 items-center">
+                  <div className="lg:col-span-2 space-y-6">
+                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-gray-900">
+                      Fighting Cancer Together
+                    </h2>
+                    <p className="text-lg md:text-xl text-gray-600 leading-relaxed mb-4">
+                      Cancer doesn't discriminate. It affects people from all
+                      walks of life, but in rural Zimbabwe, access to quality
+                      cancer care has been limited. That's where we come in.
+                    </p>
+                    <p className="text-base md:text-lg text-gray-600 leading-relaxed">
+                      Through our "Adopt a Patient" program, we connect generous
+                      donors with cancer patients who need support for their
+                      treatment journey. Your donation directly impacts a
+                      patient's life, providing hope where there was despair.
+                    </p>
+
+                    <div className="pt-4 md:pt-6">
+                      <motion.button
+                        onClick={handleDonateClick}
+                        className="w-full sm:w-auto modern-button text-sm md:text-base lg:text-lg py-3 md:py-4 px-5 md:px-6 lg:px-8 min-h-[48px] touch-manipulation flex items-center justify-center gap-2"
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                      >
+                        <span>Learn More About Our Program</span>
+                        <svg
+                          className="w-4 h-4 md:w-5 md:h-5 flex-shrink-0"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M17 8l4 4m0 0l-4 4m4-4H3"
+                          />
+                        </svg>
+                      </motion.button>
+                    </div>
+                  </div>
+
+                  <div className="relative lg:col-span-1">
+                    <motion.img
+                      src={docTakFull}
+                      alt="Karanda Mission Hospital"
+                      className="rounded-xl shadow-xl w-full h-80 md:h-80 object-cover"
+                      whileHover={{ scale: 1.02 }}
+                      transition={{ duration: 0.3 }}
+                    />
+                    <div className="absolute -inset-2 bg-gradient-to-r from-cyan-400/20 to-teal-400/20 rounded-3xl blur-xl -z-10" />
+                  </div>
+                </div>
               </div>
             </div>
-            <div className="col-span-12 md:col-span-5 md:col-start-2 order-1 mb-6 md:mb-0 mt-6 md:mt-0">
-              <div>
-                <img
-                  src={doctakwhite}
-                  alt=""
-                  className="max-w-full h-auto rounded-2xl"
-                />
+          </motion.div>
+        </div>
+      </section>
+
+      {/* ========== BOTTOM SECTION: BE THE CHANGE + OUR IMPACT ========== */}
+      <section className="bg-gradient-to-br from-slate-50 via-white to-slate-100 py-16 md:py-20 lg:py-24">
+        <div className=" mx-auto px-6">
+          <div className="max-w-5xl mx-auto">
+            <div className="w-full rounded-3xl bg-white shadow-xl border border-gray-100 p-4 sm:p-6 lg:p-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+                {/* Be the Change */}
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, amount: 0.3 }}
+                  transition={{ duration: 0.7 }}
+                  className="h-full"
+                >
+                  <div className="h-full flex flex-col">
+                    <div className="space-y-4 md:space-y-6 flex-1">
+                      <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold gradient-text-secondary">
+                        Be the Change in Their World
+                      </h2>
+                      <p className="text-base md:text-lg text-gray-600 leading-relaxed">
+                        Your kindness has the power to transform lives, heal
+                        hearts, and bring hope where it's needed most. Will you
+                        be the light that guides them to recovery?
+                      </p>
+                    </div>
+                    <motion.button
+                      onClick={handleDonateClick}
+                      className="w-full sm:w-auto modern-button text-sm md:text-base lg:text-lg py-3 md:py-3.5 px-5 md:px-6 lg:px-8 mt-6 self-center sm:self-start min-h-[48px] touch-manipulation flex items-center justify-center gap-2"
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                    >
+                      <span>Sponsor a Patient Today</span>
+                      <svg
+                        className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 flex-shrink-0"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M17 8l4 4m0 0l-4 4m4-4H3"
+                        />
+                      </svg>
+                    </motion.button>
+                  </div>
+                </motion.div>
+
+                {/* Our Impact */}
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, amount: 0.3 }}
+                  transition={{ duration: 0.7, delay: 0.1 }}
+                  className="h-full"
+                >
+                  <div className="h-full flex flex-col">
+                    <h3 className="text-2xl md:text-3xl font-bold text-gray-900 text-center mb-6">
+                      Our Impact
+                    </h3>
+
+                    <div className="grid grid-cols-1 gap-4 md:gap-6 flex-1">
+                      {[
+                        {
+                          number: "2,500+",
+                          label: "Patients Helped",
+                          color: "from-cyan-500 to-cyan-600",
+                        },
+                        {
+                          number: "95%",
+                          label: "Success Rate",
+                          color: "from-green-500 to-green-600",
+                        },
+                        {
+                          number: "150+",
+                          label: "Communities Reached",
+                          color: "from-orange-500 to-orange-600",
+                        },
+                      ].map((stat, index) => (
+                        <motion.div
+                          key={index}
+                          className="flex items-center justify-between p-4 md:p-5 bg-slate-50 rounded-xl border border-gray-200 shadow-sm"
+                          whileHover={{ x: 4, scale: 1.01 }}
+                          transition={{ duration: 0.2 }}
+                        >
+                          <div className="text-gray-700 font-semibold text-sm md:text-base">
+                            {stat.label}
+                          </div>
+                          <div
+                            className={`text-xl md:text-2xl font-bold bg-gradient-to-r ${stat.color} bg-clip-text text-transparent`}
+                          >
+                            {stat.number}
+                          </div>
+                        </motion.div>
+                      ))}
+                    </div>
+                  </div>
+                </motion.div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      {/* Modal */}
-{showModal && (
-  <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-[1000]">
-    <div className="bg-white p-8 rounded-lg shadow-lg max-w-md w-full mx-4 relative">
-      <div className="flex flex-col">
-                 <h2 className="text-2xl font-bold mb-4 text-[#3ea498] text-center">
-          Choose Donation Region
-        </h2>
-        <div className="flex flex-col space-y-4">
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://give.team.org/give/672997/#!/donation/checkout"
-            className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-white rounded-lg bg-[#3ea498] hover:bg-orange-800"
+      </section>
+
+      {/* ========== DONATION MODAL (shared) ========== */}
+      <AnimatePresence>
+        {showModal && (
+          <motion.div
+            className="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center z-50"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
           >
-            USA Donations
-          </a>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://give.ca.team.org/give/673060/#!/donation/checkout"
-            className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-white rounded-lg bg-[#3ea498] hover:bg-orange-800"
-          >
-            Canada Donations
-          </a>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://magetsi.co.zw/billers/pay/TVRnPQ/friends-of-karanda-mission-hospital"
-            className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-white rounded-lg bg-[#3ea498] hover:bg-orange-800"
-          >
-            International Donations
-          </a>
-        </div>
-        <button
-          onClick={() => setShowModal(false)}
-          className="absolute top-2 right-2 text-gray-600 hover:text-gray-800 p-2"
-        >
-          ✕
-        </button>
-      </div>
-    </div>
-  </div>
-)}
-    </section>
+            <motion.div
+              className="modern-card p-8 max-w-md w-full mx-4 relative"
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.9, opacity: 0 }}
+              transition={{ type: "spring", duration: 0.5 }}
+            >
+              <div className="text-center mb-6">
+                <h2 className="text-3xl font-bold gradient-text-primary mb-2">
+                  Choose Donation Region
+                </h2>
+                <p className="text-gray-600">
+                  Select your preferred donation platform
+                </p>
+              </div>
+
+              <div className="space-y-4">
+                {[
+                  {
+                    name: "USA Donations",
+                    href: "https://give.team.org/give/672997/#!/donation/checkout",
+                    flag: "🇺🇸",
+                  },
+                  {
+                    name: "Canada Donations",
+                    href: "https://give.ca.team.org/give/673060/#!/donation/checkout",
+                    flag: "🇨🇦",
+                  },
+                  {
+                    name: "International Donations",
+                    href: "https://magetsi.co.zw/billers/pay/TVRnPQ/friends-of-karanda-mission-hospital",
+                    flag: "🌍",
+                  },
+                ].map((option) => (
+                  <motion.a
+                    key={option.name}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href={option.href}
+                    className="flex items-center justify-center gap-3 w-full py-4 px-6 text-lg font-semibold text-white bg-gradient-to-r from-cyan-600 to-teal-600 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
+                    whileHover={{ scale: 1.02, y: -2 }}
+                    whileTap={{ scale: 0.98 }}
+                  >
+                    <span className="text-2xl">{option.flag}</span>
+                    {option.name}
+                  </motion.a>
+                ))}
+              </div>
+
+              <motion.button
+                onClick={() => setShowModal(false)}
+                className="absolute top-4 right-4 p-2 text-gray-400 hover:text-gray-600 rounded-full hover:bg-gray-100 transition-colors"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                <svg
+                  className="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </motion.button>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </>
   );
-}
+};
 
 export default AboutStory;

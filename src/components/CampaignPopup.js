@@ -24,7 +24,7 @@ const CampaignPopup = () => {
             <div className="p-4 sm:p-6 md:p-8">
               {/* Header */}
               <h2 className="text-xl sm:text-2xl font-bold mb-4 text-[#3ea498] text-center">
-                FOKMH BBQ fundraising campaign
+                Ongoing Fundraising Campaign
               </h2>
 
               {/* Images */}

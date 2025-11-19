@@ -1,128 +1,240 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { tranlogo2 } from "../assets";
 
 const currentYear = new Date().getFullYear();
 
+const linkVariants = {
+  hover: {
+    scale: 1.05,
+    color: "#f97316",
+    transition: { duration: 0.2 },
+  },
+};
+
+const sectionVariants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, ease: "easeOut" },
+  },
+};
+
 function Footer() {
   return (
-    <div className="bg-[#0B123F]">
-      <footer class="text-gray-600 body-font">
-        <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
-          <div className="flex justify-center items-center ">
-            <a href="/" className="">
-              <span className="sr-only">Friends of Karanda</span>
-              <img
-                className="h-24 z-99 w-auto animate-bounce "
-                src={tranlogo2}
-                alt=""
-              />
+    <motion.footer
+      className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-black overflow-hidden"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.2 }}
+      variants={sectionVariants}
+    >
+      {/* Background Pattern */}
+      <div className="pointer-events-none absolute inset-0 opacity-5">
+        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-cyan-600/10 to-teal-600/10" />
+        <div className="absolute top-20 left-20 w-72 h-72 bg-cyan-600/5 rounded-full blur-3xl" />
+        <div className="absolute bottom-20 right-20 w-96 h-96 bg-teal-600/5 rounded-full blur-3xl" />
+      </div>
 
-              <a
-                style={{ fontSize: "1.8rem" }}
-                href="/"
-                className="text-[#3ea498] text-xl font-semibold leading-6"
+      <div className="relative z-10">
+        {/* Main Footer Content */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-14 items-start">
+            {/* Logo and Brand Section */}
+            <motion.div
+              className="flex flex-col items-center lg:items-start"
+              variants={sectionVariants}
+            >
+              <motion.div
+                className="flex flex-col items-center lg:items-start mb-8 text-center lg:text-left"
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.3 }}
               >
-                FOKMH
-              </a>
-            </a>
-          </div>
-          <div class="flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left text-center order-first">
-            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-              <nav class="list-none mb-10">
-                <li>
-                  <a href="/" class="text-white hover:text-orange-700">
-                    Home
-                  </a>
-                </li>
-                <li>
-                  <a href="/about" class="text-white hover:text-orange-700">
-                    About
-                  </a>
-                </li>
-                <li>
-                  <a href="/causes" class="text-white hover:text-orange-700">
-                    Causes
-                  </a>
-                </li>
-                <li>
-                  <a href="/contact" class="text-white hover:text-orange-700">
-                    Contact
-                  </a>
-                </li>
-                <li>
-                  <a href="/about#faq" class="text-white hover:text-orange-700">
-                    FAQs
-                  </a>
-                </li>
+                <motion.img
+                  className="h-24 w-auto mb-6"
+                  src={tranlogo2}
+                  alt="FOKMH Logo"
+                  animate={{ y: [0, -5, 0] }}
+                  transition={{
+                    duration: 2,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                  }}
+                />
+                <h3 className="text-3xl font-bold gradient-text-primary mb-4">
+                  FOKMH
+                </h3>
+                <p className="text-gray-200 leading-relaxed max-w-sm">
+                  Supporting life and inspiring hope through compassionate
+                  healthcare at Karanda Mission Hospital.
+                </p>
+              </motion.div>
+
+              {/* Social Media Icons */}
+              <div className="flex flex-wrap gap-4 mt-2 justify-center lg:justify-start">
+                {[
+                  { name: "Facebook", icon: "📘" },
+                  { name: "Twitter", icon: "🐦" },
+                  { name: "LinkedIn", icon: "💼" },
+                  { name: "Instagram", icon: "📷" },
+                ].map((social) => (
+                  <motion.a
+                    key={social.name}
+                    href="#"
+                    className="w-11 h-11 bg-white/15 backdrop-blur-sm rounded-full flex items-center justify-center text-lg hover:bg-white/30 transition-colors shadow-lg border border-white/20"
+                    whileHover={{ scale: 1.15, rotate: 3 }}
+                    whileTap={{ scale: 0.9 }}
+                  >
+                    {social.icon}
+                  </motion.a>
+                ))}
+              </div>
+            </motion.div>
+
+            {/* Quick Links */}
+            <motion.div variants={sectionVariants}>
+              <h4 className="text-2xl font-semibold text-white mb-6 gradient-text-primary text-center lg:text-left">
+                Quick Links
+              </h4>
+              <nav>
+                <ul className="space-y-3">
+                  {[
+                    { name: "Home", href: "/" },
+                    { name: "About", href: "/about" },
+                    { name: "Causes", href: "/causes" },
+                    { name: "Contact", href: "/contact" },
+                    { name: "FAQs", href: "/about#faq" },
+                  ].map((link) => (
+                    <motion.li key={link.name} className="list-none">
+                      <motion.a
+                        href={link.href}
+                        className="text-gray-100 hover:text-cyan-300 transition-colors duration-300 block text-center lg:text-left font-medium"
+                        variants={linkVariants}
+                        whileHover="hover"
+                      >
+                        {link.name}
+                      </motion.a>
+                    </motion.li>
+                  ))}
+                </ul>
               </nav>
-            </div>
-            <div class="lg:w-1/4 md:w-1/2 w-full px-4"></div>
-            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-              <nav class="list-none mb-10">
-                <li>
-                  <p class="text-white hover:text-orange-700">PARTNERS</p>
-                </li>
-                <li>
-                  <a
+            </motion.div>
+
+            {/* Partners */}
+            <motion.div variants={sectionVariants}>
+              <h4 className="text-2xl font-semibold text-white mb-6 gradient-text-secondary text-center lg:text-left">
+                Partners
+              </h4>
+              <nav>
+                <ul className="space-y-3">
+                  {[
+                    { name: "Magetsi", href: "https://magetsi.co.zw/" },
+                    { name: "Solvaxion", href: "https://www.solvaxion.com/" },
+                    {
+                      name: "Wildrose",
+                      href: "https://www.wildroseplacement.com/",
+                    },
+                    { name: "AWS", href: "https://aws.amazon.com/" },
+                  ].map((partner) => (
+                    <motion.li key={partner.name} className="list-none">
+                      <motion.a
+                        href={partner.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gray-100 hover:text-cyan-300 transition-colors duration-300 block text-center lg:text-left font-medium"
+                        variants={linkVariants}
+                        whileHover="hover"
+                      >
+                        {partner.name} ↗
+                      </motion.a>
+                    </motion.li>
+                  ))}
+                </ul>
+              </nav>
+            </motion.div>
+
+            {/* Contact Info */}
+            <motion.div variants={sectionVariants}>
+              <h4 className="text-2xl font-semibold text-white mb-6 gradient-text-primary text-center lg:text-left">
+                Get In Touch
+              </h4>
+              <div className="space-y-5">
+                <motion.a
+                  href="mailto:info@friendsofkaranda.com"
+                  className="flex items-center gap-3 text-gray-100 hover:text-cyan-300 transition-colors duration-300 justify-center lg:justify-start"
+                  whileHover={{ x: 5 }}
+                >
+                  <span className="text-2xl">📧</span>
+                  <span className="text-sm break-all">
+                    info@friendsofkaranda.com
+                  </span>
+                </motion.a>
+                <motion.a
+                  href="tel:+1234567890"
+                  className="flex items-center gap-3 text-gray-100 hover:text-cyan-300 transition-colors duration-300 justify-center lg:justify-start"
+                  whileHover={{ x: 5 }}
+                >
+                  <span className="text-2xl">📞</span>
+                  <span>+1 (234) 567-890</span>
+                </motion.a>
+                <motion.div
+                  className="flex items-center gap-3 text-gray-100 justify-center lg:justify-start"
+                  whileHover={{ x: 5 }}
+                >
+                  <span className="text-2xl">📍</span>
+                  <span className="text-sm">
+                    Karanda Mission Hospital, Zimbabwe
+                  </span>
+                </motion.div>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+
+        {/* Bottom Section */}
+        <motion.div
+          className="border-t border-white/20 bg-black/40 backdrop-blur-sm"
+          variants={sectionVariants}
+        >
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+            <div className="flex flex-col md:flex-row items-center justify-between gap-4 md:gap-6">
+              <motion.p
+                className="text-gray-200 text-center md:text-left text-sm font-medium"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.4 }}
+              >
+                © {currentYear} Friends of Karanda Mission Hospital. All rights
+                reserved.
+              </motion.p>
+
+              <motion.div
+                className="flex flex-col md:flex-row items-center gap-2 md:gap-4 text-xs sm:text-sm text-gray-200"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.6 }}
+              >
+                <span>Made with ❤️ by Rufaro Mucheri</span>
+                <span className="hidden md:inline">•</span>
+                <span className="flex items-center gap-1">
+                  Powered by{" "}
+                  <motion.a
                     href="https://magetsi.co.zw/"
                     target="_blank"
-                    rel="noreferrer"
-                    class="text-white hover:text-orange-700"
+                    rel="noopener noreferrer"
+                    className="text-cyan-400 hover:text-cyan-300 font-semibold"
+                    whileHover={{ scale: 1.05 }}
                   >
                     Magetsi
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.solvaxion.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                    class="text-white hover:text-orange-700"
-                  >
-                    Solvaxion
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.wildroseplacement.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                    class="text-white hover:text-orange-700"
-                  >
-                    Wildrose
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://aws.amazon.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                    class="text-white hover:text-orange-700"
-                  >
-                    AWS
-                  </a>
-                </li>
-              </nav>
+                  </motion.a>
+                </span>
+              </motion.div>
             </div>
-            <div class="lg:w-1/4 md:w-1/2 w-full px-4"></div>
           </div>
-        </div>
-        <div class="bg-gray-100">
-          <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-            <p class="text-[#3ea498] text-sm text-center sm:text-left">
-              {" "}
-              © Copyright {currentYear}{" "}
-              <span>Made by Rufaro Mucheri for FOKMH </span>
-            </p>
-            <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
-              <p className="text-xs text-[#3ea498]">
-                Powered by <a href="https://magetsi.co.zw/">Magetsi </a>{" "}
-              </p>
-            </span>
-          </div>
-        </div>
-      </footer>
-    </div>
+        </motion.div>
+      </div>
+    </motion.footer>
   );
 }
 
