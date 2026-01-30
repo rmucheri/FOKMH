@@ -1,12 +1,21 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { docTakPodium } from "../assets";
-
+import { Link } from "react-router-dom";
 const stats = [
-  { number: "2,500+", label: "Patients Treated" },
-  { number: "85%", label: "Treatment Success" },
-  { number: "150+", label: "Medical Staff" },
-  { number: "30+", label: "Years of Service" },
+  {
+    label: "Patients Treated",
+    description: "Serving our community with compassionate care",
+  },
+  {
+    label: "Treatment Success",
+    description: "Committed to positive patient outcomes",
+  },
+  { label: "Medical Staff", description: "Dedicated healthcare professionals" },
+  {
+    label: "Years of Service",
+    description: "A legacy of excellence in patient care",
+  },
 ];
 
 const impactAreas = [
@@ -77,12 +86,18 @@ function Feature() {
                 transition={{ delay: 0.4 }}
                 className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
               >
-                <button className="px-8 py-3 bg-[#3ea498] text-white rounded-full hover:bg-[#2c7b72] transition-all duration-300 hover:shadow-lg w-full sm:w-auto">
+                <Link
+                  to="/causes"
+                  className="px-8 py-3 bg-[#3ea498] text-white rounded-full hover:bg-[#2c7b72] transition-all duration-300 hover:shadow-lg w-full sm:w-auto"
+                >
                   Support Our Mission
-                </button>
-                <button className="px-8 py-3 border-2 border-[#3ea498] text-[#3ea498] rounded-full hover:bg-[#3ea498] hover:text-white transition-all duration-300 w-full sm:w-auto">
+                </Link>
+                <Link
+                  to="/about"
+                  className="px-8 py-3 border-2 border-[#3ea498] text-[#3ea498] rounded-full hover:bg-[#3ea498] hover:text-white transition-all duration-300 w-full sm:w-auto"
+                >
                   Learn More
-                </button>
+                </Link>
               </motion.div>
             </div>
 
@@ -120,11 +135,11 @@ function Feature() {
                 whileHover={{ scale: 1.05 }}
                 className="bg-white p-6 rounded-xl shadow-lg text-center"
               >
-                <h3 className="text-2xl md:text-3xl font-bold text-[#3ea498] mb-2">
-                  {stat.number}
+                <h3 className="text-xl md:text-2xl font-bold text-[#3ea498] mb-2">
+                  {stat.label}
                 </h3>
                 <p className="text-sm md:text-base text-gray-600">
-                  {stat.label}
+                  {stat.description}
                 </p>
               </motion.div>
             ))}
@@ -198,9 +213,12 @@ function Feature() {
               Your support helps us continue providing essential medical care to
               those who need it most. Join us in our mission to heal and serve.
             </p>
-            <button className="w-full sm:w-auto px-8 py-3 bg-[#3ea498] text-white rounded-full hover:bg-[#2c7b72] transition-all duration-300 hover:shadow-lg">
+            <Link
+              to="/causes"
+              className="w-full sm:w-auto px-8 py-3 bg-[#3ea498] text-white rounded-full hover:bg-[#2c7b72] transition-all duration-300 hover:shadow-lg"
+            >
               Support Our Cause
-            </button>
+            </Link>
           </motion.div>
         </div>
       </section>

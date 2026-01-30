@@ -62,7 +62,7 @@ function Footer() {
                     ease: "easeInOut",
                   }}
                 />
-                <h3 className="text-3xl font-bold gradient-text-primary mb-4">
+                <h3 className="text-3xl font-bold text-[#3ea498] mb-4">
                   FOKMH
                 </h3>
                 <p className="text-gray-200 leading-relaxed max-w-sm">

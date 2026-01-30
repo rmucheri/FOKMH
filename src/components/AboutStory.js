@@ -234,18 +234,19 @@ const AboutStory = () => {
                     <div className="grid grid-cols-1 gap-4 md:gap-6 flex-1">
                       {[
                         {
-                          number: "2,500+",
                           label: "Patients Helped",
+                          description:
+                            "Providing care and support to those in need",
                           color: "from-cyan-500 to-cyan-600",
                         },
                         {
-                          number: "95%",
                           label: "Success Rate",
+                          description: "Committed to positive health outcomes",
                           color: "from-green-500 to-green-600",
                         },
                         {
-                          number: "150+",
                           label: "Communities Reached",
+                          description: "Expanding our impact across regions",
                           color: "from-orange-500 to-orange-600",
                         },
                       ].map((stat, index) => (
@@ -255,14 +256,27 @@ const AboutStory = () => {
                           whileHover={{ x: 4, scale: 1.01 }}
                           transition={{ duration: 0.2 }}
                         >
-                          <div className="text-gray-700 font-semibold text-sm md:text-base">
-                            {stat.label}
+                          <div>
+                            <div className="text-gray-700 font-semibold text-sm md:text-base">
+                              {stat.label}
+                            </div>
+                            <div className="text-gray-500 text-xs md:text-sm mt-1">
+                              {stat.description}
+                            </div>
                           </div>
-                          <div
-                            className={`text-xl md:text-2xl font-bold bg-gradient-to-r ${stat.color} bg-clip-text text-transparent`}
+                          <svg
+                            className="w-6 h-6 text-[#3ea498] flex-shrink-0"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
                           >
-                            {stat.number}
-                          </div>
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M9 5l7 7-7 7"
+                            />
+                          </svg>
                         </motion.div>
                       ))}
                     </div>
@@ -278,80 +292,81 @@ const AboutStory = () => {
       <AnimatePresence>
         {showModal && (
           <motion.div
-            className="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center z-50"
+            className="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center z-50 p-4"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
           >
             <motion.div
-              className="modern-card p-8 max-w-md w-full mx-4 relative"
+              className="bg-white rounded-2xl shadow-2xl max-w-2xl w-full overflow-hidden"
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
               transition={{ type: "spring", duration: 0.5 }}
             >
-              <div className="text-center mb-6">
-                <h2 className="text-3xl font-bold gradient-text-primary mb-2">
-                  Choose Donation Region
-                </h2>
-                <p className="text-gray-600">
-                  Select your preferred donation platform
+              {/* Header with Gradient */}
+              <div className="bg-gradient-to-r from-[#3ea498] to-cyan-600 px-8 py-12 text-white text-center relative">
+                <button
+                  onClick={() => setShowModal(false)}
+                  className="absolute top-4 right-4 text-2xl hover:text-gray-200 transition-colors"
+                >
+                  ✕
+                </button>
+                <h2 className="text-4xl font-bold mb-2">Make a Difference</h2>
+                <p className="text-lg opacity-95">
+                  Choose how you'd like to support us
                 </p>
               </div>
 
-              <div className="space-y-4">
-                {[
-                  {
-                    name: "USA Donations",
-                    href: "https://give.team.org/give/672997/#!/donation/checkout",
-                    flag: "🇺🇸",
-                  },
-                  {
-                    name: "Canada Donations",
-                    href: "https://give.ca.team.org/give/673060/#!/donation/checkout",
-                    flag: "🇨🇦",
-                  },
-                  {
-                    name: "International Donations",
-                    href: "https://magetsi.co.zw/billers/pay/TVRnPQ/friends-of-karanda-mission-hospital",
-                    flag: "🌍",
-                  },
-                ].map((option) => (
-                  <motion.a
-                    key={option.name}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href={option.href}
-                    className="flex items-center justify-center gap-3 w-full py-4 px-6 text-lg font-semibold text-white bg-gradient-to-r from-cyan-600 to-teal-600 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
-                    whileHover={{ scale: 1.02, y: -2 }}
-                    whileTap={{ scale: 0.98 }}
-                  >
-                    <span className="text-2xl">{option.flag}</span>
-                    {option.name}
-                  </motion.a>
-                ))}
+              {/* Content */}
+              <div className="p-8 space-y-6">
+                <div className="space-y-3">
+                  {[
+                    {
+                      name: "🇺🇸 USA Donations",
+                      href: "https://give.team.org/give/672997/#!/donation/checkout",
+                      color: "bg-[#3ea498] hover:bg-[#2d8276]",
+                    },
+                    {
+                      name: "🇨🇦 Canada Donations",
+                      href: "https://give.ca.team.org/give/673060/#!/donation/checkout",
+                      color: "bg-cyan-600 hover:bg-cyan-700",
+                    },
+                    {
+                      name: "🌍 Rest of the World",
+                      href: "https://magetsi.co.zw/billers/pay/TVRnPQ/friends-of-karanda-mission-hospital",
+                      color: "bg-orange-600 hover:bg-orange-700",
+                    },
+                  ].map((option) => (
+                    <motion.a
+                      key={option.name}
+                      target="_blank"
+                      rel="noreferrer"
+                      href={option.href}
+                      className={`block w-full py-4 px-6 text-center text-lg font-semibold text-white rounded-xl ${option.color} transition-all duration-200 shadow-md hover:shadow-lg`}
+                      whileHover={{ scale: 1.05, y: -2 }}
+                      whileTap={{ scale: 0.98 }}
+                    >
+                      {option.name}
+                    </motion.a>
+                  ))}
+                </div>
+
+                {/* Trust Badge */}
+                <div className="text-center text-sm text-gray-600 pt-4 border-t">
+                  <p>🔒 Secure donations · 100% transparent · Direct impact</p>
+                </div>
               </div>
 
-              <motion.button
-                onClick={() => setShowModal(false)}
-                className="absolute top-4 right-4 p-2 text-gray-400 hover:text-gray-600 rounded-full hover:bg-gray-100 transition-colors"
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-              >
-                <svg
-                  className="w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
+              {/* Footer */}
+              <div className="bg-gray-50 px-8 py-6 text-center border-t">
+                <button
+                  onClick={() => setShowModal(false)}
+                  className="text-gray-600 hover:text-gray-900 font-semibold transition-colors"
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
-              </motion.button>
+                  Maybe Later
+                </button>
+              </div>
             </motion.div>
           </motion.div>
         )}

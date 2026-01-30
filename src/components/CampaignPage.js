@@ -1,9 +1,6 @@
 import { CheckCircleIcon } from "@heroicons/react/24/outline";
 import React, { useState } from "react";
 import { ambulance, bbq, ECGmachine, waterHeater } from "../assets";
-import FavoriteIcon from "@mui/icons-material/Favorite";
-
-
 
 const CampaignPage = () => {
   const [showModal, setShowModal] = useState(false);
@@ -26,8 +23,8 @@ const CampaignPage = () => {
               Ongoing fundraising campaign
             </h1>
             <p className="mt-6 max-w-2xl mx-auto text-xl">
-              Help us improve healthcare delivery at Karanda Mission Hospital
-              through three crucial initiatives
+              Help us acquire a Land Cruiser to reach remote communities and
+              provide critical medical outreach
             </p>
             <div className="mt-10">
               <button
@@ -77,125 +74,67 @@ const CampaignPage = () => {
               </ul>
             </div>
           </div>
-
-          {/* ECG Machine Section */}
-          <div className="flex flex-col lg:flex-row-reverse items-center gap-12">
-            <div className="lg:w-1/2">
-              <img
-                src={ECGmachine}
-                alt="ECG Machine"
-                className="rounded-lg shadow-xl hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-            <div className="lg:w-1/2 space-y-6">
-              <h2 className="text-3xl font-bold text-gray-900">
-                ECG Machine for Cardiac Care
-              </h2>
-              <p className="text-lg text-gray-600">
-                A new ECG machine will enable us to:
-              </p>
-              <ul className="text-gray-600 space-y-2">
-                <li className="flex items-center">
-                  <CheckCircleIcon className="h-6 w-6 text-[#3ea498] mr-2" />
-                  Provide accurate cardiac diagnostics
-                </li>
-                <li className="flex items-center">
-                  <CheckCircleIcon className="h-6 w-6 text-[#3ea498] mr-2" />
-                  Monitor patients' heart health effectively
-                </li>
-                <li className="flex items-center">
-                  <CheckCircleIcon className="h-6 w-6 text-[#3ea498] mr-2" />
-                  Improve emergency response capabilities
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Solar Water Geysers Section */}
-          <div className="flex flex-col lg:flex-row items-center gap-12">
-            <div className="lg:w-1/2">
-              <img
-                src={waterHeater}
-                alt="Solar Water Geyser"
-                className="rounded-lg shadow-xl hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-            <div className="lg:w-1/2 space-y-6">
-              <h2 className="text-3xl font-bold text-gray-900">
-                Solar Water Geysers
-              </h2>
-              <p className="text-lg text-gray-600">
-                Installing solar water geysers will:
-              </p>
-              <ul className="text-gray-600 space-y-2">
-                <li className="flex items-center">
-                  <CheckCircleIcon className="h-6 w-6 text-[#3ea498] mr-2" />
-                  Reduce energy costs significantly
-                </li>
-                <li className="flex items-center">
-                  <CheckCircleIcon className="h-6 w-6 text-[#3ea498] mr-2" />
-                  Ensure consistent hot water supply
-                </li>
-                <li className="flex items-center">
-                  <CheckCircleIcon className="h-6 w-6 text-[#3ea498] mr-2" />
-                  Improve patient care and hygiene
-                </li>
-              </ul>
-            </div>
-          </div>
         </div>
 
         {/* Campaign Progress */}
-        {/* Option 1: Campaign Goals */}
+        {/* Campaign Goals */}
         <div className="mt-20 text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-8">
-            Campaign Goals
+            Campaign Goal
           </h2>
-          <div className="max-w-3xl mx-auto grid grid-cols-1 gap-8 sm:grid-cols-3">
-            <div className="bg-white p-6 rounded-lg shadow-lg">
-              <div className="text-[#3ea498] text-4xl font-bold">$45,000</div>
-              <div className="text-gray-600">Land Cruiser Target</div>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-lg">
-              <div className="text-[#3ea498] text-4xl font-bold">$25,000</div>
-              <div className="text-gray-600">ECG Machine Target</div>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-lg">
-              <div className="text-[#3ea498] text-4xl font-bold">$15,000</div>
-              <div className="text-gray-600">Solar Geysers Target</div>
+          <div>
+            <div className="bg-gradient-to-r from-[#3ea498] to-cyan-600 text-white p-8 rounded-xl shadow-lg">
+              <div className="text-5xl mb-4">🚗</div>
+              <h3 className="text-2xl font-bold mb-3">
+                Acquire a Land Cruiser for Medical Outreach
+              </h3>
+              <p className="text-lg opacity-95">
+                A reliable Land Cruiser will enable us to reach underserved
+                communities and save lives through consistent medical outreach
+                and emergency transport services.
+              </p>
             </div>
           </div>
         </div>
 
-        {/* Option 2: Impact Statistics */}
+        {/* Impact Areas */}
         <div className="mt-20 text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-8">
-            Potential Impact
+            Expected Impact
           </h2>
-          <div className="max-w-3xl mx-auto grid grid-cols-1 gap-8 sm:grid-cols-3">
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-3">
             <div className="bg-white p-6 rounded-lg shadow-lg">
-              <div className="text-[#3ea498] text-4xl font-bold">5,000+</div>
-              <div className="text-gray-600">
-                Rural Patients Reached Annually
+              <div className="text-[#3ea498] text-4xl mb-2">🌍</div>
+              <div className="text-gray-900 font-semibold">Extended Reach</div>
+              <div className="text-gray-600 text-sm mt-2">
+                Access 50+ remote villages
               </div>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-lg">
-              <div className="text-[#3ea498] text-4xl font-bold">2,400+</div>
-              <div className="text-gray-600">Cardiac Diagnoses Per Year</div>
+              <div className="text-[#3ea498] text-4xl mb-2">⚡</div>
+              <div className="text-gray-900 font-semibold">
+                Emergency Response
+              </div>
+              <div className="text-gray-600 text-sm mt-2">
+                Faster critical patient transport
+              </div>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-lg">
-              <div className="text-[#3ea498] text-4xl font-bold">365</div>
-              <div className="text-gray-600">Days of Hot Water Supply</div>
+              <div className="text-[#3ea498] text-4xl mb-2">❤️</div>
+              <div className="text-gray-900 font-semibold">Lives Saved</div>
+              <div className="text-gray-600 text-sm mt-2">
+                Improved community health outcomes
+              </div>
             </div>
           </div>
         </div>
 
-        {/* Option 3: Key Benefits */}
+        {/* Why a Land Cruiser */}
         <div className="mt-20 text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-8">
-            Key Benefits
+            Why a Land Cruiser?
           </h2>
-          <div className="max-w-3xl mx-auto grid grid-cols-1 gap-8 sm:grid-cols-3">
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-3">
             <div className="bg-white p-6 rounded-lg shadow-lg">
               <div className="text-[#3ea498] text-3xl mb-2">
                 <svg
@@ -212,16 +151,33 @@ const CampaignPage = () => {
                     d="M13 10V3L4 14h7v7l9-11h-7z"
                   />
                 </svg>
-                <div className="font-semibold">Mobility</div>
+                <div className="font-semibold">Reliable Mobility</div>
               </div>
-              <div className="text-gray-600">Reaching Remote Communities</div>
+              <div className="text-gray-600">
+                Built for rugged terrain and challenging roads
+              </div>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-lg">
               <div className="text-[#3ea498] text-3xl mb-2">
-                <FavoriteIcon className="h-12 w-12 mx-auto mb-2" />
-                <div className="font-semibold">Diagnosis</div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-8 w-8 mx-auto mb-2"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={1.5}
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                <div className="font-semibold">Durability</div>
               </div>
-              <div className="text-gray-600">Better Heart Care</div>
+              <div className="text-gray-600">
+                Long-lasting investment for years of service
+              </div>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-lg">
               <div className="text-[#3ea498] text-3xl mb-2">
@@ -236,12 +192,72 @@ const CampaignPage = () => {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth={2}
-                    d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+                    d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                   />
                 </svg>
-                <div className="font-semibold">Sustainability</div>
+                <div className="font-semibold">Cost-Effective</div>
               </div>
-              <div className="text-gray-600">Clean Energy Solution</div>
+              <div className="text-gray-600">
+                Excellent value for sustained healthcare delivery
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Completed Projects */}
+        <div className="mt-20 text-center">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">
+            What We've Already Accomplished
+          </h2>
+          <p className="text-lg text-gray-600 mb-12">
+            Thanks to generous donors like you, we've successfully implemented
+            crucial healthcare initiatives
+          </p>
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
+            <div className="bg-gradient-to-br from-green-50 to-emerald-50  shadow-lg  overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              <div className="h-80 overflow-hidden bg-gray-200">
+                <img
+                  src={ECGmachine}
+                  alt="ECG Machine"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <div className="p-8">
+                <div className="text-5xl mb-4">✅</div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                  ECG Machine
+                </h3>
+                <p className="text-gray-700 mb-4">
+                  Enhanced our cardiac care capabilities with modern diagnostic
+                  equipment
+                </p>
+                <div className="inline-block bg-green-600 text-white px-4 py-2 rounded-full text-sm font-semibold">
+                  Completed
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-green-50 to-emerald-50  shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              <div className="h-80 overflow-hidden bg-gray-200">
+                <img
+                  src={waterHeater}
+                  alt="Solar Water Geysers"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <div className="p-8">
+                <div className="text-5xl mb-4">✅</div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                  Solar Water Geysers
+                </h3>
+                <p className="text-gray-700 mb-4">
+                  Implemented sustainable energy solutions for improved facility
+                  operations
+                </p>
+                <div className="inline-block bg-green-600 text-white px-4 py-2 rounded-full text-sm font-semibold">
+                  Completed
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -301,38 +317,100 @@ const CampaignPage = () => {
 
       {/* Donation Modal */}
       {showModal && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-          <div className="bg-white p-8 rounded-lg shadow-lg">
-            <h2 className="text-2xl font-bold mb-4 text-[#3ea498] text-center">
-              Choose Donation Region
-            </h2>
-            <div className="flex flex-col space-y-4">
-              <a
-                target="_blank"
-                href="https://give.team.org/give/672997/#!/donation/checkout"
-                className="inline-flex justify-center items-center py-3 px-5 text-xl font-medium text-white rounded-lg bg-[#3ea498] hover:bg-orange-800"
-              >
-                USA Donations
-              </a>
-              <a
-                target="_blank"
-                href="https://give.ca.team.org/give/673060/#!/donation/checkout"
-                className="inline-flex justify-center items-center py-3 px-5 text-xl font-medium text-white rounded-lg bg-[#3ea498] hover:bg-orange-800"
-              >
-                Canada Donations
-              </a>
-              <a
-                target="_blank"
-                href="https://magetsi.co.zw/billers/pay/TVRnPQ/friends-of-karanda-mission-hospital"
-                className="inline-flex justify-center items-center py-3 px-5 text-xl font-medium text-white rounded-lg bg-[#3ea498] hover:bg-orange-800"
-              >
-                International Donations
-              </a>
+        <div className="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50 p-4">
+          <div className="bg-white rounded-2xl shadow-2xl max-w-2xl w-full overflow-hidden">
+            {/* Modal Header */}
+            <div className="bg-gradient-to-r from-[#3ea498] to-cyan-600 px-8 py-12 text-white text-center relative">
               <button
                 onClick={() => setShowModal(false)}
-                className="mt-4 text-xl text-red-600 hover:text-red-800"
+                className="absolute top-4 right-4 text-2xl hover:text-gray-200 transition-colors"
               >
-                Close
+                ✕
+              </button>
+              <h2 className="text-4xl font-bold mb-2">
+                Make a Difference Today
+              </h2>
+              <p className="text-lg opacity-95">
+                Help us reach more patients with our Land Cruiser
+              </p>
+            </div>
+
+            {/* Modal Content */}
+            <div className="p-8 space-y-8">
+              {/* Impact Section */}
+              <div className="bg-blue-50 p-6 rounded-xl border-l-4 border-[#3ea498]">
+                <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                  <span className="text-3xl mr-3">🚑</span>
+                  Your Impact
+                </h3>
+                <ul className="space-y-3 text-gray-700">
+                  <li className="flex items-start">
+                    <CheckCircleIcon className="h-6 w-6 text-[#3ea498] mr-3 flex-shrink-0 mt-0.5" />
+                    <span>Enable outreach to 50+ remote villages annually</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircleIcon className="h-6 w-6 text-[#3ea498] mr-3 flex-shrink-0 mt-0.5" />
+                    <span>
+                      Provide emergency medical transport for critical cases
+                    </span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircleIcon className="h-6 w-6 text-[#3ea498] mr-3 flex-shrink-0 mt-0.5" />
+                    <span>Support preventive healthcare initiatives</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Donation Options */}
+              <div>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">
+                  Choose Your Region
+                </h3>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://give.team.org/give/672997/#!/donation/checkout"
+                    className="flex items-center justify-center py-4 px-6 text-lg font-semibold text-white rounded-xl bg-[#3ea498] hover:bg-[#2d8276] transition-all duration-200 shadow-md hover:shadow-lg transform hover:scale-105"
+                  >
+                    🇺🇸 USA Donations
+                  </a>
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://give.ca.team.org/give/673060/#!/donation/checkout"
+                    className="flex items-center justify-center py-4 px-6 text-lg font-semibold text-white rounded-xl bg-cyan-600 hover:bg-cyan-700 transition-all duration-200 shadow-md hover:shadow-lg transform hover:scale-105"
+                  >
+                    🇨🇦 Canada Donations
+                  </a>
+                </div>
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://magetsi.co.zw/billers/pay/TVRnPQ/friends-of-karanda-mission-hospital"
+                  className="w-full flex items-center justify-center mt-4 py-4 px-6 text-lg font-semibold text-white rounded-xl bg-orange-600 hover:bg-orange-700 transition-all duration-200 shadow-md hover:shadow-lg transform hover:scale-105"
+                >
+                  🌍 International Donations
+                </a>
+              </div>
+
+              {/* Trust Badge */}
+              <div className="text-center text-sm text-gray-600 space-y-2">
+                <p className="flex items-center justify-center space-x-2">
+                  <span>🔒</span>
+                  <span>100% Secure Donations</span>
+                </p>
+                <p>Your donation goes directly to supporting patient care</p>
+              </div>
+            </div>
+
+            {/* Modal Footer */}
+            <div className="bg-gray-50 px-8 py-6 text-center border-t">
+              <button
+                onClick={() => setShowModal(false)}
+                className="text-gray-600 hover:text-gray-900 font-semibold transition-colors"
+              >
+                Maybe Later
               </button>
             </div>
           </div>

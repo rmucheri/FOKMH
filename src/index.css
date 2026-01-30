@@ -7,17 +7,28 @@
 
 body {
   margin: 0;
-  font-family: "Inter", "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-    "Helvetica Neue", sans-serif;
+  font-family:
+    "Inter",
+    "Poppins",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    "Roboto",
+    "Oxygen",
+    "Ubuntu",
+    "Cantarell",
+    "Fira Sans",
+    "Droid Sans",
+    "Helvetica Neue",
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family:
+    source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
 * {
@@ -63,7 +74,7 @@ code {
 
   /* Modern card component */
   .modern-card {
-    @apply bg-white/80 backdrop-blur-sm rounded-xl  hover:shadow-xl transition-all duration-500;
+    @apply bg-white/80 backdrop-blur-sm   hover:shadow-xl transition-all duration-500;
   }
 
   /* Gradient text utility */

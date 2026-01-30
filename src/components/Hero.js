@@ -65,10 +65,10 @@ function Hero() {
           transition={{ delay: 0.2 }}
           className="w-full max-w-3xl mb-8"
         >
-          <div className="bg-orange-600 bg-opacity-90 rounded-lg p-4 shadow-lg transform hover:scale-105 transition-transform duration-300">
+          <div className="bg-orange-600 md:mt-2 mt-60 bg-opacity-90 rounded-lg p-4 shadow-lg transform hover:scale-105 transition-transform duration-300">
             <p className="text-white text-lg text-center flex items-center justify-center gap-2">
-              <span className="text-2xl">🏥</span>
-              <span>
+              <span className="text-lg md:text-2xl">🏥</span>
+              <span className="text-xs md:text-2xl">
                 Special Campaign: Help us acquire vital medical equipment and
                 transport
                 <a
@@ -170,61 +170,74 @@ function Hero() {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 backdrop-blur-sm"
+          className="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-[99998] backdrop-blur-sm p-4"
         >
           <motion.div
             initial={{ scale: 0.9 }}
             animate={{ scale: 1 }}
-            className="bg-white rounded-2xl p-8 shadow-2xl max-w-md w-full mx-4"
+            className="bg-white rounded-2xl shadow-2xl max-w-2xl w-full overflow-hidden"
           >
-            <h2 className="text-3xl font-bold mb-6 text-[#3ea498] text-center">
-              Choose Donation Region
-            </h2>
-            <div className="space-y-4">
-              {[
-                {
-                  text: "USA Donations",
-                  href: "https://give.team.org/give/672997/#!/donation/checkout",
-                },
-                {
-                  text: "Canada Donations",
-                  href: "https://give.ca.team.org/give/673060/#!/donation/checkout",
-                },
-                {
-                  text: "Rest  of the World - Magetsi",
-                  href: "https://magetsi.co.zw/billers/pay/TVRnPQ/friends-of-karanda-mission-hospital",
-                },
-              ].map((button, index) => (
-                <a
-                  key={index}
-                  target="_blank"
-                  href={button.href}
-                  className="block w-full py-3 px-6 text-center text-white bg-[#3ea498] rounded-lg
-                           hover:bg-orange-600 transition-all duration-300 transform hover:scale-105"
-                >
-                  {button.text}
-                </a>
-              ))}
-            </div>
-            <button
-              onClick={() => setShowModal(false)}
-              className="mt-6 text-red-600 hover:text-red-800 transition-colors duration-300
-                       absolute top-4 right-4"
-            >
-              <svg
-                className="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
+            {/* Header with Gradient */}
+            <div className="bg-gradient-to-r from-[#3ea498] to-cyan-600 px-8 py-12 text-white text-center relative">
+              <button
+                onClick={() => setShowModal(false)}
+                className="absolute top-4 right-4 text-2xl hover:text-gray-200 transition-colors"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
-            </button>
+                ✕
+              </button>
+              <h2 className="text-4xl font-bold mb-2">Make a Difference</h2>
+              <p className="text-lg opacity-95">
+                Choose how you'd like to support us
+              </p>
+            </div>
+
+            {/* Content */}
+            <div className="p-8 space-y-6">
+              <div className="space-y-3">
+                {[
+                  {
+                    text: "🇺🇸 USA Donations",
+                    href: "https://give.team.org/give/672997/#!/donation/checkout",
+                    color: "bg-[#3ea498] hover:bg-[#2d8276]",
+                  },
+                  {
+                    text: "🇨🇦 Canada Donations",
+                    href: "https://give.ca.team.org/give/673060/#!/donation/checkout",
+                    color: "bg-cyan-600 hover:bg-cyan-700",
+                  },
+                  {
+                    text: "🌍 Rest of the World",
+                    href: "https://magetsi.co.zw/billers/pay/TVRnPQ/friends-of-karanda-mission-hospital",
+                    color: "bg-orange-600 hover:bg-orange-700",
+                  },
+                ].map((button, index) => (
+                  <a
+                    key={index}
+                    target="_blank"
+                    rel="noreferrer"
+                    href={button.href}
+                    className={`block w-full py-4 px-6 text-center text-lg font-semibold text-white rounded-xl ${button.color} transition-all duration-200 shadow-md hover:shadow-lg transform hover:scale-105`}
+                  >
+                    {button.text}
+                  </a>
+                ))}
+              </div>
+
+              {/* Trust Badge */}
+              <div className="text-center text-sm text-gray-600 pt-4 border-t">
+                <p>🔒 Secure donations · 100% transparent · Direct impact</p>
+              </div>
+            </div>
+
+            {/* Footer */}
+            <div className="bg-gray-50 px-8 py-6 text-center border-t">
+              <button
+                onClick={() => setShowModal(false)}
+                className="text-gray-600 hover:text-gray-900 font-semibold transition-colors"
+              >
+                Maybe Later
+              </button>
+            </div>
           </motion.div>
         </motion.div>
       )}
