@@ -15,8 +15,8 @@ const members = [
 
   {
     img: NyarotaTazvionepi,
-    header: "Tazvionepi Musanhi Nyarota",
-    text: `Tazvionepi Nyarota is an accomplished religious leader with over 25 years of ministry
+    header: "Rev Tazvionepi Nyarota",
+    text: `Rev Tazvionepi Nyarota is an accomplished religious leader with over 25 years of ministry
 experience. She has served in various leadership roles, including District Superintendent of the
 Mutare District in Zimbabwe, where she successfully established six new circuits and three local
 churches. As the first woman to chair the Board on Ordained Ministry in her conference, she
@@ -80,8 +80,8 @@ Her vast experience, coupled with her commitment to strategic development and ca
   },
   {
     img: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
-    header: "Dr Causemore Zengeni",
-    text: "Dr. C. Zengeni graduated from the University of Zimbabwe Medical School in 2005. After completing an 18-month tenure at Harare Hospital, he moved to the United Kingdom, where he undertook training in Family Medicine. He is currently a partner at Ash Tree House Surgery in Kirkham. Dr. Zengeni holds the Membership of the Royal Colleges of Physicians (MRCP UK), a specialty certificate in Diabetes and Endocrinology, and a Diploma in the Management of Diabetes in Primary Care. He is a member of the Royal College of Physicians of Edinburgh and the Society for Endocrinology.",
+    header: "Dr Charles Tsorai",
+    text: "",
   },
 
   {
@@ -97,7 +97,7 @@ Her vast experience, coupled with her commitment to strategic development and ca
   },
   {
     img: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
-    header: "Gwinyai Mudehwe",
+    header: "Francis Nyachowe",
     text: "FRIENDS OF KARANDA BOARD MEMBER",
   },
   {
@@ -144,17 +144,12 @@ Her vast experience, coupled with her commitment to strategic development and ca
   },
   {
     img: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
-    header: "Oliver Gono",
+    header: "Oliver Vhimbo",
     text: "FRIENDS OF KARANDA BOARD MEMBER",
   },
   {
     img: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
-    header: "Arthur Choga",
-    text: "FRIENDS OF KARANDA BOARD MEMBER",
-  },
-  {
-    img: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
-    header: "Efficiency Dangaiso",
+    header: "Tawanda Nyamukondiwa",
     text: "FRIENDS OF KARANDA BOARD MEMBER",
   },
   {
