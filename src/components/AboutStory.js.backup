@@ -285,7 +285,7 @@ function AboutStory() {
                   },
                   {
                     text: "🌍 International Donations",
-                    href: "https://magetsi.co.zw/billers/pay/TVRnPQ/friends-of-karanda-mission-hospital",
+                    href: "https://magetsi.co.zw/billers/friends-of-karanda-mission-hospital",
                     gradient: "from-green-500 to-green-600"
                   }
                 ].map((button, index) => (
@@ -411,7 +411,7 @@ function AboutStory() {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://magetsi.co.zw/billers/pay/TVRnPQ/friends-of-karanda-mission-hospital"
+            href="https://magetsi.co.zw/billers/friends-of-karanda-mission-hospital"
             className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-white rounded-lg bg-[#3ea498] hover:bg-orange-800"
           >
             International Donations

@@ -61,7 +61,7 @@ const aboutList = [
 const callsToAction = [
   {
     name: "Donate",
-    href: "https://magetsi.co.zw/billers/pay/TVRnPQ/friends-of-karanda-mission-hospital",
+    href: "https://magetsi.co.zw/billers/friends-of-karanda-mission-hospital",
     icon: ArrowRightIcon,
   },
   { name: "Contact Us", href: "/contact", icon: PhoneIcon },
@@ -411,7 +411,7 @@ export default function Header() {
                     },
                     {
                       name: "🌍 Rest of the World",
-                      href: "https://magetsi.co.zw/billers/pay/TVRnPQ/friends-of-karanda-mission-hospital",
+                      href: "https://magetsi.co.zw/billers/friends-of-karanda-mission-hospital",
                       color: "bg-orange-600 hover:bg-orange-700",
                     },
                   ].map((option) => (

@@ -72,7 +72,7 @@ function AboutUs() {
           </p>
           <a
             className="hover:scale-110"
-            href="https://magetsi.co.zw/billers/pay/TVRnPQ/friends-of-karanda-mission-hospital"
+            href="https://magetsi.co.zw/billers/friends-of-karanda-mission-hospital"
           >
             Donate Now!
           </a>

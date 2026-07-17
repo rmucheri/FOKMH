@@ -387,7 +387,7 @@ const CampaignPage = () => {
                 <a
                   target="_blank"
                   rel="noreferrer"
-                  href="https://magetsi.co.zw/billers/pay/TVRnPQ/friends-of-karanda-mission-hospital"
+                  href="https://magetsi.co.zw/billers/friends-of-karanda-mission-hospital"
                   className="w-full flex items-center justify-center mt-4 py-4 px-6 text-lg font-semibold text-white rounded-xl bg-orange-600 hover:bg-orange-700 transition-all duration-200 shadow-md hover:shadow-lg transform hover:scale-105"
                 >
                   🌍 International Donations
