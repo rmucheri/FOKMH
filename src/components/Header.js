@@ -106,7 +106,9 @@ export default function Header() {
               whileHover={{ rotate: 5 }}
               transition={{ duration: 0.3 }}
             />
-            <span className="text-2xl font-bold text-[#3ea498]">FOKMH</span>
+            <span className="font-display text-2xl font-extrabold tracking-tight text-[#3ea498]">
+              FOKMH
+            </span>
           </a>
         </motion.div>
 

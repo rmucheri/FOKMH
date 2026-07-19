@@ -35,8 +35,8 @@ function HeroBottom() {
   return (
     <section className="relative py-20 md:py-28 overflow-hidden bg-gradient-to-b from-white via-gray-50 to-white">
       {/* Decorative background elements */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-[#3ea498]/10 to-transparent rounded-full blur-3xl -mr-48 -mt-48" />
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-[#3ea498]/10 to-transparent rounded-full blur-3xl -ml-48 -mb-48" />
+      <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-brand-teal/10 to-transparent rounded-full blur-3xl -mr-48 -mt-48" />
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-brand-teal/10 to-transparent rounded-full blur-3xl -ml-48 -mb-48" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
         <motion.div
@@ -53,7 +53,7 @@ function HeroBottom() {
                 variants={itemVariants}
                 className="text-4xl md:text-5xl lg:text-5xl font-bold leading-tight"
               >
-                <span className="text-[#3ea498] block mb-2">
+                <span className="text-brand-teal block mb-2">
                   Meet Our Heroes
                 </span>
                 <span className="text-gray-900">Behind the Scenes</span>
@@ -76,7 +76,7 @@ function HeroBottom() {
             {/* Team member highlight card */}
             <motion.div
               variants={itemVariants}
-              className="relative p-6 md:p-8 bg-gradient-to-br from-[#3ea498]/5 to-transparent border border-[#3ea498]/20 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+              className="relative p-6 md:p-8 bg-gradient-to-br from-brand-teal/5 to-transparent border border-brand-teal/20 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300"
             >
               <div className="flex items-start gap-4">
                 <div className="text-3xl">👨‍⚕️</div>
@@ -92,7 +92,7 @@ function HeroBottom() {
                     innovative treatments and care protocols, significantly
                     improving patient outcomes.
                   </p>
-                  <div className="flex items-center gap-2 text-[#3ea498] font-semibold text-sm pt-2">
+                  <div className="flex items-center gap-2 text-brand-teal font-semibold text-sm pt-2">
                     <span>Healthcare Visionary</span>
                     <svg
                       className="w-4 h-4"
@@ -117,7 +117,7 @@ function HeroBottom() {
               variants={itemVariants}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="inline-flex items-center gap-2 px-8 py-4 bg-[#3ea498] text-white font-semibold rounded-full hover:bg-[#2c7b72] transition-all duration-300 shadow-lg hover:shadow-xl"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-brand-teal text-white font-semibold rounded-full hover:bg-brand-teal-dark transition-all duration-300 shadow-lg hover:shadow-xl"
             >
               Learn About Our Team
               <svg
@@ -142,7 +142,7 @@ function HeroBottom() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
-            className="grid grid-cols-2 gap-6 md:gap-8"
+            className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8"
           >
             {/* Image 1 */}
             <motion.div
@@ -151,7 +151,7 @@ function HeroBottom() {
               className="relative h-64 md:h-72 lg:h-80 rounded-2xl overflow-hidden shadow-xl"
             >
               <img
-                className="w-full h-full object-cover"
+                className="w-full h-full max-w-full object-cover"
                 src="https://clubrunner.blob.core.windows.net/00000000662/Images/Rotopics%202019-2020%20by%20Michael/2019-12-16%20xmas%20dinner/Sonosite-2---Mother-and-Baby-and--Scan.jpg"
                 alt="Medical care in action"
               />
@@ -169,7 +169,7 @@ function HeroBottom() {
               className="relative h-64 md:h-72 lg:h-80 rounded-2xl overflow-hidden shadow-xl mt-6 md:mt-12"
             >
               <img
-                className="w-full h-full object-cover"
+                className="w-full h-full max-w-full object-cover"
                 src={docTakFull}
                 alt="Professional medical team"
               />
@@ -210,7 +210,7 @@ function HeroBottom() {
             <motion.div
               key={index}
               whileHover={{ scale: 1.05 }}
-              className="p-6 md:p-8 bg-white rounded-2xl shadow-lg border border-gray-100 hover:border-[#3ea498]/30 transition-all duration-300 text-center"
+              className="p-6 md:p-8 bg-white rounded-2xl shadow-lg border border-gray-100 hover:border-brand-teal/30 transition-all duration-300 text-center"
             >
               <div className="text-4xl mb-4">{item.icon}</div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">

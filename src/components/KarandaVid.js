@@ -12,8 +12,8 @@ function KarandaVid() {
     >
       {/* Decorative background elements */}
       <div className="absolute inset-0 bg-gradient-to-b from-white via-gray-50 to-white" />
-      <div className="absolute top-20 right-0 w-80 h-80 bg-gradient-to-br from-[#3ea498]/5 to-transparent rounded-full blur-3xl" />
-      <div className="absolute bottom-20 left-0 w-80 h-80 bg-gradient-to-tr from-[#3ea498]/5 to-transparent rounded-full blur-3xl" />
+      <div className="absolute top-20 right-0 w-80 h-80 bg-gradient-to-br from-brand-teal/5 to-transparent rounded-full blur-3xl" />
+      <div className="absolute bottom-20 left-0 w-80 h-80 bg-gradient-to-tr from-brand-teal/5 to-transparent rounded-full blur-3xl" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
         {/* Section header */}
@@ -25,7 +25,7 @@ function KarandaVid() {
           className="text-center mb-12 md:mb-16"
         >
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-            <span className="text-[#3ea498]">Watch</span> Our Impact in Action
+            <span className="text-brand-teal">Watch</span> Our Impact in Action
           </h2>
           <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto">
             Discover the stories of hope and healing happening at Karanda
@@ -42,7 +42,7 @@ function KarandaVid() {
           className="relative mx-auto"
         >
           {/* Gradient border effect */}
-          <div className="absolute -inset-2 md:-inset-3 bg-gradient-to-r from-[#3ea498] via-cyan-500 to-[#3ea498] rounded-2xl md:rounded-3xl blur-xl opacity-30 group-hover:opacity-50 transition-opacity duration-300" />
+          <div className="absolute -inset-2 md:-inset-3 bg-gradient-to-r from-brand-teal via-cyan-500 to-brand-teal rounded-2xl md:rounded-3xl blur-xl opacity-30 group-hover:opacity-50 transition-opacity duration-300" />
 
           {/* Video frame */}
           <div className="relative bg-black rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl group">
@@ -105,7 +105,7 @@ function KarandaVid() {
               key={index}
               whileHover={{ scale: 1.05, y: -4 }}
               transition={{ duration: 0.3 }}
-              className="p-6 md:p-8 bg-white rounded-xl md:rounded-2xl shadow-lg border border-gray-100 hover:border-[#3ea498]/30 transition-all duration-300"
+              className="p-6 md:p-8 bg-white rounded-xl md:rounded-2xl shadow-lg border border-gray-100 hover:border-brand-teal/30 transition-all duration-300"
             >
               <div className="text-3xl md:text-4xl mb-4">{item.icon}</div>
               <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-2">

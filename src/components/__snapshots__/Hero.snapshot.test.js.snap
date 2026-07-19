@@ -1,0 +1,157 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Hero snapshot matches the snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="relative min-h-[75vh] overflow-hidden"
+    style="opacity: 0;"
+  >
+    <div
+      class="absolute inset-0 bg-cover bg-center bg-no-repeat"
+      style="background-image: url(https://images.squarespace-cdn.com/content/v1/6509b098e9ec677d0862ff32/302dbc06-51e9-496e-9845-290226370ad3/DSCF7739.jpg?format=750w);"
+    >
+      <div
+        class="absolute inset-0 bg-black/60"
+      />
+    </div>
+    <div
+      class="relative flex min-h-[75vh] flex-col items-center justify-center gap-6 px-4 py-12 sm:py-16 max-w-7xl mx-auto"
+    >
+      <div
+        class="w-full max-w-3xl"
+        style="opacity: 0; transform: translateY(-50px);"
+      >
+        <div
+          class="bg-orange-600 bg-opacity-90 rounded-lg p-4 shadow-lg transform hover:scale-105 transition-transform duration-300"
+        >
+          <p
+            class="text-white text-center flex items-center justify-center gap-2"
+          >
+            <span
+              class="text-lg md:text-2xl"
+            >
+              🏥
+            </span>
+            <span
+              class="text-xs md:text-2xl"
+            >
+              Special Campaign: Help us acquire vital medical equipment and transport
+              <a
+                class="ml-2 inline-flex min-h-[44px] items-center font-bold text-white hover:text-brand-teal underline decoration-2 transition-colors duration-300 rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-orange-600"
+                href="/fundraising"
+              >
+                Learn More →
+              </a>
+            </span>
+          </p>
+        </div>
+      </div>
+      <div
+        class="text-center max-w-4xl"
+        style="opacity: 0; transform: translateY(50px);"
+      >
+        <h1
+          class="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-white mb-4 sm:mb-6 leading-tight"
+        >
+          Friends of Karanda Mission Hospital
+        </h1>
+        <p
+          class="text-lg sm:text-xl md:text-2xl text-gray-100 mb-4 sm:mb-6 leading-relaxed"
+        >
+          Support Life, Inspire Hope: Join Us in the Fight Against Cancer at Karanda Mission Hospital in our Patient Sponsorship Program,
+        </p>
+        <a
+          class="inline-flex min-h-[44px] items-center justify-center rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-400 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+          href="/causes"
+        >
+          <span
+            class="text-3xl sm:text-4xl font-extrabold text-orange-500 hover:text-orange-400 transition-colors duration-300"
+          >
+            "Adopt a Patient"
+          </span>
+        </a>
+        <div
+          class="flex flex-col sm:flex-row items-center justify-center gap-4 mt-6 sm:mt-8"
+          style="opacity: 0; transform: translateY(50px);"
+        >
+          <button
+            class="w-full sm:w-56 min-h-[44px] px-8 py-4 bg-brand-teal text-white text-lg font-semibold rounded-full
+ hover:bg-brand-teal-dark transition-all duration-300 transform hover:scale-105
+ flex items-center justify-center gap-2 shadow-lg
+ focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+            type="button"
+          >
+            Donate Now
+            <svg
+              class="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M17 8l4 4m0 0l-4 4m4-4H3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              />
+            </svg>
+          </button>
+          <a
+            class="w-full sm:w-56 min-h-[44px] px-8 py-4 border-2 border-white text-white text-lg font-semibold rounded-full
+ hover:bg-white hover:text-gray-900 transition-all duration-300 transform hover:scale-105
+ flex items-center justify-center gap-2
+ focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+            href="/about"
+          >
+            More Information
+          </a>
+          <a
+            class="w-full sm:w-56 min-h-[44px] px-8 py-4 bg-orange-600 text-white text-lg font-semibold rounded-full
+ hover:bg-orange-700 transition-all duration-300 transform hover:scale-105
+ flex items-center justify-center gap-2 shadow-lg
+ focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-400 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+            href="/events"
+          >
+            Events
+            <svg
+              class="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      class="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+      style="opacity: 0;"
+    >
+      <div
+        class="animate-bounce"
+      >
+        <svg
+          class="w-6 h-6 text-white"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M19 14l-7 7m0 0l-7-7m7 7V3"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

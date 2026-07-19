@@ -7,7 +7,6 @@ import Partner from "../components/Partner";
 import KarandaVid from "../components/KarandaVid";
 import Feature from "../components/Feature";
 import Payment from "../components/Payment";
-import CampaignPopup from "../components/CampaignPopup";
 
 function Home() {
   const sectionVariants = {
@@ -23,9 +22,7 @@ function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-primary overflow-hidden">
-      <CampaignPopup />
-
+    <div className="min-h-screen bg-white overflow-hidden">
       {/* Hero Section */}
       <motion.section
         initial="hidden"
@@ -36,7 +33,7 @@ function Home() {
       </motion.section>
 
       {/* Main Content Sections */}
-      <div className="relative">
+      <div className="relative space-y-8 md:space-y-12">
         <motion.section
           initial="hidden"
           whileInView="visible"
@@ -62,7 +59,7 @@ function Home() {
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
           variants={sectionVariants}
-          className="relative z-10 bg-gradient-secondary"
+          className="relative z-10"
         >
           <Payment />
         </motion.section>

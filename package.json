@@ -49,6 +49,7 @@
     ]
   },
   "devDependencies": {
+    "jest-axe": "^10.0.0",
     "tailwindcss": "^3.4.4"
   }
 }

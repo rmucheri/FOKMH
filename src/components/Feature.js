@@ -65,7 +65,7 @@ function Feature() {
                   className="text-3xl md:text-4xl lg:text-5xl font-bold px-4 md:px-0"
                 >
                   Transforming Lives Through{" "}
-                  <span className="text-[#3ea498] block md:inline">
+                  <span className="text-brand-teal block md:inline">
                     Compassionate Care
                   </span>
                 </motion.h1>
@@ -88,13 +88,13 @@ function Feature() {
               >
                 <Link
                   to="/causes"
-                  className="px-8 py-3 bg-[#3ea498] text-white rounded-full hover:bg-[#2c7b72] transition-all duration-300 hover:shadow-lg w-full sm:w-auto"
+                  className="px-8 py-3 bg-brand-teal text-white rounded-full hover:bg-brand-teal-dark transition-all duration-300 hover:shadow-lg w-full sm:w-auto"
                 >
                   Support Our Mission
                 </Link>
                 <Link
                   to="/about"
-                  className="px-8 py-3 border-2 border-[#3ea498] text-[#3ea498] rounded-full hover:bg-[#3ea498] hover:text-white transition-all duration-300 w-full sm:w-auto"
+                  className="px-8 py-3 border-2 border-brand-teal text-brand-teal rounded-full hover:bg-brand-teal hover:text-white transition-all duration-300 w-full sm:w-auto"
                 >
                   Learn More
                 </Link>
@@ -108,11 +108,11 @@ function Feature() {
               transition={{ duration: 0.8 }}
               className="relative flex justify-center lg:justify-end"
             >
-              <div className="absolute -inset-4 bg-[#3ea498]/10 rounded-xl blur-xl"></div>
+              <div className="absolute -inset-4 bg-brand-teal/10 rounded-xl blur-xl"></div>
               <img
                 src={docTakPodium}
-                alt="Medical Care"
-                className="relative rounded-xl shadow-2xl w-4/5 md:w-3/4 lg:w-5/6 object-cover"
+                alt="Dr. Paul Thistle speaking at a podium at Karanda Mission Hospital"
+                className="relative rounded-xl shadow-2xl w-4/5 md:w-3/4 lg:w-5/6 max-w-full h-auto object-cover"
               />
             </motion.div>
           </motion.div>
@@ -135,7 +135,7 @@ function Feature() {
                 whileHover={{ scale: 1.05 }}
                 className="bg-white p-6 rounded-xl shadow-lg text-center"
               >
-                <h3 className="text-xl md:text-2xl font-bold text-[#3ea498] mb-2">
+                <h3 className="text-xl md:text-2xl font-bold text-brand-teal mb-2">
                   {stat.label}
                 </h3>
                 <p className="text-sm md:text-base text-gray-600">
@@ -191,7 +191,7 @@ function Feature() {
                   <motion.div
                     initial={{ scaleX: 0 }}
                     animate={{ scaleX: 1 }}
-                    className="absolute bottom-0 left-0 w-full h-1 bg-[#3ea498] origin-left"
+                    className="absolute bottom-0 left-0 w-full h-1 bg-brand-teal origin-left"
                   />
                 )}
               </motion.div>
@@ -215,7 +215,7 @@ function Feature() {
             </p>
             <Link
               to="/causes"
-              className="w-full sm:w-auto px-8 py-3 bg-[#3ea498] text-white rounded-full hover:bg-[#2c7b72] transition-all duration-300 hover:shadow-lg"
+              className="w-full sm:w-auto px-8 py-3 bg-brand-teal text-white rounded-full hover:bg-brand-teal-dark transition-all duration-300 hover:shadow-lg"
             >
               Support Our Cause
             </Link>

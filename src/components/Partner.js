@@ -17,8 +17,8 @@ function Partner() {
       className="relative py-16 md:py-24 bg-gradient-to-r from-gray-50 via-white to-gray-50 overflow-hidden"
     >
       {/* Decorative background elements */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-[#3ea498]/5 to-transparent rounded-full blur-3xl" />
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-[#3ea498]/5 to-transparent rounded-full blur-3xl" />
+      <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-brand-teal/5 to-transparent rounded-full blur-3xl" />
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-brand-teal/5 to-transparent rounded-full blur-3xl" />
 
       {/* Header */}
       <motion.div
@@ -29,7 +29,7 @@ function Partner() {
         className="relative z-10 text-center mb-12 md:mb-16 px-4"
       >
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-          Our <span className="text-[#3ea498]">Trusted Partners</span>
+          Our <span className="text-brand-teal">Trusted Partners</span>
         </h2>
         <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto">
           Working together with leading organizations to improve healthcare and
@@ -52,7 +52,7 @@ function Partner() {
                   alt="Solvaxion"
                   width="180"
                   height="80"
-                  className="w-auto h-20 object-contain"
+                  className="w-auto h-20 max-w-full object-contain"
                 />
               </div>
             </li>
@@ -64,7 +64,7 @@ function Partner() {
                     alt="Magetsi"
                     width="180"
                     height="80"
-                    className="w-auto h-20 object-contain"
+                    className="w-auto h-20 max-w-full object-contain"
                   />
                 </div>
               </a>
@@ -76,7 +76,7 @@ function Partner() {
                   alt="Wildrose"
                   width="180"
                   height="80"
-                  className="w-auto h-20 object-contain"
+                  className="w-auto h-20 max-w-full object-contain"
                 />
               </div>
             </li>
@@ -87,7 +87,7 @@ function Partner() {
                   alt="Mamoyo"
                   width="180"
                   height="80"
-                  className="w-auto h-20 object-contain"
+                  className="w-auto h-20 max-w-full object-contain"
                 />
               </div>
             </li>
@@ -98,7 +98,7 @@ function Partner() {
                   alt="Calculators"
                   width="180"
                   height="80"
-                  className="w-auto h-20 object-contain"
+                  className="w-auto h-20 max-w-full object-contain"
                 />
               </div>
             </li>
@@ -109,7 +109,7 @@ function Partner() {
                   alt="Team Logo"
                   width="180"
                   height="80"
-                  className="w-auto h-20 object-contain"
+                  className="w-auto h-20 max-w-full object-contain"
                 />
               </div>
             </li>
@@ -120,7 +120,7 @@ function Partner() {
                   alt="Karanda Mission Hospital"
                   width="180"
                   height="80"
-                  className="w-auto h-20 object-contain"
+                  className="w-auto h-20 max-w-full object-contain"
                 />
               </div>
             </li>
@@ -130,10 +130,10 @@ function Partner() {
               <div className="h-32 flex items-center justify-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 group-hover:scale-110 group-hover:bg-gray-50">
                 <img
                   src={solvaxion}
-                  alt="Solvaxion"
+                  alt=""
                   width="180"
                   height="80"
-                  className="w-auto h-20 object-contain"
+                  className="w-auto h-20 max-w-full object-contain"
                 />
               </div>
             </li>
@@ -141,10 +141,10 @@ function Partner() {
               <div className="h-32 flex items-center justify-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 group-hover:scale-110 group-hover:bg-gray-50">
                 <img
                   src={magetsi}
-                  alt="Magetsi"
+                  alt=""
                   width="180"
                   height="80"
-                  className="w-auto h-20 object-contain"
+                  className="w-auto h-20 max-w-full object-contain"
                 />
               </div>
             </li>
@@ -152,10 +152,10 @@ function Partner() {
               <div className="h-32 flex items-center justify-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 group-hover:scale-110 group-hover:bg-gray-50">
                 <img
                   src={wildrose}
-                  alt="Wildrose"
+                  alt=""
                   width="180"
                   height="80"
-                  className="w-auto h-20 object-contain"
+                  className="w-auto h-20 max-w-full object-contain"
                 />
               </div>
             </li>
@@ -163,10 +163,10 @@ function Partner() {
               <div className="h-32 flex items-center justify-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 group-hover:scale-110 group-hover:bg-gray-50">
                 <img
                   src={mamoyo}
-                  alt="Mamoyo"
+                  alt=""
                   width="180"
                   height="80"
-                  className="w-auto h-20 object-contain"
+                  className="w-auto h-20 max-w-full object-contain"
                 />
               </div>
             </li>
@@ -174,10 +174,10 @@ function Partner() {
               <div className="h-32 flex items-center justify-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 group-hover:scale-110 group-hover:bg-gray-50">
                 <img
                   src={calculators}
-                  alt="Calculators"
+                  alt=""
                   width="180"
                   height="80"
-                  className="w-auto h-20 object-contain"
+                  className="w-auto h-20 max-w-full object-contain"
                 />
               </div>
             </li>
@@ -185,10 +185,10 @@ function Partner() {
               <div className="h-32 flex items-center justify-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 group-hover:scale-110 group-hover:bg-gray-50">
                 <img
                   src={teamlogo}
-                  alt="Team Logo"
+                  alt=""
                   width="180"
                   height="80"
-                  className="w-auto h-20 object-contain"
+                  className="w-auto h-20 max-w-full object-contain"
                 />
               </div>
             </li>
@@ -196,10 +196,10 @@ function Partner() {
               <div className="h-32 flex items-center justify-center p-6 bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 group-hover:scale-110">
                 <img
                   src={Karandalogo}
-                  alt="Karanda Mission Hospital"
+                  alt=""
                   width="180"
                   height="80"
-                  className="w-auto h-20 object-contain"
+                  className="w-auto h-20 max-w-full object-contain"
                 />
               </div>
             </li>

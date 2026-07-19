@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { Parallax } from "react-parallax";
+import React, { useEffect, useRef, useState } from "react";
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import { kmhgate } from "../assets";
+import DonationModal from "./DonationModal";
 
 const karanda1 =
   "https://images.squarespace-cdn.com/content/v1/6509b098e9ec677d0862ff32/302dbc06-51e9-496e-9845-290226370ad3/DSCF7739.jpg?format=750w";
@@ -35,7 +36,8 @@ const getRandomImage = () => {
 
 function Hero() {
   const [bgImage, setBgImage] = useState(getRandomImage());
-  const [showModal, setShowModal] = useState(false);
+  const [isDonationOpen, setIsDonationOpen] = useState(false);
+  const donateButtonRef = useRef(null);
 
   useEffect(() => {
     setBgImage(getRandomImage());
@@ -46,37 +48,39 @@ function Hero() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      className="relative h-[75vh] overflow-hidden"
+      className="relative min-h-[75vh] overflow-hidden"
     >
       {/* Background Image with Overlay */}
       <div
         style={{ backgroundImage: `url(${bgImage})` }}
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
       >
-        <div className="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-[0px]" />
+        {/* Dark overlay tuned for >=4.5:1 (normal) / >=3:1 (large) text
+            contrast over any random background image (Reqs 3.4, 6.2, 6.8). */}
+        <div className="absolute inset-0 bg-black/60" />
       </div>
 
       {/* Content Container */}
-      <div className="relative h-full flex flex-col items-center justify-center px-4 max-w-7xl mx-auto">
+      <div className="relative flex min-h-[75vh] flex-col items-center justify-center gap-6 px-4 py-12 sm:py-16 max-w-7xl mx-auto">
         {/* Campaign Banner */}
         <motion.div
           initial={{ y: -50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.2 }}
-          className="w-full max-w-3xl mb-8"
+          className="w-full max-w-3xl"
         >
-          <div className="bg-orange-600 md:mt-2 mt-60 bg-opacity-90 rounded-lg p-4 shadow-lg transform hover:scale-105 transition-transform duration-300">
-            <p className="text-white text-lg text-center flex items-center justify-center gap-2">
+          <div className="bg-orange-600 bg-opacity-90 rounded-lg p-4 shadow-lg transform hover:scale-105 transition-transform duration-300">
+            <p className="text-white text-center flex items-center justify-center gap-2">
               <span className="text-lg md:text-2xl">🏥</span>
               <span className="text-xs md:text-2xl">
                 Special Campaign: Help us acquire vital medical equipment and
                 transport
-                <a
-                  href="/fundraising"
-                  className="ml-2 font-bold text-white hover:text-[#3ea498] underline decoration-2 transition-colors duration-300"
+                <Link
+                  to="/fundraising"
+                  className="ml-2 inline-flex min-h-[44px] items-center font-bold text-white hover:text-brand-teal underline decoration-2 transition-colors duration-300 rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-orange-600"
                 >
                   Learn More →
-                </a>
+                </Link>
               </span>
             </p>
           </div>
@@ -89,32 +93,38 @@ function Hero() {
           transition={{ delay: 0.4 }}
           className="text-center max-w-4xl"
         >
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-white mb-6 leading-tight">
+          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-white mb-4 sm:mb-6 leading-tight">
             Friends of Karanda Mission Hospital
           </h1>
 
-          <p className="text-xl md:text-2xl text-gray-100 mb-8 leading-relaxed">
+          <p className="text-lg sm:text-xl md:text-2xl text-gray-100 mb-4 sm:mb-6 leading-relaxed">
             Support Life, Inspire Hope: Join Us in the Fight Against Cancer at
             Karanda Mission Hospital in our Patient Sponsorship Program,
-            <a href="/causes" className="block mt-4">
-              <span className="text-4xl font-extrabold text-orange-500 hover:text-orange-400 transition-colors duration-300">
-                "Adopt a Patient"
-              </span>
-            </a>
           </p>
+          <Link
+            to="/causes"
+            className="inline-flex min-h-[44px] items-center justify-center rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-400 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+          >
+            <span className="text-3xl sm:text-4xl font-extrabold text-orange-500 hover:text-orange-400 transition-colors duration-300">
+              "Adopt a Patient"
+            </span>
+          </Link>
 
           {/* Buttons */}
           <motion.div
             initial={{ y: 50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.6 }}
-            className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8"
+            className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-6 sm:mt-8"
           >
             <button
-              onClick={() => setShowModal(true)}
-              className="px-8 py-4 bg-[#3ea498] text-white text-lg font-semibold rounded-full 
-                       hover:bg-orange-600 transition-all duration-300 transform hover:scale-105
-                       flex items-center gap-2 shadow-lg"
+              ref={donateButtonRef}
+              type="button"
+              onClick={() => setIsDonationOpen(true)}
+              className="w-full sm:w-56 min-h-[44px] px-8 py-4 bg-brand-teal text-white text-lg font-semibold rounded-full
+                       hover:bg-brand-teal-dark transition-all duration-300 transform hover:scale-105
+                       flex items-center justify-center gap-2 shadow-lg
+                       focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
             >
               Donate Now
               <svg
@@ -132,13 +142,38 @@ function Hero() {
               </svg>
             </button>
 
-            <a
-              href="/about"
-              className="px-8 py-4 border-2 border-white text-white text-lg font-semibold rounded-full
-                       hover:bg-white hover:text-gray-900 transition-all duration-300 transform hover:scale-105"
+            <Link
+              to="/about"
+              className="w-full sm:w-56 min-h-[44px] px-8 py-4 border-2 border-white text-white text-lg font-semibold rounded-full
+                       hover:bg-white hover:text-gray-900 transition-all duration-300 transform hover:scale-105
+                       flex items-center justify-center gap-2
+                       focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
             >
               More Information
-            </a>
+            </Link>
+
+            <Link
+              to="/events"
+              className="w-full animate-bounce sm:w-56 min-h-[44px] px-8 py-4 bg-orange-600 text-white text-lg font-semibold rounded-full
+                       hover:bg-orange-700 transition-all duration-300 transform hover:scale-105
+                       flex items-center justify-center gap-2 shadow-lg
+                       focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-400 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+            >
+              Events
+              <svg
+                className="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                />
+              </svg>
+            </Link>
           </motion.div>
         </motion.div>
       </div>
@@ -165,82 +200,12 @@ function Hero() {
         </div>
       </motion.div>
 
-      {/* Modal - Same as before */}
-      {showModal && (
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          className="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-[99998] backdrop-blur-sm p-4"
-        >
-          <motion.div
-            initial={{ scale: 0.9 }}
-            animate={{ scale: 1 }}
-            className="bg-white rounded-2xl shadow-2xl max-w-2xl w-full overflow-hidden"
-          >
-            {/* Header with Gradient */}
-            <div className="bg-gradient-to-r from-[#3ea498] to-cyan-600 px-8 py-12 text-white text-center relative">
-              <button
-                onClick={() => setShowModal(false)}
-                className="absolute top-4 right-4 text-2xl hover:text-gray-200 transition-colors"
-              >
-                ✕
-              </button>
-              <h2 className="text-4xl font-bold mb-2">Make a Difference</h2>
-              <p className="text-lg opacity-95">
-                Choose how you'd like to support us
-              </p>
-            </div>
-
-            {/* Content */}
-            <div className="p-8 space-y-6">
-              <div className="space-y-3">
-                {[
-                  {
-                    text: "🇺🇸 USA Donations",
-                    href: "https://give.team.org/give/672997/#!/donation/checkout",
-                    color: "bg-[#3ea498] hover:bg-[#2d8276]",
-                  },
-                  {
-                    text: "🇨🇦 Canada Donations",
-                    href: "https://give.ca.team.org/give/673060/#!/donation/checkout",
-                    color: "bg-cyan-600 hover:bg-cyan-700",
-                  },
-                  {
-                    text: "🌍 Rest of the World",
-                    href: "https://magetsi.co.zw/billers/friends-of-karanda-mission-hospital",
-                    color: "bg-orange-600 hover:bg-orange-700",
-                  },
-                ].map((button, index) => (
-                  <a
-                    key={index}
-                    target="_blank"
-                    rel="noreferrer"
-                    href={button.href}
-                    className={`block w-full py-4 px-6 text-center text-lg font-semibold text-white rounded-xl ${button.color} transition-all duration-200 shadow-md hover:shadow-lg transform hover:scale-105`}
-                  >
-                    {button.text}
-                  </a>
-                ))}
-              </div>
-
-              {/* Trust Badge */}
-              <div className="text-center text-sm text-gray-600 pt-4 border-t">
-                <p>🔒 Secure donations · 100% transparent · Direct impact</p>
-              </div>
-            </div>
-
-            {/* Footer */}
-            <div className="bg-gray-50 px-8 py-6 text-center border-t">
-              <button
-                onClick={() => setShowModal(false)}
-                className="text-gray-600 hover:text-gray-900 font-semibold transition-colors"
-              >
-                Maybe Later
-              </button>
-            </div>
-          </motion.div>
-        </motion.div>
-      )}
+      {/* Accessible regional donation dialog */}
+      <DonationModal
+        open={isDonationOpen}
+        onClose={() => setIsDonationOpen(false)}
+        returnFocusRef={donateButtonRef}
+      />
     </motion.div>
   );
 }

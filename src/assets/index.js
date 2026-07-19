@@ -6,7 +6,7 @@ import mamoyo from "./images/mamoyo.jpg";
 import doctorl from "./images/doctorl.jpg";
 import doctorp from "./images/doctorp.jpg";
 import solvaxion from "./images/solvaxion.svg";
-import wildrose from "./images/WildroseLogo(1).svg";
+import wildrose from "./images/WildroseLogo.svg";
 import hospital from "./images/hospital.jpg";
 import operation from "./images/operation.jpg";
 import xrays from "./images/xrays.jpg";
