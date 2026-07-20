@@ -28,7 +28,7 @@ function Partner() {
         transition={{ duration: 0.6, delay: 0.1 }}
         className="relative z-10 text-center mb-12 md:mb-16 px-4"
       >
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+        <h2 className="font-display tracking-tight text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
           Our <span className="text-brand-teal">Trusted Partners</span>
         </h2>
         <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto">

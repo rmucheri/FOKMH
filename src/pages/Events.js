@@ -84,7 +84,7 @@ function Events() {
           transition={{ duration: 0.6 }}
           className="mx-auto max-w-3xl"
         >
-          <h1 className="mb-4 text-4xl font-extrabold sm:text-5xl">
+          <h1 className="mb-4 font-display text-4xl font-extrabold tracking-tight sm:text-5xl">
             Karanda Fundraiser Events
           </h1>
           <p className="text-lg opacity-95 sm:text-xl">
@@ -96,7 +96,7 @@ function Events() {
       <div className="mx-auto max-w-6xl px-4 py-12 sm:py-16">
         {/* Poster gallery */}
         <section>
-          <h2 className="mb-6 text-2xl font-bold text-gray-900">
+          <h2 className="mb-6 font-display text-2xl font-bold tracking-tight text-gray-900">
             Event posters
           </h2>
 
@@ -143,7 +143,7 @@ function Events() {
                       src={`${EVENTS_BASE}/${poster.image}`}
                       alt={poster.title || "Event poster"}
                       loading="lazy"
-                      className="h-96 w-full max-w-full object-fill transition-transform duration-300 group-hover:scale-105"
+                      className="h-96 w-full max-w-full bg-gray-50 object-contain transition-transform duration-300 group-hover:scale-105"
                     />
                   </button>
                   <div className="p-5">

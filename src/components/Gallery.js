@@ -61,8 +61,8 @@ export function Gallery() {
       className="relative py-4 md:py-8 overflow-hidden bg-gradient-to-b from-white via-gray-50 to-white"
     >
       {/* Decorative background elements */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-[#3ea498]/5 to-transparent rounded-full blur-3xl" />
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-[#3ea498]/5 to-transparent rounded-full blur-3xl" />
+      <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-brand-teal/5 to-transparent rounded-full blur-3xl" />
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-brand-teal/5 to-transparent rounded-full blur-3xl" />
 
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
         {/* Header */}
@@ -73,8 +73,8 @@ export function Gallery() {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="text-center mb-12 md:mb-16"
         >
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4">
-            Our <span className="text-[#3ea498]">Gallery</span>
+          <h2 className="font-display tracking-tight text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4">
+            Our <span className="text-brand-teal">Gallery</span>
           </h2>
           <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto">
             Moments of hope and healing from Karanda Mission Hospital
@@ -103,7 +103,7 @@ export function Gallery() {
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.95 }}
                 transition={{ duration: 0.4 }}
-                className="w-full h-auto md:h-[500px] lg:h-[600px] object-cover"
+                className="w-full max-w-full h-auto md:h-[500px] lg:h-[600px] object-cover"
               />
             </AnimatePresence>
 
@@ -127,9 +127,9 @@ export function Gallery() {
                 <motion.img
                   src={imgelink}
                   alt={`Gallery thumbnail ${index + 1}`}
-                  className={`h-32 sm:h-40 md:h-44 w-full object-cover transition-all duration-300 ${
+                  className={`h-32 sm:h-40 md:h-44 w-full max-w-full object-cover transition-all duration-300 ${
                     active === imgelink
-                      ? "ring-2 md:ring-4 ring-[#3ea498]"
+                      ? "ring-2 md:ring-4 ring-brand-teal"
                       : "ring-1 ring-gray-200"
                   } group-hover:scale-110`}
                   whileHover={{ scale: 1.05 }}
@@ -139,7 +139,7 @@ export function Gallery() {
                 <div
                   className={`absolute inset-0 transition-all duration-300 ${
                     active === imgelink
-                      ? "bg-[#3ea498]/20"
+                      ? "bg-brand-teal/20"
                       : "bg-black/0 group-hover:bg-black/10"
                   }`}
                 />
@@ -148,7 +148,7 @@ export function Gallery() {
                 {active === imgelink && (
                   <motion.div
                     layoutId="activeIndicator"
-                    className="absolute inset-0 border-2 md:border-4 border-[#3ea498] rounded-xl md:rounded-2xl"
+                    className="absolute inset-0 border-2 md:border-4 border-brand-teal rounded-xl md:rounded-2xl"
                     initial={{ scale: 0.8, opacity: 0 }}
                     animate={{ scale: 1, opacity: 1 }}
                     transition={{ duration: 0.3 }}
@@ -161,7 +161,7 @@ export function Gallery() {
                     initial={{ scale: 0, rotate: -180 }}
                     animate={{ scale: 1, rotate: 0 }}
                     transition={{ duration: 0.3 }}
-                    className="absolute top-2 right-2 w-6 h-6 bg-[#3ea498] rounded-full flex items-center justify-center"
+                    className="absolute top-2 right-2 w-6 h-6 bg-brand-teal rounded-full flex items-center justify-center"
                   >
                     <svg
                       className="w-4 h-4 text-white"
@@ -187,7 +187,7 @@ export function Gallery() {
             variants={itemVariants}
             className="flex justify-center items-center gap-2 text-sm md:text-base text-gray-600"
           >
-            <span className="font-semibold text-[#3ea498]">
+            <span className="font-semibold text-brand-teal">
               {data.findIndex((img) => img.imgelink === active) + 1}
             </span>
             <span>/</span>

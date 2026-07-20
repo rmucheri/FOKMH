@@ -151,22 +151,22 @@ function Teamleadership() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16 lg:mb-20"
         >
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold gradient-text-primary mb-6">
+          <h2 className="font-display tracking-tight text-4xl sm:text-5xl lg:text-6xl font-bold gradient-text-primary mb-6">
             Meet Our Leadership
           </h2>
           <div className="max-w-4xl mx-auto">
             <div className="modern-card p-6 sm:p-8">
               <p className="text-xl text-gray-600 leading-relaxed mb-4">
-                <span className="text-teal-500 text-2xl font-semibold">
+                <span className="text-brand-teal text-2xl font-semibold">
                   Message from the CEO
                 </span>
               </p>
               <p className="text-5xl sm:text-lg text-gray-600 ">
-                <span className="italic text-teal-500 text-3xl">"</span>
+                <span className="italic text-brand-teal text-3xl">"</span>
                 My personal experiences with cancer have deeply shaped my
                 perspective on the importance of accessible, compassionate
                 healthcare.
-                <span className="italic text-teal-500 text-3xl">"</span>
+                <span className="italic text-brand-teal text-3xl">"</span>
               </p>
               <motion.a
                 href="/CEO"
@@ -218,7 +218,7 @@ function Teamleadership() {
                       <img
                         src={leader.image}
                         alt={leader.name}
-                        className="w-full h-full rounded-full object-cover shadow-2xl"
+                        className="w-full max-w-full h-full rounded-full object-cover shadow-2xl"
                       />
                       <div className="absolute -inset-4 bg-gradient-to-r from-cyan-400/30 to-teal-400/30 rounded-full blur-2xl -z-10" />
                     </div>
@@ -248,13 +248,13 @@ function Teamleadership() {
           className="mb-20"
         >
           <div className="text-center mb-16">
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold gradient-text-primary mb-6">
+            <h2 className="font-display tracking-tight text-4xl sm:text-5xl lg:text-6xl font-bold gradient-text-primary mb-6">
               Meet the Karanda Leadership
             </h2>
             <div className="max-w-4xl mx-auto">
               <div className="modern-card p-8">
                 <p className="text-xl text-gray-600 leading-relaxed">
-                  <span className="text-teal-500 text-2xl font-semibold">
+                  <span className="text-brand-teal text-2xl font-semibold">
                     Dr. Thistle and Crew
                   </span>
                 </p>
@@ -288,7 +288,7 @@ function Teamleadership() {
                       <img
                         src={member.image}
                         alt={member.name}
-                        className="w-full h-full rounded-2xl object-cover shadow-2xl"
+                        className="w-full max-w-full h-full rounded-2xl object-cover shadow-2xl"
                       />
                       <div className="absolute -inset-3 bg-gradient-to-r from-teal-400/40 to-cyan-400/40 rounded-2xl blur-xl -z-10 group-hover:blur-2xl transition-all duration-500" />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-2xl" />
@@ -302,7 +302,7 @@ function Teamleadership() {
                     <p className="gradient-text-secondary text-lg font-semibold mb-2">
                       {member.role}
                     </p>
-                    <p className="text-sm text-teal-600 font-medium bg-teal-50 px-3 py-1 rounded-full inline-block mb-3">
+                    <p className="text-sm text-brand-teal-dark font-medium bg-brand-teal/10 px-3 py-1 rounded-full inline-block mb-3">
                       {member.specialization}
                     </p>
                     <p className="text-gray-600 leading-relaxed">
@@ -322,7 +322,7 @@ function Teamleadership() {
           transition={{ duration: 0.8 }}
         >
           <div className="text-center mb-12 lg:mb-16">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold gradient-text-secondary mb-4">
+            <h2 className="font-display tracking-tight text-3xl sm:text-4xl lg:text-5xl font-bold gradient-text-secondary mb-4">
               Board Members
             </h2>
             <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
@@ -389,7 +389,7 @@ function Teamleadership() {
           className="mb-20 mt-20"
         >
           <div className="text-center mb-16">
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold gradient-text-secondary mb-8">
+            <h2 className="font-display tracking-tight text-4xl sm:text-5xl lg:text-6xl font-bold gradient-text-secondary mb-8">
               Our Vision
             </h2>
           </div>
@@ -420,7 +420,7 @@ function Teamleadership() {
           className="mb-20"
         >
           <div className="text-center mb-16">
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold gradient-text-primary mb-6">
+            <h2 className="font-display tracking-tight text-4xl sm:text-5xl lg:text-6xl font-bold gradient-text-primary mb-6">
               Our Values
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -439,13 +439,13 @@ function Teamleadership() {
                 transition={{ duration: 0.8, delay: index * 0.1 }}
                 className="group"
               >
-                <div className="modern-card p-8 h-full hover:shadow-2xl transition-all duration-500 group-hover:bg-gradient-to-br group-hover:from-white group-hover:to-teal-50/50">
+                <div className="modern-card p-8 h-full hover:shadow-2xl transition-all duration-500 group-hover:bg-gradient-to-br group-hover:from-white group-hover:to-brand-teal/5">
                   <div className="flex items-start space-x-6">
                     <div className="text-4xl group-hover:scale-110 transition-transform duration-300">
                       {value.icon}
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-teal-700 transition-colors duration-300">
+                      <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-brand-teal-dark transition-colors duration-300">
                         {value.title}
                       </h3>
                       <p className="text-gray-600 leading-relaxed group-hover:text-gray-700 transition-colors duration-300">

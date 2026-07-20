@@ -62,7 +62,7 @@ function Feature() {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ delay: 0.2 }}
-                  className="text-3xl md:text-4xl lg:text-5xl font-bold px-4 md:px-0"
+                  className="font-display tracking-tight text-3xl md:text-4xl lg:text-5xl font-bold px-4 md:px-0"
                 >
                   Transforming Lives Through{" "}
                   <span className="text-brand-teal block md:inline">
@@ -157,7 +157,7 @@ function Feature() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12 md:mb-16"
           >
-            <h2 className="text-2xl md:text-3xl font-bold mb-4">
+            <h2 className="font-display tracking-tight text-2xl md:text-3xl font-bold mb-4">
               Our Areas of Impact
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto px-4">
@@ -206,7 +206,7 @@ function Feature() {
             transition={{ duration: 0.6 }}
             className="text-center mt-12 md:mt-20 px-4"
           >
-            <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6">
+            <h2 className="font-display tracking-tight text-2xl md:text-3xl font-bold mb-4 md:mb-6">
               Ready to Make a Difference?
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto mb-6 md:mb-8 text-sm md:text-base">

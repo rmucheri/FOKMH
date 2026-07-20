@@ -43,7 +43,7 @@ const AboutStory = () => {
             className="text-center mb-20"
           >
             <motion.h1
-              className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-8 drop-shadow-2xl"
+              className="font-display tracking-tight text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-8 drop-shadow-2xl"
               animate={{
                 textShadow: [
                   "0 0 20px rgba(34, 211, 238, 0.5)",
@@ -82,7 +82,7 @@ const AboutStory = () => {
                 >
                   <motion.button
                     onClick={handleDonateClick}
-                    className="w-full sm:w-auto bg-gradient-to-r from-cyan-500 to-teal-500 text-white font-semibold py-3 md:py-4 px-6 md:px-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 min-h-[48px] touch-manipulation"
+                    className="w-full sm:w-auto bg-gradient-to-r from-brand-teal to-brand-teal-dark text-white font-semibold py-3 md:py-4 px-6 md:px-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 min-h-[48px] touch-manipulation"
                     whileHover={{ scale: 1.05, y: -2 }}
                     whileTap={{ scale: 0.95 }}
                   >
@@ -112,7 +112,7 @@ const AboutStory = () => {
               <div className="modern-card p-6 md:p-10 lg:p-12">
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-12 items-center">
                   <div className="lg:col-span-2 space-y-6">
-                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-gray-900">
+                    <h2 className="font-display tracking-tight text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-gray-900">
                       Fighting Cancer Together
                     </h2>
                     <p className="text-lg md:text-xl text-gray-600 leading-relaxed mb-4">
@@ -156,7 +156,7 @@ const AboutStory = () => {
                     <motion.img
                       src={docTakFull}
                       alt="Karanda Mission Hospital"
-                      className="rounded-xl shadow-xl w-full h-80 md:h-80 object-cover"
+                      className="rounded-xl shadow-xl w-full max-w-full h-80 md:h-80 object-cover"
                       whileHover={{ scale: 1.02 }}
                       transition={{ duration: 0.3 }}
                     />
@@ -185,7 +185,7 @@ const AboutStory = () => {
                 >
                   <div className="h-full flex flex-col">
                     <div className="space-y-4 md:space-y-6 flex-1">
-                      <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold gradient-text-secondary">
+                      <h2 className="font-display tracking-tight text-2xl md:text-3xl lg:text-4xl font-bold gradient-text-secondary">
                         Be the Change in Their World
                       </h2>
                       <p className="text-base md:text-lg text-gray-600 leading-relaxed">
@@ -265,7 +265,7 @@ const AboutStory = () => {
                             </div>
                           </div>
                           <svg
-                            className="w-6 h-6 text-[#3ea498] flex-shrink-0"
+                            className="w-6 h-6 text-brand-teal flex-shrink-0"
                             fill="none"
                             stroke="currentColor"
                             viewBox="0 0 24 24"
@@ -305,7 +305,7 @@ const AboutStory = () => {
               transition={{ type: "spring", duration: 0.5 }}
             >
               {/* Header with Gradient */}
-              <div className="bg-gradient-to-r from-[#3ea498] to-cyan-600 px-8 py-12 text-white text-center relative">
+              <div className="bg-gradient-to-r from-brand-teal to-cyan-600 px-8 py-12 text-white text-center relative">
                 <button
                   onClick={() => setShowModal(false)}
                   className="absolute top-4 right-4 text-2xl hover:text-gray-200 transition-colors"
@@ -325,7 +325,7 @@ const AboutStory = () => {
                     {
                       name: "🇺🇸 USA Donations",
                       href: "https://give.team.org/give/672997/#!/donation/checkout",
-                      color: "bg-[#3ea498] hover:bg-[#2d8276]",
+                      color: "bg-brand-teal hover:bg-brand-teal-dark",
                     },
                     {
                       name: "🇨🇦 Canada Donations",

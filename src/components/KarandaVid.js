@@ -24,7 +24,7 @@ function KarandaVid() {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="text-center mb-12 md:mb-16"
         >
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="font-display tracking-tight text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
             <span className="text-brand-teal">Watch</span> Our Impact in Action
           </h2>
           <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto">

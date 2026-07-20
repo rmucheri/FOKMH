@@ -154,10 +154,10 @@ function Hero() {
 
             <Link
               to="/events"
-              className="w-full animate-bounce sm:w-56 min-h-[44px] px-8 py-4 bg-orange-600 text-white text-lg font-semibold rounded-full
-                       hover:bg-orange-700 transition-all duration-300 transform hover:scale-105
-                       flex items-center justify-center gap-2 shadow-lg
-                       focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-400 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+              className="w-full sm:w-56 min-h-[44px] px-8 py-4 border-2 border-white text-white text-lg font-semibold rounded-full
+                       hover:bg-white hover:text-gray-900 transition-all duration-300 transform hover:scale-105
+                       flex items-center justify-center gap-2
+                       focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
             >
               Events
               <svg

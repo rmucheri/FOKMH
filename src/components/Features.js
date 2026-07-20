@@ -77,7 +77,7 @@ function Features() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold gradient-text-primary mb-4">
+          <h2 className="font-display tracking-tight text-4xl md:text-5xl font-bold gradient-text-primary mb-4">
             Highlights of Your Contributions
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -104,14 +104,14 @@ function Features() {
               <div className="flex items-start gap-6">
                 {/* Icon Container */}
                 <motion.div
-                  className={`flex-shrink-0 w-16 h-16 bg-gradient-to-r from-cyan-500 to-cyan-600 rounded-2xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-shadow duration-300`}
+                  className={`flex-shrink-0 w-16 h-16 bg-gradient-to-r from-brand-teal to-cyan-600 rounded-2xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-shadow duration-300`}
                 >
                   <feature.icon className="w-8 h-8 text-white" />
                 </motion.div>
 
                 {/* Content */}
                 <div className="flex-1">
-                  <h3 className="text-2xl font-bold text-gray-900 group-hover:text-cyan-600 transition-colors mb-3">
+                  <h3 className="text-2xl font-bold text-gray-900 group-hover:text-brand-teal transition-colors mb-3">
                     {feature.name}
                   </h3>
 
@@ -122,7 +122,7 @@ function Features() {
                   {/* Progress Bar */}
                   <div className="mt-6">
                     <motion.div
-                      className="h-2 bg-gradient-to-r from-cyan-500 to-cyan-600 rounded-full"
+                      className="h-2 bg-gradient-to-r from-brand-teal to-cyan-600 rounded-full"
                       initial={{ width: 0 }}
                       whileInView={{ width: "100%" }}
                       viewport={{ once: true }}

@@ -76,7 +76,7 @@ function Contact() {
               />
             </svg>
             <div className="text-center">
-              <h2 className=" font-extrabold tracking-tight text-[#3ea498] dark:text-slate-200 sm:text-4xl">
+              <h2 className="font-display tracking-tight font-extrabold text-brand-teal dark:text-slate-200 text-3xl sm:text-4xl">
                 Contact Us
               </h2>
               <p className="mt-4 text-xl leading-6 text-gray-500 dark:text-slate-400">
@@ -98,8 +98,8 @@ function Contact() {
                     id="name"
                     autoComplete="organization"
                     placeholder="Enter your fullname"
-                    required=""
-                    className="border-gray-300 block w-full rounded-md py-3 px-4 shadow-sm focus:border-sky-500 focus:ring-sky-500 dark:border-white/5 dark:bg-slate-700/50 dark:text-white"
+                    required
+                    className="border-gray-300 block w-full rounded-md py-3 px-4 shadow-sm focus:border-brand-teal focus:ring-brand-teal dark:border-white/5 dark:bg-slate-700/50 dark:text-white"
                   />
                 </div>
               </div>
@@ -114,11 +114,11 @@ function Contact() {
                   <input
                     name="email"
                     id="email"
-                    required=""
+                    required
                     type="email"
                     placeholder="Email Address"
                     autoComplete="email"
-                    className="border-gray-300 block w-full rounded-md py-3 px-4 shadow-sm focus:border-sky-500 focus:ring-sky-500 dark:border-white/5 dark:bg-slate-700/50 dark:text-white"
+                    className="border-gray-300 block w-full rounded-md py-3 px-4 shadow-sm focus:border-brand-teal focus:ring-brand-teal dark:border-white/5 dark:bg-slate-700/50 dark:text-white"
                   />
                 </div>
               </div>
@@ -131,27 +131,22 @@ function Contact() {
                 </label>
                 <div className="mt-1 mb-4">
                   <textarea
-                    required=""
+                    required
                     name="message"
                     id="message"
                     placeholder="Message"
                     rows={4}
-                    className="border-gray-300 block w-full rounded-md py-3 px-4 shadow-sm focus:border-sky-500 focus:ring-sky-500 dark:border-white/5 dark:bg-slate-700/50 dark:text-white"
+                    className="border-gray-300 block w-full rounded-md py-3 px-4 shadow-sm focus:border-brand-teal focus:ring-brand-teal dark:border-white/5 dark:bg-slate-700/50 dark:text-white"
                     defaultValue={""}
                   />
                 </div>
               </div>
               <div className="flex justify-end sm:col-span-2">
-                {/* <button
-                type="submit"
-                className="btn btn-primary inline-flex items-center rounded-md px-4 py-2 font-medium focus:outline-none focus-visible:ring focus-visible:ring-sky-500 shadow-sm sm:text-sm transition-colors duration-75 text-sky-500 border border-sky-500 hover:bg-sky-50 active:bg-sky-100 disabled:bg-sky-100 dark:hover:bg-gray-900 dark:active:bg-gray-800 dark:disabled:bg-gray-800 disabled:cursor-not-allowed"
-              >
-                <span>Send Message</span>
-              </button> */}
-                <button class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
-                  <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                    Send Message
-                  </span>
+                <button
+                  type="submit"
+                  className="inline-flex items-center justify-center min-h-[44px] rounded-full bg-brand-teal px-8 py-3 font-semibold text-white shadow-lg transition-all hover:bg-brand-teal-dark hover:shadow-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-teal focus-visible:ring-offset-2"
+                >
+                  Send Message
                 </button>
               </div>
               {/* <a

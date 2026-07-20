@@ -55,7 +55,7 @@ function Testimonials() {
       className="relative py-16 md:py-24 bg-white overflow-hidden"
     >
       {/* Decorative background */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-[#3ea498]/5 to-transparent rounded-full blur-3xl" />
+      <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-brand-teal/5 to-transparent rounded-full blur-3xl" />
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-cyan-400/5 to-transparent rounded-full blur-3xl" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
@@ -67,8 +67,8 @@ function Testimonials() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16 md:mb-20"
         >
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4">
-            <span className="text-[#3ea498]">Patient Stories</span>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 font-display tracking-tight">
+            <span className="text-brand-teal">Patient Stories</span>
             <br />
             <span className="text-2xl md:text-3xl font-semibold text-gray-600">
               The heartfelt testimonials of our community
@@ -99,7 +99,7 @@ function Testimonials() {
               className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-white to-[#f8fffe] border border-gray-100 shadow-lg hover:shadow-xl transition-all duration-300 p-8"
             >
               {/* Gradient overlay on hover */}
-              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-[#3ea498]/10 to-transparent rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-brand-teal/10 to-transparent rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
               {/* Icon */}
               <div className="relative z-10 text-4xl mb-4">
@@ -107,7 +107,7 @@ function Testimonials() {
               </div>
 
               {/* Quote Mark */}
-              <div className="relative z-10 text-6xl text-[#3ea498]/20 font-bold mb-2">
+              <div className="relative z-10 text-6xl text-brand-teal/20 font-bold mb-2">
                 "
               </div>
 
@@ -121,13 +121,13 @@ function Testimonials() {
                 <h4 className="font-bold text-gray-900 text-lg mb-1">
                   {testimonial.author}
                 </h4>
-                <p className="text-sm text-[#3ea498] font-semibold">
+                <p className="text-sm text-brand-teal font-semibold">
                   {testimonial.role}
                 </p>
               </div>
 
               {/* Bottom accent line */}
-              <div className="absolute bottom-0 left-0 h-1 w-12 bg-gradient-to-r from-[#3ea498] to-cyan-400 group-hover:w-full transition-all duration-300" />
+              <div className="absolute bottom-0 left-0 h-1 w-12 bg-gradient-to-r from-brand-teal to-cyan-400 group-hover:w-full transition-all duration-300" />
             </motion.div>
           ))}
         </motion.div>
@@ -146,7 +146,7 @@ function Testimonials() {
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="px-10 py-4 bg-gradient-to-r from-[#3ea498] to-cyan-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+            className="px-10 py-4 bg-gradient-to-r from-brand-teal to-cyan-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
           >
             Make a Difference Today
           </motion.button>

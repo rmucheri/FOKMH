@@ -66,7 +66,7 @@ function CauseHero() {
         className="relative py-16 md:py-24 bg-white overflow-hidden"
       >
         {/* Decorative background */}
-        <div className="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-[#3ea498]/5 to-transparent rounded-full blur-3xl" />
+        <div className="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-brand-teal/5 to-transparent rounded-full blur-3xl" />
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
           {/* Section Header */}
@@ -77,8 +77,8 @@ function CauseHero() {
             transition={{ duration: 0.8 }}
             className="text-center mb-16 md:mb-20"
           >
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4">
-              Our <span className="text-[#3ea498]">Causes & Impact</span>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 font-display tracking-tight">
+              Our <span className="text-brand-teal">Causes & Impact</span>
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               Discover how your support directly transforms lives through our
@@ -106,10 +106,10 @@ function CauseHero() {
                   >
                     <img
                       alt={cause.title}
-                      className="object-cover object-center h-96 w-full group-hover:brightness-110 transition-all duration-500"
+                      className="object-cover object-center h-96 w-full max-w-full group-hover:brightness-110 transition-all duration-500"
                       src={cause.image}
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#3ea498]/30 to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-brand-teal/30 to-transparent" />
                     <motion.div
                       initial={{ opacity: 0 }}
                       whileHover={{ opacity: 1 }}
@@ -118,7 +118,7 @@ function CauseHero() {
                       <img
                         src={cause.icon}
                         alt={cause.title}
-                        className="w-12 h-12 object-cover"
+                        className="w-12 h-12 max-w-full object-cover"
                       />
                     </motion.div>
                   </motion.div>
@@ -134,7 +134,7 @@ function CauseHero() {
                       transition={{ duration: 0.5 }}
                       className="inline-block"
                     >
-                      <span className="px-4 py-2 bg-gradient-to-r from-[#3ea498]/20 to-cyan-400/20 text-[#3ea498] font-bold rounded-full text-sm border border-[#3ea498]/30">
+                      <span className="px-4 py-2 bg-gradient-to-r from-brand-teal/20 to-cyan-400/20 text-brand-teal font-bold rounded-full text-sm border border-brand-teal/30">
                         Cause {index + 1} of {causes.length}
                       </span>
                     </motion.div>
@@ -145,12 +145,12 @@ function CauseHero() {
                     </h3>
 
                     {/* Subtitle */}
-                    <p className="text-lg text-[#3ea498] font-semibold">
+                    <p className="text-lg text-brand-teal font-semibold">
                       {cause.subtitle}
                     </p>
 
                     {/* Accent line */}
-                    <div className="w-16 h-1 bg-gradient-to-r from-[#3ea498] to-cyan-400" />
+                    <div className="w-16 h-1 bg-gradient-to-r from-brand-teal to-cyan-400" />
 
                     {/* Description */}
                     <p className="text-base md:text-lg text-gray-700 leading-relaxed">
@@ -189,7 +189,7 @@ function CauseHero() {
               className="bg-white p-8 rounded-2xl shadow-2xl max-w-md w-full mx-4"
               onClick={(e) => e.stopPropagation()}
             >
-              <h2 className="text-2xl font-bold mb-6 text-[#3ea498] text-center">
+              <h2 className="text-2xl font-bold mb-6 text-brand-teal text-center">
                 Choose Donation Region
               </h2>
               <div className="flex flex-col space-y-4">
@@ -199,7 +199,7 @@ function CauseHero() {
                   target="_blank"
                   rel="noopener noreferrer"
                   href="https://give.team.org/give/672997/#!/donation/checkout"
-                  className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-white rounded-lg bg-gradient-to-r from-[#3ea498] to-cyan-600 hover:shadow-lg transition-all"
+                  className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-white rounded-lg bg-gradient-to-r from-brand-teal to-cyan-600 hover:shadow-lg transition-all"
                 >
                   USA Donations
                 </motion.a>
@@ -209,7 +209,7 @@ function CauseHero() {
                   target="_blank"
                   rel="noopener noreferrer"
                   href="https://give.ca.team.org/give/673060/#!/donation/checkout"
-                  className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-white rounded-lg bg-gradient-to-r from-[#3ea498] to-cyan-600 hover:shadow-lg transition-all"
+                  className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-white rounded-lg bg-gradient-to-r from-brand-teal to-cyan-600 hover:shadow-lg transition-all"
                 >
                   Canada Donations
                 </motion.a>
@@ -217,7 +217,7 @@ function CauseHero() {
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                   onClick={() => setShowModal(false)}
-                  className="py-3 px-5 text-base font-medium text-[#3ea498] rounded-lg border-2 border-[#3ea498] hover:bg-[#3ea498]/5 transition-all"
+                  className="py-3 px-5 text-base font-medium text-brand-teal rounded-lg border-2 border-brand-teal hover:bg-brand-teal/5 transition-all"
                 >
                   Close
                 </motion.button>

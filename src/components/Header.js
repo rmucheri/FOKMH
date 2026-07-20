@@ -129,12 +129,12 @@ export default function Header() {
         <PopoverGroup className="hidden lg:flex lg:gap-x-8 xl:gap-x-12">
           <motion.a
             href="/"
-            className="text-lg font-semibold text-gray-800 hover:text-cyan-600 transition-colors duration-300 relative"
+            className="text-lg font-semibold text-gray-800 hover:text-brand-teal transition-colors duration-300 relative"
             whileHover={{ scale: 1.05 }}
           >
             Home
             <motion.div
-              className="absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-cyan-600 to-teal-600"
+              className="absolute bottom-0 left-0 h-0.5 bg-brand-teal"
               initial={{ width: 0 }}
               whileHover={{ width: "100%" }}
               transition={{ duration: 0.3 }}
@@ -142,7 +142,7 @@ export default function Header() {
           </motion.a>
 
           <Popover className="relative">
-            <PopoverButton className="flex items-center gap-x-1 text-lg font-semibold text-gray-800 hover:text-cyan-600 transition-colors duration-300">
+            <PopoverButton className="flex items-center gap-x-1 text-lg font-semibold text-gray-800 hover:text-brand-teal transition-colors duration-300">
               About Us
               <ChevronDownIcon
                 className="h-5 w-5 flex-none text-gray-400 transition-transform group-hover:rotate-180"
@@ -207,12 +207,26 @@ export default function Header() {
 
           <motion.a
             href="/causes"
-            className="text-lg font-semibold text-gray-800 hover:text-cyan-600 transition-colors duration-300 relative"
+            className="text-lg font-semibold text-gray-800 hover:text-brand-teal transition-colors duration-300 relative"
             whileHover={{ scale: 1.05 }}
           >
             Causes
             <motion.div
-              className="absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-cyan-600 to-teal-600"
+              className="absolute bottom-0 left-0 h-0.5 bg-brand-teal"
+              initial={{ width: 0 }}
+              whileHover={{ width: "100%" }}
+              transition={{ duration: 0.3 }}
+            />
+          </motion.a>
+
+          <motion.a
+            href="/events"
+            className="text-lg font-semibold text-gray-800 hover:text-brand-teal transition-colors duration-300 relative"
+            whileHover={{ scale: 1.05 }}
+          >
+            Events
+            <motion.div
+              className="absolute bottom-0 left-0 h-0.5 bg-brand-teal"
               initial={{ width: 0 }}
               whileHover={{ width: "100%" }}
               transition={{ duration: 0.3 }}
@@ -221,12 +235,12 @@ export default function Header() {
 
           <motion.a
             href="/contact"
-            className="text-lg font-semibold text-gray-800 hover:text-cyan-600 transition-colors duration-300 relative"
+            className="text-lg font-semibold text-gray-800 hover:text-brand-teal transition-colors duration-300 relative"
             whileHover={{ scale: 1.05 }}
           >
             Contact Us
             <motion.div
-              className="absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-cyan-600 to-teal-600"
+              className="absolute bottom-0 left-0 h-0.5 bg-brand-teal"
               initial={{ width: 0 }}
               whileHover={{ width: "100%" }}
               transition={{ duration: 0.3 }}
@@ -333,6 +347,14 @@ export default function Header() {
                       whileTap={{ scale: 0.95 }}
                     >
                       Causes
+                    </motion.a>
+
+                    <motion.a
+                      href="/events"
+                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold text-gray-900 hover:bg-gray-50"
+                      whileTap={{ scale: 0.95 }}
+                    >
+                      Events
                     </motion.a>
 
                     <motion.a

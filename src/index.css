@@ -59,11 +59,11 @@ code {
   }
 
   ::-webkit-scrollbar-thumb {
-    @apply bg-gradient-to-b from-cyan-400 to-teal-500 rounded-full;
+    @apply bg-gradient-to-b from-teal-500 to-cyan-500 rounded-full;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    @apply from-cyan-500 to-teal-600;
+    @apply from-teal-600 to-cyan-600;
   }
 }
 
@@ -80,7 +80,7 @@ code {
 
   /* Gradient text utility */
   .gradient-text-primary {
-    @apply bg-gradient-to-r from-cyan-600 via-teal-600 to-cyan-500 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-teal-600 via-teal-500 to-cyan-600 bg-clip-text text-transparent;
   }
 
   .gradient-text-secondary {
@@ -89,7 +89,7 @@ code {
 
   /* Modern button */
   .modern-button {
-    @apply relative inline-flex items-center gap-3 px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-cyan-600 to-teal-600 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-cyan-300/50;
+    @apply relative inline-flex items-center gap-3 px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-teal-600 to-cyan-600 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-teal-300/50;
   }
 
   /* Glass morphism effect */

@@ -15,9 +15,9 @@ const FAQs = () => {
           className={`faq-btn flex w-full text-left`}
           onClick={handleToggle}
         >
-          <div className="mr-5 flex h-10 w-full max-w-[40px] items-center justify-center rounded-lg bg-primary/5 text-primary dark:bg-white/5">
+          <div className="mr-5 flex h-10 w-full max-w-[40px] items-center justify-center rounded-lg bg-brand-teal/5 text-brand-teal dark:bg-white/5">
             <svg
-              className={`fill-primary stroke-primary duration-200 ease-in-out ${
+              className={`fill-brand-teal stroke-brand-teal duration-200 ease-in-out ${
                 active ? "rotate-180" : ""
               }`}
               width="17"
@@ -59,10 +59,10 @@ const FAQs = () => {
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4">
             <div className="mx-auto mb-[60px] max-w-[520px] text-center lg:mb-20">
-              <span className="mb-2 block text-lg font-semibold text-primary text-[#3ea498]">
+              <span className="mb-2 block text-lg font-semibold text-brand-teal">
                 FAQ
               </span>
-              <h2 className="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-[40px]/[48px] text-[#3ea498]">
+              <h2 className="font-display tracking-tight mb-4 text-3xl font-bold dark:text-white sm:text-[40px]/[48px] text-brand-teal">
                 Any Questions? Look Here
               </h2>
               <p className="text-base text-body-color dark:text-dark-6 text-gray-600">
@@ -126,7 +126,7 @@ const FAQs = () => {
               y2="-418.681"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#3056D3" stop-opacity="0.36" />
+              <stop stop-color="#3ea498" stop-opacity="0.36" />
               <stop offset="1" stop-color="#F5F2FD" stop-opacity="0" />
               <stop offset="1" stop-color="#F5F2FD" stop-opacity="0.096144" />
             </linearGradient>

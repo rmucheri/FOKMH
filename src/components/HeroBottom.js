@@ -51,7 +51,7 @@ function HeroBottom() {
             <div className="space-y-6">
               <motion.h2
                 variants={itemVariants}
-                className="text-4xl md:text-5xl lg:text-5xl font-bold leading-tight"
+                className="font-display tracking-tight text-4xl md:text-5xl lg:text-5xl font-bold leading-tight"
               >
                 <span className="text-brand-teal block mb-2">
                   Meet Our Heroes
