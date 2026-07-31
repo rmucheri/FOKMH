@@ -17,11 +17,7 @@ function formatDate(value) {
   let parsed;
   const match = /^(\d{4})-(\d{2})-(\d{2})$/.exec(value);
   if (match) {
-    parsed = new Date(
-      Number(match[1]),
-      Number(match[2]) - 1,
-      Number(match[3])
-    );
+    parsed = new Date(Number(match[1]), Number(match[2]) - 1, Number(match[3]));
   } else {
     parsed = new Date(value);
   }
@@ -31,6 +27,26 @@ function formatDate(value) {
     month: "long",
     day: "numeric",
   });
+}
+
+// Parse date string to Date object (local timezone)
+function parseEventDate(dateString) {
+  if (!dateString) return null;
+  const match = /^(\d{4})-(\d{2})-(\d{2})$/.exec(dateString);
+  if (match) {
+    return new Date(Number(match[1]), Number(match[2]) - 1, Number(match[3]));
+  }
+  return new Date(dateString);
+}
+
+// Check if event is in the future
+function isUpcomingEvent(eventDateString) {
+  const eventDate = parseEventDate(eventDateString);
+  if (!eventDate) return false;
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  eventDate.setHours(0, 0, 0, 0);
+  return eventDate >= today;
 }
 
 function Events() {
@@ -94,91 +110,199 @@ function Events() {
       </section>
 
       <div className="mx-auto max-w-6xl px-4 py-12 sm:py-16">
-        {/* Poster gallery */}
-        <section>
-          <h2 className="mb-6 font-display text-2xl font-bold tracking-tight text-gray-900">
-            Event posters
-          </h2>
+        {status === "loading" && (
+          <div className="rounded-2xl border border-dashed border-gray-300 bg-gray-50 p-12 text-center text-gray-600">
+            Loading posters…
+          </div>
+        )}
 
-          {status === "loading" && (
-            <div className="rounded-2xl border border-dashed border-gray-300 bg-gray-50 p-12 text-center text-gray-600">
-              Loading posters…
-            </div>
-          )}
+        {status === "error" && (
+          <div
+            role="alert"
+            className="rounded-2xl border border-orange-300 bg-orange-50 p-8 text-center text-gray-800"
+          >
+            Couldn't load the events list. Make sure{" "}
+            <code>public/events/events.json</code> exists and is valid JSON.
+          </div>
+        )}
 
-          {status === "error" && (
-            <div
-              role="alert"
-              className="rounded-2xl border border-orange-300 bg-orange-50 p-8 text-center text-gray-800"
-            >
-              Couldn't load the events list. Make sure{" "}
-              <code>public/events/events.json</code> exists and is valid JSON.
-            </div>
-          )}
+        {status === "ready" && posters.length === 0 && (
+          <div className="rounded-2xl border border-dashed border-gray-300 bg-gray-50 p-12 text-center text-gray-600">
+            No events posted yet. Add one to{" "}
+            <code>public/events/events.json</code> and redeploy.
+          </div>
+        )}
 
-          {status === "ready" && posters.length === 0 && (
-            <div className="rounded-2xl border border-dashed border-gray-300 bg-gray-50 p-12 text-center text-gray-600">
-              No events posted yet. Add one to{" "}
-              <code>public/events/events.json</code> and redeploy.
-            </div>
-          )}
-
-          {status === "ready" && posters.length > 0 && (
-            <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-              {posters.map((poster, index) => (
-                <motion.div
-                  key={`${poster.image}-${index}`}
-                  initial={{ opacity: 0, scale: 0.95 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true }}
-                  className="group overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-lg transition-shadow duration-300 hover:shadow-xl"
-                >
-                  <button
-                    type="button"
-                    onClick={() => setActivePoster(poster)}
-                    aria-label={`View ${poster.title || "poster"} full size`}
-                    className="block w-full cursor-zoom-in overflow-hidden focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-teal focus-visible:ring-offset-2"
-                  >
-                    <img
-                      src={`${EVENTS_BASE}/${poster.image}`}
-                      alt={poster.title || "Event poster"}
-                      loading="lazy"
-                      className="h-96 w-full max-w-full bg-gray-50 object-contain transition-transform duration-300 group-hover:scale-105"
-                    />
-                  </button>
-                  <div className="p-5">
-                    <h3 className="text-lg font-bold text-gray-900">
-                      {poster.title || "Untitled event"}
-                    </h3>
-                    {poster.date && (
-                      <p className="mt-1 flex items-center gap-1 text-sm text-brand-teal">
-                        <svg
-                          className="h-4 w-4"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
+        {status === "ready" && posters.length > 0 && (
+          <>
+            {/* Upcoming Events */}
+            {(() => {
+              const upcomingEvents = posters.filter((poster) =>
+                isUpcomingEvent(poster.date),
+              );
+              return (
+                <section className="mb-12">
+                  <h2 className="mb-6 font-display text-2xl font-bold tracking-tight text-gray-900">
+                    Upcoming Events
+                  </h2>
+                  {upcomingEvents.length === 0 ? (
+                    <div className="rounded-2xl border border-dashed border-gray-300 bg-gray-50 p-12 text-center text-gray-600">
+                      No upcoming events. Check back soon!
+                    </div>
+                  ) : (
+                    <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                      {upcomingEvents.map((poster, index) => (
+                        <motion.div
+                          key={`${poster.image}-upcoming-${index}`}
+                          initial={{ opacity: 0, scale: 0.95 }}
+                          whileInView={{ opacity: 1, scale: 1 }}
+                          viewport={{ once: true }}
+                          className="group overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-lg transition-shadow duration-300 hover:shadow-xl"
                         >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                          />
-                        </svg>
-                        {formatDate(poster.date)}
-                      </p>
-                    )}
-                    {poster.description && (
-                      <p className="mt-2 text-sm text-gray-600">
-                        {poster.description}
-                      </p>
-                    )}
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          )}
-        </section>
+                          <button
+                            type="button"
+                            onClick={() => setActivePoster(poster)}
+                            aria-label={`View ${poster.title || "poster"} full size`}
+                            className="block w-full cursor-zoom-in overflow-hidden focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-teal focus-visible:ring-offset-2"
+                          >
+                            <img
+                              src={`${EVENTS_BASE}/${poster.image}`}
+                              alt={poster.title || "Event poster"}
+                              loading="lazy"
+                              className="h-96 w-full max-w-full bg-gray-50 object-contain transition-transform duration-300 group-hover:scale-105"
+                            />
+                          </button>
+                          <div className="p-5">
+                            <h3 className="text-lg font-bold text-gray-900">
+                              {poster.title || "Untitled event"}
+                            </h3>
+                            {poster.date && (
+                              <p className="mt-1 flex items-center gap-1 text-sm text-brand-teal">
+                                <svg
+                                  className="h-4 w-4"
+                                  fill="none"
+                                  stroke="currentColor"
+                                  viewBox="0 0 24 24"
+                                >
+                                  <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth={2}
+                                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                                  />
+                                </svg>
+                                {formatDate(poster.date)}
+                              </p>
+                            )}
+                            {poster.description && (
+                              <p className="mt-2 text-sm text-gray-600">
+                                {poster.description}
+                              </p>
+                            )}
+                            <button
+                              type="button"
+                              onClick={() => {
+                                if (poster.ticketUrl) {
+                                  window.open(poster.ticketUrl, "_blank");
+                                } else {
+                                  setActivePoster(poster);
+                                }
+                              }}
+                              className="mt-4 w-full rounded-lg bg-brand-teal px-4 py-2 font-semibold text-white transition-colors duration-200 hover:bg-teal-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-teal focus-visible:ring-offset-2"
+                            >
+                              Purchase Ticket
+                            </button>
+                          </div>
+                        </motion.div>
+                      ))}
+                    </div>
+                  )}
+                </section>
+              );
+            })()}
+
+            {/* Past Events */}
+            {(() => {
+              const pastEvents = posters.filter(
+                (poster) => !isUpcomingEvent(poster.date),
+              );
+              return (
+                <section>
+                  <h2 className="mb-6 font-display text-2xl font-bold tracking-tight text-gray-900">
+                    Past Events
+                  </h2>
+                  {pastEvents.length === 0 ? (
+                    <div className="rounded-2xl border border-dashed border-gray-300 bg-gray-50 p-12 text-center text-gray-600">
+                      No past events yet.
+                    </div>
+                  ) : (
+                    <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                      {pastEvents.map((poster, index) => (
+                        <motion.div
+                          key={`${poster.image}-past-${index}`}
+                          initial={{ opacity: 0, scale: 0.95 }}
+                          whileInView={{ opacity: 1, scale: 1 }}
+                          viewport={{ once: true }}
+                          className="group overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-lg transition-shadow duration-300 hover:shadow-xl"
+                        >
+                          <button
+                            type="button"
+                            onClick={() => setActivePoster(poster)}
+                            aria-label={`View ${poster.title || "poster"} full size`}
+                            className="block w-full cursor-zoom-in overflow-hidden focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-teal focus-visible:ring-offset-2"
+                          >
+                            <img
+                              src={`${EVENTS_BASE}/${poster.image}`}
+                              alt={poster.title || "Event poster"}
+                              loading="lazy"
+                              className="h-96 w-full max-w-full bg-gray-50 object-contain transition-transform duration-300 group-hover:scale-105"
+                            />
+                          </button>
+                          <div className="p-5">
+                            <h3 className="text-lg font-bold text-gray-900">
+                              {poster.title || "Untitled event"}
+                            </h3>
+                            {poster.date && (
+                              <p className="mt-1 flex items-center gap-1 text-sm text-gray-500">
+                                <svg
+                                  className="h-4 w-4"
+                                  fill="none"
+                                  stroke="currentColor"
+                                  viewBox="0 0 24 24"
+                                >
+                                  <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth={2}
+                                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                                  />
+                                </svg>
+                                {formatDate(poster.date)}
+                              </p>
+                            )}
+                            {poster.description && (
+                              <p className="mt-2 text-sm text-gray-600">
+                                {poster.description}
+                              </p>
+                            )}
+                            <button
+                              type="button"
+                              onClick={() => setActivePoster(poster)}
+                              className="mt-4 w-full rounded-lg bg-gray-200 px-4 py-2 font-semibold text-gray-700 transition-colors duration-200 hover:bg-gray-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-400 focus-visible:ring-offset-2"
+                              disabled
+                            >
+                              Past Event
+                            </button>
+                          </div>
+                        </motion.div>
+                      ))}
+                    </div>
+                  )}
+                </section>
+              );
+            })()}
+          </>
+        )}
       </div>
 
       {/* Full-size poster lightbox */}
